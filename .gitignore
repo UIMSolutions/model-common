@@ -13,3 +13,4 @@ model-common-test-*
 *.o
 *.obj
 *.lst
+dub.selections.json

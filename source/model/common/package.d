@@ -18,9 +18,11 @@ static this() {
       this.name("Common");
 
       this.attclasses(
-        EIMAttclass(randomUUID, "base/integer"), 
-        EIMAttclass(randomUUID, "base/string"), 
-        EIMAttclass(randomUUID, "base/uuid"));
+        EIMAttclass.name("base/integer"), 
+        EIMAttclass.name("base/string"), 
+        EIMAttclass.name("base/timestamp"), 
+        EIMAttclass.name("base/url"), 
+        EIMAttclass.name("base/uuid"));
     }
   };
 }
