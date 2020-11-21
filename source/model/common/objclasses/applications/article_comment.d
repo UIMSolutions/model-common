@@ -7,9 +7,7 @@ static this() {
   gsCommon.objclasses("common/applications/articleComment", new class DEIMObjclass {
     this() {
       super(); 
-      this
-      .id(randomUUID)
-      .attributes([
+      this.attributes([
         "kbArticleCommentId":"common/applications/articleComment/kbArticleCommentId", //	Unique identifier of the knowledge base article comment.	
         "kbArticleId":"common/applications/articleComment/kbArticleId", //	Unique identifier of the knowledge base article to which the comment applies.	
         "title":"common/applications/articleComment/title", //	Title of the knowledge base article comment.	

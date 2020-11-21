@@ -7,9 +7,7 @@ static this() {
   gsCommon.objclasses("common/applications/article", new class DEIMObjclass {
     this() {
       super(); 
-      this
-      .id(randomUUID)
-      .attributes([
+      this.attributes([
         "kbArticleId":"common/applications/article/kbArticleId", //	Shows the ID of the article.	
         "kbArticleTemplateId":"common/applications/article/kbArticleTemplateId", //	Choose the template that you want to use as a base for creating the new article.	
         "organizationId":"common/applications/article/organizationId", //	Unique identifier of the organization associated with the article.	

@@ -7,9 +7,7 @@ static this() {
   gsCommon.objclasses("common/applications/businessUnit", new class DEIMObjclass {
     this() {
       super(); 
-      this
-      .id(randomUUID)
-      .attributes([
+      this.attributes([
         "businessUnitId":"common/applications/businessUnit/businessUnitId", //	Unique identifier of the business unit.	
         "createdOn":"common/applications/businessUnit/createdOn", //	Date and time when the business unit was created.	
         "createdBy":"common/applications/businessUnit/createdBy", //	Unique identifier of the user who created the business unit.	

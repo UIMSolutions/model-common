@@ -7,9 +7,7 @@ static this() {
   gsCommon.objclasses("common/applications/account", new class DEIMObjclass {
     this() {
       super(); 
-      this
-      .id(randomUUID)
-      .attributes([
+      this.attributes([
         "createdOn": "common/applications/createdOn", //	Date and time when the record was created.	
         "createdBy":"base/uuid", //	Shows who created the record.	
         "modifiedOn":"common/applications/account/modifiedOn", //	Date and time when the record was modified.	

@@ -7,13 +7,11 @@ static this() {
   gsCommon.objclasses("common/applications/knowledgeArticleCategory", new class DEIMObjclass {
     this() {
       super(); 
-      this
-      .id(randomUUID)
-      .attributes([
-knowledgeArticleId		
-categoryId		
-knowledgeArticleCategoryId	Unique identifier of the Category for the knowledge article.	
-versionNumber		
+      this.attributes([
+        "knowledgeArticleId":"common/applications/knowledgeArticleCategory/knowledgeArticleId", //		
+        "categoryId":"common/applications/knowledgeArticleCategory/categoryId", //		
+        "knowledgeArticleCategoryId":"common/applications/knowledgeArticleCategory/knowledgeArticleCategoryId", //	Unique identifier of the Category for the knowledge article.	
+        "versionNumber":"common/applications/knowledgeArticleCategory/versionNumber", //		
       ]); 
 
     }

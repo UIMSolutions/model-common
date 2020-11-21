@@ -6,9 +6,7 @@ static this() {
   gsCommon.objclasses("common/applications/currency", new class DEIMObjclass {
     this() {
       super(); 
-      this
-      .id(randomUUID)
-      .attributes([
+      this.attributes([
         "statusCode":"common/applications/currency/statusCode", //	Reason for the status of the transaction currency.	
         "statusCode_display":"common/applications/currency/statusCode_display", // 	
         "modifiedOn":"common/applications/currency/modifiedOn", // Date and time when the transaction currency was last modified.	

@@ -7,9 +7,7 @@ static this() {
   gsCommon.objclasses("common/applications/owner", new class DEIMObjclass {
     this() {
       super(); 
-      this
-      .id(randomUUID)
-      .attributes([
+      this.attributes([
         "ownerId":"common/applications/ownerId", //	Unique identifier for the Owner: systemuserid or teamid.	
         "ownerIdType":"common/applications/account/ownerIdType", //	The type of owner, either User or Team.	
         "versionNumber":"common/applications/account/versionNumber", //	Version Number	

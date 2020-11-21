@@ -7,9 +7,7 @@ static this() {
   gsCommon.objclasses("common/applications/articleTemplate", new class DEIMObjclass {
     this() {
       super(); 
-      this
-      .id(randomUUID)
-      .attributes([
+      this.attributes([
         "kbArticleTemplateId":"common/applications/articleTemplate/kbArticleTemplateId", //	Unique identifier of the knowledge base article template.	
         "structureXml":"common/applications/articleTemplate/structureXml", //	XML structure of the knowledge base article.	
         "organizationId":"common/applications/articleTemplate/organizationId", //	Unique identifier of the organization associated with the template.	

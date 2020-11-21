@@ -7,9 +7,7 @@ static this() {
   gsCommon.objclasses("common/applications/address", new class DEIMObjclass {
     this() {
       super(); 
-      this
-      .id(randomUUID)
-      .attributes([
+      this.attributes([
         "parentId":"common/applications/address/parentId", // Choose the customer's address.	
         "parentIdTypeCode":"common/applications/address/parentIdTypeCode", // The name of the entity linked by parentId	
         "customerAddressId":"common/applications/address/customerAddressId", // Unique identifier of the customer address.	

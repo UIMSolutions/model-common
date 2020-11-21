@@ -7,9 +7,7 @@ static this() {
   gsCommon.objclasses("common/applications/organization", new class DEIMObjclass {
     this() {
       super(); 
-      this
-      .id(randomUUID)
-      .attributes([
+      this.attributes([
         "organizationId":"common/applications/organization/organizationId", //	Unique identifier of the organization.	
         "name":"common/applications/organization/name", //	Name of the organization. The name is set when Microsoft CRM is installed and should not be changed.	
         "userGroupId":"common/applications/organization/userGroupId", //	Unique identifier of the default group of users in the organization.	

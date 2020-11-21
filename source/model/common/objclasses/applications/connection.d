@@ -7,9 +7,7 @@ static this() {
   gsCommon.objclasses("common/applications/connection", new class DEIMObjclass {
     this() {
       super(); 
-      this
-      .id(randomUUID)
-      .attributes([
+      this.attributes([
         "modifiedBy":"common/applications/connection/modifiedBy", //	Shows who last updated the record.	
         "owningUser":"common/applications/connection/owningUser", //	Unique identifier of the user who owns the connection.	
         "statusCode":"common/applications/connection/statusCode", //	Reason for the status of the connection.	

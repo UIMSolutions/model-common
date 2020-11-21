@@ -7,9 +7,7 @@ static this() {
   gsCommon.objclasses("common/applications/phoneCall", new class DEIMObjclass {
     this() {
       super(); 
-      this
-      .id(randomUUID)
-      .attributes([
+      this.attributes([
         "createdOn":"common/applications/phoneCall/createdOn", //	Date and time when the record was created.	
         "createdBy":"common/applications/phoneCall/createdBy", //		Shows who created the record.	
         "modifiedOn":"common/applications/phoneCall/modifiedOn", //		Date and time when the record was modified.	

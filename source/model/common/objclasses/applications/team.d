@@ -1,4 +1,4 @@
-module source.model.common.objclasses.applications.team;
+module model.common.objclasses.applications.team;
 
 import model.common;
 
@@ -6,9 +6,7 @@ static this() {
   gsCommon.objclasses("common/applications/team", new class DEIMObjclass {
     this() {
       super(); 
-      this
-      .id(randomUUID)
-      .attributes([
+      this.attributes([
         "teamId":"common/applications/team/teamId", // Unique identifier for the team.	
         "organizationId":"common/applications/team/organizationId", // Unique identifier of the organization associated with the team.	
         "businessUnitId":"common/applications/team/businessUnitId", // Unique identifier of the business unit with which the team is associated.	

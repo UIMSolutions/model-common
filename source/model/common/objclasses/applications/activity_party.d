@@ -7,9 +7,7 @@ static this() {
   gsCommon.objclasses("common/applications/activityParty", new class DEIMObjclass {
     this() {
       super(); 
-      this
-      .id(randomUUID)
-      .attributes([
+      this.attributes([
         "activityId":"common/applications/activityParty/activityId", //	Unique identifier of the activity associated with the activity party. (A "party" is any person who is associated with an activity.)	
         "activityPartyId":"common/applications/activityParty/activityPartyId", //		Unique identifier of the activity party.	
         "partyId":"common/applications/activityParty/partyId", //		Unique identifier of the party associated with the activity.	
