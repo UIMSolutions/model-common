@@ -3,6 +3,7 @@ module model.common.objclasses.applications.team;
 import model.common;
 
 static this() {
+  // Collection of system users that routinely collaborate. Teams can be used to simplify record sharing and provide team members with common access to organization data when team members belong to different Business Units.
   gsCommon.objclasses("common/applications/team", new class DEIMObjclass {
     this() {
       super(); 
