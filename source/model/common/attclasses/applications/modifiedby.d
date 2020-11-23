@@ -3,7 +3,7 @@ module model.common.attclasses.applications.modifiedby;
 import model.common;
 
 static this() {
-  gsCommon.attclasses("common/applications/modifiedBy", new class DEIMAttclass {
+  gsCommon.attclasses("common/application/modifiedBy", new class DEIMAttclass {
     this() {
       super(); 
       _attclassName = "dataFormat/guid/nullable";
@@ -11,6 +11,6 @@ static this() {
   });
 }
 unittest {
-  assert(gsCommon.attclasses("common/applications/modifiedBy").name == "common/applications/modifiedBy");
+  assert(gsCommon.attclasses("common/application/modifiedBy").name == "common/application/modifiedBy");
 }
     

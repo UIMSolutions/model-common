@@ -4,32 +4,32 @@ import model.common;
 
 static this() {
   // Person or group associated with an activity. An activity can have multiple activity parties.
-  gsCommon.objclasses("common/applications/activityParty", new class DEIMObjclass {
+  gsCommon.objclasses("common/application/activityParty", new class DEIMObjclass {
     this() {
       super(); 
       this.attributes([
-        "activityId":"common/applications/activityParty/activityId", //	Unique identifier of the activity associated with the activity party. (A "party" is any person who is associated with an activity.)	
-        "activityPartyId":"common/applications/activityParty/activityPartyId", //		Unique identifier of the activity party.	
-        "partyId":"common/applications/activityParty/partyId", //		Unique identifier of the party associated with the activity.	
-        "partyObjectTypeCode":"common/applications/activityParty/partyObjectTypeCode", //		The name of the entity linked by partyId	
-        "participationTypeMask":"common/applications/activityParty/participationTypeMask", //		Role of the person in the activity, such as sender, to, cc, bcc, required, optional, organizer, regarding, or owner.	
-        "participationTypeMask_display":"common/applications/activityParty/participationTypeMask_display", //			
-        "addressUsed":"common/applications/activityParty/addressUsed", //		Email address to which an email is delivered, and which is associated with the target entity.	
-        "doNotFax":"common/applications/activityParty/doNotFax", //		Information about whether to allow sending faxes to the activity party.	
-        "scheduledStart":"common/applications/activityParty/scheduledStart", //		Scheduled start time of the activity.	
-        "scheduledEnd":"common/applications/activityParty/scheduledEnd", //		Scheduled end time of the activity.	
-        "effort":"common/applications/activityParty/effort", //		Amount of effort used by the resource in a service appointment activity.	
-        "doNotEMail":"common/applications/activityParty/doNotEMail", //		Information about whether to allow sending email to the activity party.	
-        "exchangeEntryId":"common/applications/activityParty/exchangeEntryId", //		For internal use only.	
-        "versionNumber":"common/applications/activityParty/versionNumber", //			
-        "doNotPostalMail":"common/applications/activityParty/doNotPostalMail", //		Information about whether to allow sending postal mail to the lead.	
-        "doNotPhone":"common/applications/activityParty/doNotPhone", //		Information about whether to allow phone calls to the lead.	
-        "ownerId":"common/applications/activityParty/ownerId", //		Owner Id	
-        "ownerIdType":"common/applications/activityParty/ownerIdType", //		The type of owner, either User or Team.	
-        "instanceTypeCode":"common/applications/activityParty/instanceTypeCode", //		Type of instance of a recurring series.	
-        "instanceTypeCode_display":"common/applications/activityParty/instanceTypeCode_display", //			
-        "isPartyDeleted":"common/applications/activityParty/isPartyDeleted", //		Information about whether the underlying entity record is deleted.	
-        "addressUsedEmailColumnNumber":"common/applications/activityParty/addressUsedEmailColumnNumber", //		Email address column number from associated party.	
+        "activityId":"common/application/activityParty/activityId", //	Unique identifier of the activity associated with the activity party. (A "party" is any person who is associated with an activity.)	
+        "activityPartyId":"common/application/activityParty/activityPartyId", //		Unique identifier of the activity party.	
+        "partyId":"common/application/activityParty/partyId", //		Unique identifier of the party associated with the activity.	
+        "partyObjectTypeCode":"common/application/activityParty/partyObjectTypeCode", //		The name of the entity linked by partyId	
+        "participationTypeMask":"common/application/activityParty/participationTypeMask", //		Role of the person in the activity, such as sender, to, cc, bcc, required, optional, organizer, regarding, or owner.	
+        "participationTypeMask_display":"common/application/activityParty/participationTypeMask_display", //			
+        "addressUsed":"common/application/activityParty/addressUsed", //		Email address to which an email is delivered, and which is associated with the target entity.	
+        "doNotFax":"common/application/activityParty/doNotFax", //		Information about whether to allow sending faxes to the activity party.	
+        "scheduledStart":"common/application/activityParty/scheduledStart", //		Scheduled start time of the activity.	
+        "scheduledEnd":"common/application/activityParty/scheduledEnd", //		Scheduled end time of the activity.	
+        "effort":"common/application/activityParty/effort", //		Amount of effort used by the resource in a service appointment activity.	
+        "doNotEMail":"common/application/activityParty/doNotEMail", //		Information about whether to allow sending email to the activity party.	
+        "exchangeEntryId":"common/application/activityParty/exchangeEntryId", //		For internal use only.	
+        "versionNumber":"common/application/activityParty/versionNumber", //			
+        "doNotPostalMail":"common/application/activityParty/doNotPostalMail", //		Information about whether to allow sending postal mail to the lead.	
+        "doNotPhone":"common/application/activityParty/doNotPhone", //		Information about whether to allow phone calls to the lead.	
+        "ownerId":"common/application/activityParty/ownerId", //		Owner Id	
+        "ownerIdType":"common/application/activityParty/ownerIdType", //		The type of owner, either User or Team.	
+        "instanceTypeCode":"common/application/activityParty/instanceTypeCode", //		Type of instance of a recurring series.	
+        "instanceTypeCode_display":"common/application/activityParty/instanceTypeCode_display", //			
+        "isPartyDeleted":"common/application/activityParty/isPartyDeleted", //		Information about whether the underlying entity record is deleted.	
+        "addressUsedEmailColumnNumber":"common/application/activityParty/addressUsedEmailColumnNumber", //		Email address column number from associated party.	
       ]);
     }
   });

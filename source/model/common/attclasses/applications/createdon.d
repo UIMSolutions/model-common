@@ -3,7 +3,7 @@ module model.common.attclasses.applications.createdon;
 import model.common;
 
 static this() {
-  gsCommon.attclasses("common/applications/createdOn", new class DEIMAttclass {
+  gsCommon.attclasses("common/application/createdOn", new class DEIMAttclass {
     this() {
       super(); 
       _attclassName = "base/dateTime/nullable";
@@ -11,6 +11,6 @@ static this() {
   });
 }
 unittest {
-  assert(gsCommon.attclasses("common/applications/ownerId").name == "common/applications/ownerId");
+  assert(gsCommon.attclasses("common/application/ownerId").name == "common/application/ownerId");
 }
     

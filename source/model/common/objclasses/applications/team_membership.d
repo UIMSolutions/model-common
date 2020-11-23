@@ -4,14 +4,14 @@ import model.common;
 
 static this() {
   // User membership in Teams
-  gsCommon.objclasses("common/applications/teamMembership", new class DEIMObjclass {
+  gsCommon.objclasses("common/application/teamMembership", new class DEIMObjclass {
     this() {
       super(); 
       this.attributes([
-        "teamMembershipId":"common/applications/teamMembership/teamMembershipId", // Unique identifier of the teamMembership.
-        "systemUserId":"common/applications/teamMembership/systemUserId", // 
-        "teamId":"common/applications/teamMembership/teamId", // 
-        "versionNumber":"common/applications/teamMembership/versionNumber", // Version Number
+        "teamMembershipId":"common/application/teamMembership/teamMembershipId", // Unique identifier of the teamMembership.
+        "systemUserId":"common/application/teamMembership/systemUserId", // 
+        "teamId":"common/application/teamMembership/teamId", // 
+        "versionNumber":"common/application/teamMembership/versionNumber", // Version Number
       ]); 
     }
   });
