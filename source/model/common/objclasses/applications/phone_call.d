@@ -9,7 +9,7 @@ static this() {
       super(); 
       this.attributes([
         "createdOn":"common/application/phoneCall/createdOn", //	Date and time when the record was created.	
-        "createdBy":"common/application/phoneCall/createdBy", //		Shows who created the record.	
+        "createdBy":"common/createdBy", //		Shows who created the record.	
         "modifiedOn":"common/application/phoneCall/modifiedOn", //		Date and time when the record was modified.	
         "modifiedBy":"common/application/phoneCall/modifiedBy", //		Shows who last updated the record.	
         "createdOnBehalfBy":"common/application/phoneCall/createdOnBehalfBy", //		Shows who created the record on behalf of another user.	
@@ -49,7 +49,7 @@ static this() {
         "leftVoiceMail":"common/application/phoneCall/leftVoiceMail", //		Left the voice mail	
         "directionCode":"common/application/phoneCall/directionCode", //		Select the direction of the activity as incoming or outbound.	
         "phoneNumber":"common/application/phoneCall/phoneNumber", //		Type the phone number.	
-        "description":"common/application/phoneCall/description", //		Additional information to describe the phone call, such as the primary message or the products and services discussed.	
+        "description":"common/description", //		Additional information to describe the phone call, such as the primary message or the products and services discussed.	
         "stateCode":"common/application/phoneCall/stateCode", //		Shows whether the phone call is open, completed, or canceled. Completed and canceled phone calls are read-only and can't be edited.	
         "stateCode_display":"common/application/phoneCall/stateCode_display", //			
         "statusCode":"common/application/phoneCall/statusCode", //		Select the phone call's status.	

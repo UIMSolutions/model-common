@@ -16,12 +16,12 @@ static this() {
         "owningBusinessUnit":"common/application/sla/owningBusinessUnit", //	Unique identifier for the business unit that owns the record	
         "owningUser":"common/application/sla/owningUser", //	Unique identifier for the user that owns the record.	
         "owningTeam":"common/application/sla/owningTeam", //	Unique identifier for the team that owns the record.	
-        "description":"common/application/sla/description", //	Type additional information to describe the SLA	
+        "description":"common/description", //	Type additional information to describe the SLA	
         "changedAttributeList":"common/application/sla/changedAttributeList", //	Type additional information to describe the SLA	
         "applicableFrom":"common/application/sla/applicableFrom", //	Select the field that specifies the date and time from which the SLA items will be calculated for the case record. For example, if you select the Case Created On field, SLA calculation will begin from the time the case is created.	
         "isDefault":"common/application/sla/isDefault", //	Tells whether this SLA is the default one.	
         "createdOn":"common/application/sla/createdOn", //	Shows the date and time when the record was created. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options.	
-        "createdBy":"common/application/sla/createdBy", //	Shows who created the record.	
+        "createdBy":"common/createdBy", //	Shows who created the record.	
         "modifiedOn":"common/application/sla/modifiedOn", //	Shows the date and time when the record was last updated. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options.	
         "modifiedBy":"common/application/sla/modifiedBy", //	Shows who last updated the record.	
         "exchangeRate":"common/application/sla/exchangeRate", //	Exchange rate between the currency associated with the SLA record and the base currency.	

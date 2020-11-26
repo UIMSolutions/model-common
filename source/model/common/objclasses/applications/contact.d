@@ -8,10 +8,11 @@ static this() {
     this() {
       super(); 
       this.attributes([
-        "createdOn":"common/application/createdOn", //	Date and time when the record was created.	
-        "createdBy":"common/application/contact/createdBy", //	Shows who created the record.	
-        "modifiedOn":"common/application/contact/modifiedOn", //	Date and time when the record was modified.	
-        "modifiedBy":"common/application/contact/modifiedBy", //	Shows who last updated the record.	
+        "createdOn":"common/createdOn", //	Date and time when the record was created.	
+        "createdBy":"common/createdBy", //	Shows who created the record.	
+        "modifiedOn":"common/modifiedOn", //	Date and time when the record was modified.	
+        "modifiedBy":"common/modifiedBy", //	Shows who last updated the record.	
+        
         "createdOnBehalfBy":"common/application/contact/createdOnBehalfBy", //	Shows who created the record on behalf of another user.	
         "modifiedOnBehalfBy":"common/application/contact/modifiedOnBehalfBy", //	Shows who last updated the record on behalf of another user.	
         "overriddenCreatedOn":"common/application/contact/overriddenCreatedOn", //	Date and time that the record was migrated.	
@@ -56,7 +57,7 @@ static this() {
         "birthDate":"common/application/contact/birthDate", //	Enter the contact's birthday for use in customer gift programs or other communications.	
         "governmentId":"common/application/contact/governmentId", //	Type the passport number or other government ID for the contact for use in documents or reports.	
         "yomiFullName":"common/application/contact/yomiFullName", //	Shows the combined Yomi first and last names of the contact so that the full phonetic name can be displayed in views and reports.	
-        "description":"common/application/contact/description", //	Type additional information to describe the contact, such as an excerpt from the company's website.	
+        "description":"common/description", //	Type additional information to describe the contact, such as an excerpt from the company's website.	
         "employeeId":"common/application/contact/employeeId", //	Type the employee ID or number for the contact for reference in orders, service cases, or other communications with the contact's organization.	
         "genderCode":"common/application/contact/genderCode", //	Select the contact's gender to make sure the contact is addressed correctly in sales calls, email, and marketing campaigns.	
         "genderCode_display":"common/application/contact/genderCode_display", //		

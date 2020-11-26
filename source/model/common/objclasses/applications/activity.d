@@ -8,10 +8,11 @@ static this() {
     this() {
       super(); 
       this.attributes([
-        "createdOn":"common/application/createdOn", // Date and time when the record was created.	
-        "createdBy":"common/application/activity/createdBy", // 	Shows who created the record.	
+        "createdOn":"common/createdBy", // Date and time when the record was created.	
+        "createdBy":"common/createdBy", // 	Shows who created the record.	
         "modifiedOn":"common/application/activity/modifiedOn", // 	Date and time when the record was modified.	
         "modifiedBy":"common/application/activity/modifiedBy", // 	Shows who last updated the record.	
+        
         "createdOnBehalfBy":"common/application/activity/createdOnBehalfBy", // 	Shows who created the record on behalf of another user.	
         "modifiedOnBehalfBy":"common/application/activity/modifiedOnBehalfBy", // 	Shows who last updated the record on behalf of another user.	
         "ownerId":"common/application/activity/ownerId", // 	Owner Id	
@@ -55,7 +56,7 @@ static this() {
         "exchangeItemId":"common/application/activity/exchangeItemId", // 	The message id of activity which is returned from Exchange Server.	
         "exchangeWebLink":"common/application/activity/exchangeWebLink", // 	Shows the web link of Activity of type email.	
         "postponeActivityProcessingUntil":"common/application/activity/postponeActivityProcessingUntil", // 	For internal use only.	
-        "description":"common/application/activity/description", // 	Description of the activity.	
+        "description":"common/description", // 	Description of the activity.	
         "stateCode":"common/application/activity/stateCode", // 	Status of the activity.	
         "stateCode_display":"common/application/activity/stateCode_display", // 		
         "statusCode":"common/application/activity/statusCode", // 	Reason for the status of the activity.	

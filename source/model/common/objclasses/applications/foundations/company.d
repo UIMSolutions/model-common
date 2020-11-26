@@ -9,7 +9,7 @@ static this() {
       super(); 
       this.attributes([
         "createdOn":"common/foundation/company/createdOn", // Date and time when the record was created.
-        "createdBy":"common/foundation/company/createdBy", // Shows who created the record.
+        "createdBy":"common/createdBy", // Shows who created the record.
         "modifiedOn":"common/foundation/company/modifiedOn", // Date and time when the record was modified.
         "modifiedBy":"common/foundation/company/modifiedBy", // Shows who last updated the record.
         "createdOnBehalfBy":"common/foundation/company/createdOnBehalfBy", // Shows who created the record on behalf of another user.

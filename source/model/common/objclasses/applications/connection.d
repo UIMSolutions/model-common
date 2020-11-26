@@ -8,7 +8,11 @@ static this() {
     this() {
       super(); 
       this.attributes([
-        "modifiedBy":"common/application/connection/modifiedBy", //	Shows who last updated the record.	
+        "createdOn":"common/createdOn", //	Shows the date and time when the record was created. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options.	
+        "createdBy":"common/createdBy", //	Shows who created the record.	
+        "modifiedOn":"common/application/connection/modifiedOn", //	Shows the date and time when the record was last updated. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options.	
+        "modifiedBy":"common/modifiedBy", //	Shows who last updated the record.	
+
         "owningUser":"common/application/connection/owningUser", //	Unique identifier of the user who owns the connection.	
         "statusCode":"common/application/connection/statusCode", //	Reason for the status of the connection.	
         "statusCode_display":"common/application/connection/statusCode_display", //		
@@ -20,17 +24,14 @@ static this() {
         "ownerId":"common/application/connection/ownerId", //	Owner Id	
         "ownerIdType":"common/application/connection/ownerIdType", //	The type of owner, either User or Team.	
         "relatedConnectionId":"common/application/connection/relatedConnectionId", //	Unique identifier for the reciprocal connection record.	
-        "description":"common/application/connection/description", //	Type additional information to describe the connection, such as the length or quality of the relationship.	
+        "description":"common/description", //	Type additional information to describe the connection, such as the length or quality of the relationship.	
         "owningBusinessUnit":"common/application/connection/owningBusinessUnit", //	Shows the business unit that the record owner belongs to.	
         "overriddenCreatedOn":"common/application/connection/overriddenCreatedOn", //	Date and time that the record was migrated.	
         "record2Id":"common/application/connection/record2Id", //	Unique identifier of the target record.	
         "record2IdObjectTypeCode":"common/application/connection/record2IdObjectTypeCode", //	The name of the entity linked by record2Id	
-        "createdBy":"common/application/connection/createdBy", //	Shows who created the record.	
         "record2RoleId":"common/application/connection/record2RoleId", //	Choose the secondary party's role or relationship with the primary party.	
         "effectiveEnd":"common/application/connection/effectiveEnd", //	Enter the end date of the connection.	
         "record1RoleId":"common/application/connection/record1RoleId", //	Choose the primary party's role or relationship with the second party.	
-        "createdOn":"common/application/connection/createdOn", //	Shows the date and time when the record was created. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options.	
-        "modifiedOn":"common/application/connection/modifiedOn", //	Shows the date and time when the record was last updated. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options.	
         "record1Id":"common/application/connection/record1Id", //	Unique identifier of the source record.	
         "record1IdObjectTypeCode":"common/application/connection/record1IdObjectTypeCode", //	The name of the entity linked by record1Id	
         "stateCode":"common/application/connection/stateCode", //	Shows whether the connection is active or inactive. Inactive connections are read-only and can't be edited unless they are reactivated.	

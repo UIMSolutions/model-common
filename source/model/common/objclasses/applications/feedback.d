@@ -22,7 +22,7 @@ static this() {
         "statusCode_display":"common/application/feedback/statusCode_display", //		
         "versionNumber":"common/application/feedback/versionNumber", //	Version number of the feedback.	
         "regardingObjectId":"common/application/feedback/regardingObjectId", //	Shows the record that the feedback is associated with.	
-        "createdBy":"common/application/feedback/createdBy", //	Shows who created the record.	
+        "createdBy":"common/createdBy", //	Shows who created the record.	
         "createdOn":"common/application/feedback/createdOn", //	Shows the date and time when the record was created. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options.	
         "createdOnBehalfBy":"common/application/feedback/createdOnBehalfBy", //	Shows who created the record on behalf of another user.	
         "modifiedBy":"common/application/feedback/modifiedBy", //	Shows who last updated the record.	

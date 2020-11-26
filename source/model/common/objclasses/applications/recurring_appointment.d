@@ -8,10 +8,11 @@ static this() {
     this() {
       super(); 
       this.attributes([
-        "createdOn":"common/application/recurringAppointment/createdOn", //	Date and time when the record was created.	
-        "createdBy":"common/application/recurringAppointment/createdBy", //	Shows who created the record.	
-        "modifiedOn":"common/application/recurringAppointment/modifiedOn", //	Date and time when the record was modified.	
-        "modifiedBy":"common/application/recurringAppointment/modifiedBy", //	Shows who last updated the record.	
+        "createdOn":"common/createdOn", //	Date and time when the record was created.	
+        "createdBy":"common/createdBy", //	Shows who created the record.	
+        "modifiedOn":"common/modifiedOn", //	Date and time when the record was modified.	
+        "modifiedBy":"common/modifiedBy", //	Shows who last updated the record.	
+
         "createdOnBehalfBy":"common/application/recurringAppointment/createdOnBehalfBy", //	Shows who created the record on behalf of another user.	
         "modifiedOnBehalfBy":"common/application/recurringAppointment/modifiedOnBehalfBy", //	Shows who last updated the record on behalf of another user.	
         "overriddenCreatedOn":"common/application/recurringAppointment/overriddenCreatedOn", //	Date and time that the record was migrated.	
@@ -75,7 +76,7 @@ static this() {
         "isNthMonthly":"common/application/recurringAppointment/isNthMonthly", //	Indicates whether the recurring appointment series should occur after every N months. Valid for monthly recurrence pattern only.	
         "endTime":"common/application/recurringAppointment/endTime", //	End time of the associated activity.	
         "daysOfWeekMask":"common/application/recurringAppointment/daysOfWeekMask", //	Bitmask that represents the days of the week on which the recurring appointment occurs.	
-        "description":"common/application/recurringAppointment/description", //	Type additional information to describe the recurring appointment, such as key talking points or objectives.	
+        "description":"common/description", //	Type additional information to describe the recurring appointment, such as key talking points or objectives.	
         "instance":"common/application/recurringAppointment/instance", //	Specifies the recurring appointment series to occur on every Nth day of a month. Valid for monthly and yearly recurrence patterns only.	
         "instance_display":"common/application/recurringAppointment/instance_display", //		
         "deletedExceptionsList":"common/application/recurringAppointment/deletedExceptionsList", //	List of deleted instances of the recurring appointment series.	

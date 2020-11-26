@@ -10,7 +10,7 @@ static this() {
       this.attributes([
         "priceLevelId":"common/foundation/pricelist/priceLevelId", //	Unique identifier of the price list.
         "createdOn":"common/foundation/pricelist/createdOn", //	Date and time when the record was created.
-        "createdBy":"common/foundation/pricelist/createdBy", //	Unique identifier of the user who created the price list.
+        "createdBy":"common/createdBy", //	Unique identifier of the user who created the price list.
         "modifiedOn":"common/foundation/pricelist/modifiedOn", //	Date and time when the record was modified.
         "modifiedBy":"common/foundation/pricelist/modifiedBy", //	Unique identifier of the user who last modified the price list.
         "createdOnBehalfBy":"common/foundation/pricelist/createdOnBehalfBy", //	Unique identifier of the delegate user who created the pricelevel.
@@ -23,7 +23,7 @@ static this() {
         "UTCConversionTimeZoneCode":"common/foundation/pricelist/UTCConversionTimeZoneCode", //	Time zone code that was in use when the record was created.
         "name":"common/foundation/pricelist/name", //	Name of the price list.
         "beginDate":"common/foundation/pricelist/beginDate", //	Date on which the price list becomes effective.
-        "description":"common/foundation/pricelist/description", //	Description of the price list.
+        "description":"common/description", //	Description of the price list.
         "endDate":"common/foundation/pricelist/endDate", //	Date that is the last day the price list is valid.
         "freightTermsCode":"common/foundation/pricelist/freightTermsCode", //	Freight terms for the price list.
         "freightTermsCode_display":"common/foundation/pricelist/freightTermsCode_display", //	

@@ -12,11 +12,11 @@ static this() {
         "organizationId":"common/application/team/organizationId", // Unique identifier of the organization associated with the team.	
         "businessUnitId":"common/application/team/businessUnitId", // Unique identifier of the business unit with which the team is associated.	
         "name":"common/application/team/name", // Name of the team.	
-        "description":"common/application/team/description", // Description of the team.	
+        "description":"common/description", // Description of the team.	
         "emailAddress":"common/application/team/emailAddress", // Email address for the team.	
         "createdOn":"common/application/createdOn", // Date and time when the team was created.	
         "modifiedOn":"common/application/team/modifiedOn", // Date and time when the team was last modified.	
-        "createdBy":"common/application/team/createdBy", // Unique identifier of the user who created the team.	
+        "createdBy":"common/createdBy", // Unique identifier of the user who created the team.	
         "modifiedBy":"common/application/team/modifiedBy", // Unique identifier of the user who last modified the team.	
         "versionNumber":"common/application/team/versionNumber", // Version number of the team.	
         "importSequenceNumber":"common/application/team/importSequenceNumber", // Unique identifier of the data import or data migration that created this record.	

@@ -9,7 +9,7 @@ static this() {
       super(); 
       this.attributes([
         "createdOn":"common/application/socialProfile/createdOn", //	Date and time when the record was created.
-        "createdBy":"common/application/socialProfile/createdBy", //	Shows who created the record.
+        "createdBy":"common/createdBy", //	Shows who created the record.
         "modifiedOn":"common/application/socialProfile/modifiedOn", //	Date and time when the record was modified.
         "modifiedBy":"common/application/socialProfile/modifiedBy", //	Shows who last updated the record.
         "createdOnBehalfBy":"common/application/socialProfile/createdOnBehalfBy", //	Shows who created the record on behalf of another user.

@@ -8,10 +8,11 @@ static this() {
     this() {
       super(); 
       this.attributes([
-        "createdOn":"common/application/goal/createdOn", //	Date and time when the record was created.	
-        "createdBy":"common/application/goal/createdBy", //	Shows who created the record.	
-        "modifiedOn":"common/application/goal/modifiedOn", //	Date and time when the record was modified.	
-        "modifiedBy":"common/application/goal/modifiedBy", //	Shows who last updated the record.	
+        "createdOn":"common//createdOn", //	Date and time when the record was created.	
+        "createdBy":"common/createdBy", //	Shows who created the record.	
+        "modifiedOn":"common/modifiedOn", //	Date and time when the record was modified.	
+        "modifiedBy":"common/modifiedBy", //	Shows who last updated the record.	
+
         "createdOnBehalfBy":"common/application/goal/createdOnBehalfBy", //	Shows who created the record on behalf of another user.	
         "modifiedOnBehalfBy":"common/application/goal/modifiedOnBehalfBy", //	Shows who last updated the record on behalf of another user.	
         "overriddenCreatedOn":"common/application/goal/overriddenCreatedOn", //	Date and time that the record was migrated.	

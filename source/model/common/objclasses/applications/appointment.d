@@ -8,10 +8,11 @@ static this() {
     this() {
       super(); 
       this.attributes([
-        "createdOn":"common/application/appointment/createdOn", //	Date and time when the record was created.	
-        "createdBy":"common/application/appointment/createdBy", //	Shows who created the record.	
-        "modifiedOn":"common/application/appointment/modifiedOn", //	Date and time when the record was modified.	
-        "modifiedBy":"common/application/appointment/modifiedBy", //	Shows who last updated the record.	
+        "createdOn":"common/createdOn", //	Date and time when the record was created.	
+        "createdBy":"common/createdBy", //	Shows who created the record.	
+        "modifiedOn":"common/modifiedOn", //	Date and time when the record was modified.	
+        "modifiedBy":"common/modifiedBy", //	Shows who last updated the record.	
+        
         "createdOnBehalfBy":"common/application/appointment/createdOnBehalfBy", //	Shows who created the record on behalf of another user.	
         "modifiedOnBehalfBy":"common/application/appointment/modifiedOnBehalfBy", //	Shows who last updated the record on behalf of another user.	
         "overriddenCreatedOn":"common/application/appointment/overriddenCreatedOn", //	Date and time that the record was migrated.	
@@ -51,7 +52,7 @@ static this() {
         "requiredAttendees":"common/application/appointment/requiredAttendees", //	Enter the account, contact, lead, user, or other equipment resources that are required to attend the activity.	
         "optionalAttendees":"common/application/appointment/optionalAttendees", //	The account, contact, lead, user, or other equipment resources that are not needed at the activity, but can optionally attend.	
         "isAllDayEvent":"common/application/appointment/isAllDayEvent", //	Select whether the appointment is an all-day event to make sure that the required resources are scheduled for the full day.	
-        "description":"common/application/appointment/description", //	Type additional information to describe the purpose of the appointment.	
+        "description":"common/description", //	Type additional information to describe the purpose of the appointment.	
         "globalObjectId":"common/application/appointment/globalObjectId", //	Shows the ID of the appointment in Microsoft Office Outlook. The ID is used to synchronize the appointment between Microsoft Dynamics 365 and the correct Exchange account.	
         "statusCode":"common/application/appointment/statusCode", //	Select the appointment's status.	
         "statusCode_display":"common/application/appointment/statusCode_display", //		

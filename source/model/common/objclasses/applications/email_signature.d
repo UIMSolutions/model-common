@@ -14,9 +14,9 @@ static this() {
         "mimeType":"common/application/emailSignature/mimeType", //	MIME type of the email signature.	
         "body":"common/application/emailSignature/body", //	Body text of the email signature.	
         "title":"common/application/emailSignature/title", //	Title of the email signature.	
-        "description":"common/application/emailSignature/description", //	Description of the email signature.	
+        common/descriptionemailSignature/description", //	Description of the email signature.	
         "owningUser":"common/application/emailSignature/owningUser", //	Unique identifier of the user who owns the email signature.	
-        "createdBy":"common/application/emailSignature/createdBy", //	Unique identifier of the user who created the email signature.	
+        "createdBy":"common/createdBy", //	Unique identifier of the user who created the email signature.	
         "presentationXml":"common/application/emailSignature/presentationXml", //	XML data for the body of the email signature.	
         "createdOn":"common/application/emailSignature/createdOn", //	Date and time when the email signature was created.	
         "modifiedBy":"common/application/emailSignature/modifiedBy", //	Unique identifier of the user who last modified the email signature.	

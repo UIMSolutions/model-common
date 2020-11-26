@@ -20,7 +20,7 @@ static this() {
         "state":"common/application/queueItem/state", //	Status of the queue item.	
         "status":"common/application/queueItem/status", //	Reason for the status of the queue item.	
         "createdOn":"common/application/queueItem/createdOn", //	Shows the date and time when the record was created. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options.	
-        "createdBy":"common/application/queueItem/createdBy", //	Shows who created the record.	
+        "createdBy":"common/createdBy", //	Shows who created the record.	
         "modifiedBy":"common/application/queueItem/modifiedBy", //	Shows who last updated the record.	
         "modifiedOn":"common/application/queueItem/modifiedOn", //	Shows the date and time when the record was last updated. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options.	
         "toRecipients":"common/application/queueItem/toRecipients", //	Recipients listed on the To line of the message for email queue items.	

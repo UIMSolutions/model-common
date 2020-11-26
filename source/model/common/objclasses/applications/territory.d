@@ -10,7 +10,7 @@ static this() {
       this.attributes([
         "territoryId":"common/application/territory/territoryId", // Unique identifier of the territory.	
         "createdOn":"common/application/territory/createdOn", // Date and time when the record was created.	
-        "createdBy":"common/application/territory/createdBy", // Unique identifier of the user who created the territory.	
+        "createdBy":"common/createdBy", // Unique identifier of the user who created the territory.	
         "modifiedOn":"common/application/territory/modifiedOn", // Date and time when the record was modified.	
         "modifiedBy":"common/application/territory/modifiedBy", // Unique identifier of the user who last modified the territory.
         "createdOnBehalfBy":"common/application/territory/createdOnBehalfBy", // Unique identifier of the delegate user who created the territory.	
@@ -22,7 +22,7 @@ static this() {
         "timeZoneRuleVersionNumber":"common/application/territory/timeZoneRuleVersionNumber", // For internal use only.	
         "UTCConversionTimeZoneCode":"common/application/territory/UTCConversionTimeZoneCode", // Time zone code that was in use when the record was created.	
         "name":"common/application/territory/name", // Name of the territory.	
-        "description":"common/application/territory/description", // Description of the territory.	
+        "description":"common/description", // Description of the territory.	
         "managerId":"common/application/territory/managerId", // Unique identifier of the manager of the territory.	
         "entityImageId":"common/application/territory/entityImageId", // 	
         "exchangeRate":"common/application/territory/exchangeRate", // Exchange rate for the currency associated with the territory with respect to the base currency.	

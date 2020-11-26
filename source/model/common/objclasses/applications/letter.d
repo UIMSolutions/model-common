@@ -8,10 +8,12 @@ static this() {
     this() {
       super(); 
       this.attributes([
-        "createdOn":"common/application/letter/createdOn", //	Date and time when the record was created.	
-        "createdBy":"common/application/letter/createdBy", //	Shows who created the record.	
-        "modifiedOn":"common/application/letter/modifiedOn", //	Date and time when the record was modified.	
-        "modifiedBy":"common/application/letter/modifiedBy", //	Shows who last updated the record.	
+        "createdOn":"common//createdOn", //	Date and time when the record was created.	
+        "createdBy":"common/createdBy", //	Shows who created the record.	
+        "modifiedOn":"common/modifiedOn", //	Date and time when the record was modified.	
+        "modifiedBy":"common/modifiedBy", //	Shows who last updated the record.	
+        "description":"common/description", //	Type the letter body or additional information to describe the letter, such as the primary message or the products and services described.	
+        
         "createdOnBehalfBy":"common/application/letter/createdOnBehalfBy", //	Shows who created the record on behalf of another user.	
         "modifiedOnBehalfBy":"common/application/letter/modifiedOnBehalfBy", //	Shows who last updated the record on behalf of another user.	
         "overriddenCreatedOn":"common/application/letter/overriddenCreatedOn", //	Date and time that the record was migrated.	
@@ -53,7 +55,6 @@ static this() {
         "statusCode_display":"common/application/letter/statusCode_display", //		
         "stateCode":"common/application/letter/stateCode", //	Shows whether the letter is open, completed, or canceled. Completed and canceled letters are read-only and can't be edited.	
         "stateCode_display":"common/application/letter/stateCode_display", //		
-        "description":"common/application/letter/description", //	Type the letter body or additional information to describe the letter, such as the primary message or the products and services described.	
         "transactionCurrencyId":"common/application/letter/transactionCurrencyId", //	Choose the local currency for the record to make sure budgets are reported in the correct currency.	
         "exchangeRate":"common/application/letter/exchangeRate", //	Shows the conversion rate of the record's currency. The exchange rate is used to convert all money fields in the record from the local currency to the system's default currency.	
         "processId":"common/application/letter/processId", //	Shows the ID of the process.	

@@ -12,7 +12,7 @@ static this() {
         "modifiedOn":"common/application/customerRelationship/modifiedOn", //	Shows the date and time when the record was last updated. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options.	
         "customerRoleId":"common/application/customerRelationship/customerRoleId", //	Choose the primary party's role or nature of the relationship the customer has with the second party. The field is read-only until both parties have been selected. Administrators can configure role values under Business Management in the Settings area.	
         "customerRelationshipId":"common/application/customerRelationship/customerRelationshipId", //	Unique identifier of the customer relationship.	
-        "createdBy":"common/application/customerRelationship/createdBy", //	Shows who created the record.	
+        "createdBy":"common/createdBy", //	Shows who created the record.	
         "ownerId":"common/application/customerRelationship/ownerId", //	Owner Id	
         "ownerIdType":"common/application/customerRelationship/ownerIdType", //	The type of owner, either User or Team.	
         "partnerId":"common/application/customerRelationship/partnerId", //	Select the secondary account or contact involved in the customer relationship.	

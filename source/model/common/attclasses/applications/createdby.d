@@ -3,7 +3,7 @@ module model.common.attclasses.applications.createdby;
 import model.common;
 
 static this() {
-  gsCommon.attclasses("common/application/createdBy", new class DEIMAttclass {
+  gsCommon.attclasses("common/createdBy", new class DEIMAttclass {
     this() {
       super(); 
       _attclassName = "dataFormat/guid/nullable";

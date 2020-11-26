@@ -8,6 +8,12 @@ static this() {
     this() {
       super(); 
       this.attributes([
+        "createdOn":"common/createdOn", //	Date and time when the organization was created.	
+        "createdBy":"common/createdBy", //	Unique identifier of the user who created the organization.	
+        "modifiedOn":"common/modifiedOn", //	Date and time when the organization was last modified.	
+        "modifiedBy":"common/modifiedBy", //	Unique identifier of the user who last modified the organization.	
+
+        "fiscalYearFormat":"common/application/organization/fiscalYearFormat", //	Information that specifies how the name of the fiscal year is displayed throughout Microsoft CRM.	
         "organizationId":"common/application/organization/organizationId", //	Unique identifier of the organization.	
         "name":"common/application/organization/name", //	Name of the organization. The name is set when Microsoft CRM is installed and should not be changed.	
         "userGroupId":"common/application/organization/userGroupId", //	Unique identifier of the default group of users in the organization.	
@@ -44,9 +50,6 @@ static this() {
         "invoicePrefix":"common/application/organization/invoicePrefix", //	Prefix to use for all invoice numbers throughout Microsoft Dynamics 365.	
         "currentInvoiceNumber":"common/application/organization/currentInvoiceNumber", //	First invoice number to use. Deprecated. Use SetAutoNumberSeed message.	
         "uniqueSpecifierLength":"common/application/organization/uniqueSpecifierLength", //	Number of characters appended to invoice, quote, and order numbers.	
-        "createdOn":"common/application/organization/createdOn", //	Date and time when the organization was created.	
-        "modifiedOn":"common/application/organization/modifiedOn", //	Date and time when the organization was last modified.	
-        "modifiedOn":"common/application/organization/fiscalYearFormat", //	Information that specifies how the name of the fiscal year is displayed throughout Microsoft CRM.	
         "fiscalPeriodFormat":"common/application/organization/fiscalPeriodFormat", //	Information that specifies how the name of the fiscal period is displayed throughout Microsoft CRM.	
         "fiscalYearPeriodConnect":"common/application/organization/fiscalYearPeriodConnect", //	Information that specifies how the names of the fiscal year and the fiscal period should be connected when displayed together.	
         "languageCode":"common/application/organization/languageCode", //	Preferred language for the organization.	
@@ -58,7 +61,6 @@ static this() {
         "nextTrackingNumber":"common/application/organization/nextTrackingNumber", //	Next token to be placed on the subject line of an email message.	
         "tagMaxAggressiveCycles":"common/application/organization/tagMaxAggressiveCycles", //	Maximum number of aggressive polling cycles executed for email auto-tagging when a new email is received.	
         "systemUserId":"common/application/organization/systemUserId", //	Unique identifier of the system user for the organization.	
-        "createdBy":"common/application/organization/createdBy", //	Unique identifier of the user who created the organization.	
         "grantAccessToNetworkService":"common/application/organization/grantAccessToNetworkService", //	For internal use only.	
         "allowOutlookScheduledSyncs":"common/application/organization/allowOutlookScheduledSyncs", //	Indicates whether scheduled synchronizations to Outlook are allowed.	
         "allowMarketingEmailExecution":"common/application/organization/allowMarketingEmailExecution", //	Indicates whether marketing emails execution is allowed.	
@@ -70,7 +72,6 @@ static this() {
         "tokenExpiry":"common/application/organization/tokenExpiry", //	Duration used for token expiration.	
         "shareToPreviousOwnerOnAssign":"common/application/organization/shareToPreviousOwnerOnAssign", //	Information that specifies whether to share to previous owner on assign.	
         "acknowledgementTemplateId":"common/application/organization/acknowledgementTemplateId", //	Unique identifier of the template to be used for acknowledgement when a user unsubscribes.	
-        "modifiedBy":"common/application/organization/modifiedBy", //	Unique identifier of the user who last modified the organization.	
         "integrationUserId":"common/application/organization/integrationUserId", //	Unique identifier of the integration user for the organization.	
         "trackingTokenIdBase":"common/application/organization/trackingTokenIdBase", //	Base number used to provide separate tracking token identifiers to users belonging to different deployments.	
         "businessClosureCalendarId":"common/application/organization/businessClosureCalendarId", //	Unique identifier of the business closure calendar of organization.	

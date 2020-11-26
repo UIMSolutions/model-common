@@ -8,6 +8,11 @@ static this() {
     this() {
       super(); 
       this.attributes([
+        "createdOn":"common/createdOn", //	Date and time when the queue was created.	
+        "createdBy":"common/createdBy", //	Unique identifier of the user who created the queue record.	
+        "modifiedOn":"common/modifiedOn", //	Date and time when the queue was last modified.	
+        "modifiedBy":"common/modifiedBy", //	Unique identifier of the user who last modified the queue.	
+
         "queueId":"common/application/queue/queueId", //	Unique identifier of the queue.	
         "businessUnitId":"common/application/queue/businessUnitId", //	Unique identifier of the business unit with which the queue is associated.	
         "organizationId":"common/application/queue/organizationId", //	Unique identifier of the organization associated with the queue.	
@@ -16,12 +21,8 @@ static this() {
         "queueTypeCode":"common/application/queue/queueTypeCode", //	Type of queue that is automatically assigned when a user or queue is created. The type can be public, private, or work in process.	
         "queueTypeCode_display":"common/application/queue/queueTypeCode_display", //		
         "name":"common/application/queue/name", //	Name of the queue.	
-        "description":"common/application/queue/description", //	Description of the queue.	
+        "description":"common/description", //	Description of the queue.	
         "queueSemantics":"common/application/queue/queueSemantics", //	For internal use only.	
-        "createdOn":"common/application/queue/createdOn", //	Date and time when the queue was created.	
-        "createdBy":"common/application/queue/createdBy", //	Unique identifier of the user who created the queue record.	
-        "modifiedBy":"common/application/queue/modifiedBy", //	Unique identifier of the user who last modified the queue.	
-        "modifiedOn":"common/application/queue/modifiedOn", //	Date and time when the queue was last modified.	
         "versionNumber":"common/application/queue/versionNumber", //	Version number of the queue.	
         "ignoreUnsolicitedEmail":"common/application/queue/ignoreUnsolicitedEmail", //	Information that specifies whether a queue is to ignore unsolicited email (deprecated).	
         "isFaxQueue":"common/application/queue/isFaxQueue", //	Indication of whether a queue is the fax delivery queue.	

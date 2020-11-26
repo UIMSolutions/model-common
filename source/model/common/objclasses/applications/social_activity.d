@@ -9,7 +9,7 @@ static this() {
       super(); 
       this.attributes([
         "createdOn":"common/application/socialActivity/createdOn", //	Date and time when the record was created.	
-        "createdBy":"common/application/socialActivity/createdBy", //	Shows who created the record.	
+        "createdBy":"common/createdBy", //	Shows who created the record.	
         "modifiedOn":"common/application/socialActivity/modifiedOn", //	Date and time when the record was modified.	
         "modifiedBy":"common/application/socialActivity/modifiedBy", //	Shows who last updated the record.	
         "createdOnBehalfBy":"common/application/socialActivity/createdOnBehalfBy", //	Shows who created the record on behalf of another user.	
@@ -48,7 +48,7 @@ static this() {
         "community":"common/application/socialActivity/community", //	Shows how contact about the activity originated, such as from Twitter or Facebook. This field is read-only.	
         "community_display":"common/application/socialActivity/community_display", //		
         "directionCode":"common/application/socialActivity/directionCode", //	Select the direction of the activity as incoming or outbound.	
-        "description":"common/application/socialActivity/description", //	Shows information about the social post content. This field is read-only.	
+        "description":"common/description", //	Shows information about the social post content. This field is read-only.	
         "traversedPath":"common/application/socialActivity/traversedPath", //	For internal use only.	
         "processId":"common/application/socialActivity/processId", //	Unique identifier of the Process.	
         "stageId":"common/application/socialActivity/stageId", //	Unique identifier of the Stage.	

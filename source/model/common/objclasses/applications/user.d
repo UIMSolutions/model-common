@@ -38,7 +38,7 @@ static this() {
         "passportHi":"common/application/user/passportHi", //For internal use only.
         "disabledReason":"common/application/user/disabledReason", //Reason for disabling the user.
         "modifiedOn":"common/application/user/modifiedOn", //Date and time when the user was last modified.
-        "createdBy":"common/application/user/createdBy", //Unique identifier of the user who created the user.
+        "createdBy":"common/createdBy", //Unique identifier of the user who created the user.
         "employeeId":"common/application/user/employeeId", //Employee identifier for the user.
         "modifiedBy":"common/application/user/modifiedBy", //Unique identifier of the user who last modified the user.
         "isDisabled":"common/application/user/isDisabled", //Information about whether the user is enabled.

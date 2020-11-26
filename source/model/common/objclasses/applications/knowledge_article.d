@@ -9,7 +9,7 @@ static this() {
       super(); 
       this.attributes([
         "createdOn":"common/application/knowledgeArticle/createdOn", //	Date and time when the record was created.	
-        "createdBy":"common/application/knowledgeArticle/createdBy", //	Shows who created the record.	
+        "createdBy":"common/createdBy", //	Shows who created the record.	
         "modifiedOn":"common/application/knowledgeArticle/modifiedOn", //	Date and time when the record was modified.	
         "modifiedBy":"common/application/knowledgeArticle/modifiedBy", //	Shows who last updated the record.	
         "createdOnBehalfBy":"common/application/knowledgeArticle/createdOnBehalfBy", //	Shows who created the record on behalf of another user.	
@@ -41,7 +41,7 @@ static this() {
         "expirationDate":"common/application/knowledgeArticle/expirationDate", //	Enter an expiration date for the article. Leave this field blank for no expiration date.	
         "parentArticleContentId":"common/application/knowledgeArticle/parentArticleContentId", //	Contains the id of the parent article content associated with the entity.	
         "knowledgeArticleViews":"common/application/knowledgeArticle/knowledgeArticleViews", //	Shows the total number of article views.	
-        "description":"common/application/knowledgeArticle/description", //	A short overview of the article, primarily used in search results and for search engine optimization.	
+        "description":"common/description", //	A short overview of the article, primarily used in search results and for search engine optimization.	
         "majorVersionNumber":"common/application/knowledgeArticle/majorVersionNumber", //	Shows the major version number of this article's content.	
         "minorVersionNumber":"common/application/knowledgeArticle/minorVersionNumber", //	Shows the minor version number of this article's content.	
         "languageLocaleId":"common/application/knowledgeArticle/languageLocaleId", //	Select the language that the article's content is in.	

@@ -12,6 +12,7 @@ static this() {
         "createdBy":"base/uuid", //	Shows who created the record.	
         "modifiedOn":"common/application/account/modifiedOn", //	Date and time when the record was modified.	
         "modifiedBy":"base/uuid", //	Shows who last updated the record.	
+        
         "createdOnBehalfBy":"base/uuid", //	Shows who created the record on behalf of another user.	
         "modifiedOnBehalfBy":"base/uuid", //	Shows who last updated the record on behalf of another user.	
         "overriddenCreatedOn":"common/application/account/overriddenCreatedOn", //	Date and time that the record was migrated.	
@@ -54,7 +55,7 @@ static this() {
         "accountNumber":"common/application/account/accountNumber", // Type an ID number or code for the account to quickly search and identify the account in system views.	
         "revenue":"common/application/account/revenue", // Type the annual revenue for the account, used as an indicator in financial performance analysis.	
         "numberOfEmployees":"common/application/account/numberOfEmployees", // Type the number of employees that work at the account for use in marketing segmentation and demographic analysis.	
-        "description":"common/application/account/description", // Type additional information to describe the account, such as an excerpt from the company's website.	
+        "description":"common/description", // Type additional information to describe the account, such as an excerpt from the company's website.	
         "SIC":"common/application/account/SIC", // Type the Standard Industrial Classification (SIC) code that indicates the account's primary industry of business, for use in marketing segmentation and demographic analysis.	
         "ownershipCode":"common/application/account/ownershipCode", // Select the account's ownership structure, such as public or private.	
         "ownershipCode_display":"common/application/account/ownershipCode_display", // 	

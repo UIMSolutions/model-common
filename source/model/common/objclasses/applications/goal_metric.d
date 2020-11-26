@@ -10,7 +10,7 @@ static this() {
       this.attributes([
         "metricId":"common/application/goalMetric/metricId", //	Unique identifier of the goal metric.	
         "createdOn":"common/application/goalMetric/createdOn", //	Date and time when the record was created.	
-        "createdBy":"common/application/goalMetric/createdBy", //	Unique identifier of the user who created the record.	
+        "createdBy":"common/createdBy", //	Unique identifier of the user who created the record.	
         "modifiedOn":"common/application/goalMetric/modifiedOn", //	Date and time when the record was modified.	
         "modifiedBy":"common/application/goalMetric/modifiedBy", //	Unique identifier of the user who modified the record.	
         "createdOnBehalfBy":"common/application/goalMetric/createdOnBehalfBy", //	Unique identifier of the delegate user who created the record.	
@@ -30,7 +30,7 @@ static this() {
         "amountDataType_display":"common/application/goalMetric/amountDataType_display", //		
         "isAmount":"common/application/goalMetric/isAmount", //	Information that indicates whether the metric type is Count or Amount.	
         "isStretchTracked":"common/application/goalMetric/isStretchTracked", //	Indicates whether the goal metric tracks stretch targets.	
-        "description":"common/application/goalMetric/description", //	Description of the goal metric.	
+        "description":"common/description", //	Description of the goal metric.	
       ]); 
 
     }

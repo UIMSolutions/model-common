@@ -9,7 +9,7 @@ static this() {
       super(); 
       this.attributes([
         "createdOn":"common/application/createdOn", //	Date and time when the record was created.	
-        "createdBy":"common/application/email/createdBy", //		Shows who created the record.	
+        "createdBy":"common/createdBy", //		Shows who created the record.	
         "modifiedOn":"common/application/email/modifiedOn", //		Date and time when the record was modified.	
         "modifiedBy":"common/application/email/modifiedBy", //		Shows who last updated the record.	
         "createdOnBehalfBy":"common/application/email/createdOnBehalfBy", //		Shows who created the record on behalf of another user.	
@@ -56,7 +56,7 @@ static this() {
         "statusCode":"common/application/email/statusCode", //		Select the email's status.	
         "statusCode_display":"common/application/email/statusCode_display", //			
         "submittedBy":"common/application/email/submittedBy", //		Shows the Microsoft Office Outlook account for the user who submitted the email to Microsoft Dynamics 365.	
-        "description":"common/application/email/description", //		Type the greeting and message text of the email.	
+        "description":"common/description", //		Type the greeting and message text of the email.	
         "mimeType":"common/application/email/mimeType", //		MIME type of the email message data.	
         "readReceiptRequested":"common/application/email/readReceiptRequested", //		Indicates that a read receipt is requested.	
         "trackingToken":"common/application/email/trackingToken", //		Shows the tracking token assigned to the email to make sure responses are automatically tracked in Microsoft Dynamics 365.	

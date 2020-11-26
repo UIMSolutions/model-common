@@ -10,9 +10,11 @@ static this() {
       this.attributes([
         "productId":"common/foundation/product/productId", //	Unique identifier of the product.	
         "createdOn":"common/foundation/product/createdOn", //	Date and time when the record was created.	
-        "createdBy":"common/foundation/product/createdBy", //	Unique identifier of the user who created the product.	
+        "createdBy":"common/createdBy", //	Unique identifier of the user who created the product.	
         "modifiedOn":"common/foundation/product/modifiedOn", //	Date and time when the record was modified.	
         "modifiedBy":"common/foundation/product/modifiedBy", //	Unique identifier of the user who last modified the product.	
+        "description":"common/description", //	Description of the product.	
+
         "createdOnBehalfBy":"common/foundation/product/createdOnBehalfBy", //	Unique identifier of the delegate user who created the product.	
         "modifiedOnBehalfBy":"common/foundation/product/modifiedOnBehalfBy", //	Unique identifier of the delegate user who last modified the product.	
         "organizationId":"common/foundation/product/organizationId", //	Unique identifier for the organization	
@@ -34,7 +36,6 @@ static this() {
         "currentCostBase":"common/foundation/product/currentCostBase", //	Value of the Current Cost in base currency.	
         "defaultUoMId":"common/foundation/product/defaultUoMId", //	Default unit for the product.	
         "defaultUoMScheduleId":"common/foundation/product/defaultUoMScheduleId", //	Default unit group for the product.	
-        "description":"common/foundation/product/description", //	Description of the product.	
         "isKit":"common/foundation/product/isKit", //	Information that specifies whether the product is a kit.	
         "isStockItem":"common/foundation/product/isStockItem", //	Information about whether the product is a stock item.	
         "parentProductId":"common/foundation/product/parentProductId", //	Specifies the parent product family hierarchy.	

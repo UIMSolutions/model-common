@@ -8,6 +8,12 @@ static this() {
     this() {
       super(); 
       this.attributes([
+        "createdOn":"common/createdOn", //	For internal use only.	
+        "createdBy":"common/createdBy", //	For internal use only.	
+        "modifiedOn":"common/modifiedOn", //	For internal use only.	
+        "modifiedBy":"common/modifiedBy", //	For internal use only.	
+        "description":"common/description", //	For internal use only.	
+
         "SLAKPIInstanceId":"common/application/slaKpiInstance/SLAKPIInstanceId", //	Unique identifier of the SLA KPI Instance.	
         "name":"common/application/slaKpiInstance/name", //	Type a descriptive name for the service level agreement (SLA) key performance indicator (KPI) instance.	
         "computedFailureTime":"common/application/slaKpiInstance/computedFailureTime", //	Computed Failure Date and time	
@@ -25,12 +31,7 @@ static this() {
         "warningTime":"common/application/slaKpiInstance/warningTime", //	Enter the date and time when the service level agreement (SLA) key performance indicator (KPI)will go to a warning state.	
         "transactionCurrencyId":"common/application/slaKpiInstance/transactionCurrencyId", //	Choose the local currency for the record to make sure budgets are reported in the correct currency.	
         "exchangeRate":"common/application/slaKpiInstance/exchangeRate", //	For internal use only.	
-        "createdBy":"common/application/slaKpiInstance/createdBy", //	For internal use only.	
-        "createdOn":"common/application/slaKpiInstance/createdOn", //	For internal use only.	
         "createdOnBehalfBy":"common/application/slaKpiInstance/createdOnBehalfBy", //	For internal use only.	
-        "description":"common/application/slaKpiInstance/description", //	For internal use only.	
-        "modifiedBy":"common/application/slaKpiInstance/modifiedBy", //	For internal use only.	
-        "modifiedOn":"common/application/slaKpiInstance/modifiedOn", //	For internal use only.	
         "modifiedOnBehalfBy":"common/application/slaKpiInstance/modifiedOnBehalfBy", //	For internal use only.	
         "versionNumber":"common/application/slaKpiInstance/versionNumber", //	For internal use only.	
         "warningTimeReached":"common/application/slaKpiInstance/warningTimeReached", //	Shows information about whether the case has reached its warning time.	

@@ -24,7 +24,7 @@ static this() {
         "createdOn":"common/application/note/createdOn", //	Date and time when the note was created.	
         "fileSize":"common/application/note/fileSize", //	File size of the note.	
         "fileName":"common/application/note/fileName", //	File name of the note.	
-        "createdBy":"common/application/note/createdBy", //	Unique identifier of the user who created the note.	
+        "createdBy":"common/createdBy", //	Unique identifier of the user who created the note.	
         "modifiedBy":"common/application/note/modifiedBy", //	Unique identifier of the user who last modified the note.	
         "modifiedOn":"common/application/note/modifiedOn", //	Date and time when the note was last modified.	
         "versionNumber":"common/application/note/versionNumber", //	Version number of the note.	

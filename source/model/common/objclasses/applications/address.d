@@ -8,6 +8,11 @@ static this() {
     this() {
       super(); 
       this.attributes([
+        "createdBy":"common/createdBy", // 	Shows who created the record.	
+        "createdOn":"common/createdBy", // 	Shows the date and time when the record was created. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options.	
+        "modifiedBy":"common/application/address/modifiedBy", // 	Shows who last updated the record.	
+        "modifiedOn":"common/application/address/modifiedOn", // 	Shows the date and time when the record was last updated. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options.	
+
         "parentId":"common/application/address/parentId", // Choose the customer's address.	
         "parentIdTypeCode":"common/application/address/parentIdTypeCode", // The name of the entity linked by parentId	
         "customerAddressId":"common/application/address/customerAddressId", // Unique identifier of the customer address.	
@@ -40,10 +45,6 @@ static this() {
         "telephone3":"common/application/address/telephone3", // 	Type a third phone number for the customer's address.	
         "fax":"common/application/address/fax", // 	Type the fax number associated with the customer's address.	
         "versionNumber":"common/application/address/versionNumber", // 	Version number of the customer address.	
-        "createdBy":"common/application/address/createdBy", // 	Shows who created the record.	
-        "createdOn":"common/application/createdOn", // 	Shows the date and time when the record was created. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options.	
-        "modifiedBy":"common/application/address/modifiedBy", // 	Shows who last updated the record.	
-        "modifiedOn":"common/application/address/modifiedOn", // 	Shows the date and time when the record was last updated. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options.	
         "owningBusinessUnit":"common/application/address/owningBusinessUnit", // 	Shows the business unit that the record owner belongs to.	
         "owningUser":"common/application/address/owningUser", // 	Unique identifier of the user who owns the customer address.	
         "timeZoneRuleVersionNumber":"common/application/address/timeZoneRuleVersionNumber", // 	For internal use only.	

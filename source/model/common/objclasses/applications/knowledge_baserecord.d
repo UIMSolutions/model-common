@@ -9,10 +9,11 @@ static this() {
       super(); 
       this.attributes([
         "knowledgeBaseRecordId":"common/application/knowledgeBaseRecord/knowledgeBaseRecordId", //	This field will be used to store the Unique ID of the associated Knowledge Base records	
-        "createdOn":"common/application/knowledgeBaseRecord/createdOn", //	Date and time when the record was created.	
-        "createdBy":"common/application/knowledgeBaseRecord/createdBy", //	Unique identifier of the user who created the record.	
-        "modifiedOn":"common/application/knowledgeBaseRecord/modifiedOn", //	Date and time when the record was modified.	
-        "modifiedBy":"common/application/knowledgeBaseRecord/modifiedBy", //	Unique identifier of the user who modified the record.	
+        "createdOn":"common/createdOn", //	Date and time when the record was created.	
+        "createdBy":"common/createdBy", //	Unique identifier of the user who created the record.	
+        "modifiedOn":"common/modifiedOn", //	Date and time when the record was modified.	
+        "modifiedBy":"common/modifiedBy", //	Unique identifier of the user who modified the record.	
+
         "createdOnBehalfBy":"common/application/knowledgeBaseRecord/createdOnBehalfBy", //	Unique identifier of the delegate user who created the record.	
         "modifiedOnBehalfBy":"common/application/knowledgeBaseRecord/modifiedOnBehalfBy", //	Unique identifier of the delegate user who modified the record.	
         "organizationId":"common/application/knowledgeBaseRecord/organizationId", //	Unique identifier for the organization	

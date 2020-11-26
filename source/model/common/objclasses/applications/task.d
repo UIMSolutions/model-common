@@ -9,7 +9,7 @@ static this() {
       super(); 
       this.attributes([
         "createdOn":"common/application/task/createdOn", // Date and time when the record was created.", 
-        "createdBy":"common/application/task/createdBy", // Shows who created the record.", 
+        "createdBy":"common/createdBy", // Shows who created the record.", 
         "modifiedOn":"common/application/task/modifiedOn", // Date and time when the record was modified.", 
         "modifiedBy":"common/application/task/modifiedBy", // Shows who last updated the record.", 
         "createdOnBehalfBy":"common/application/task/createdOnBehalfBy", // Shows who created the record on behalf of another user.", 
@@ -46,7 +46,7 @@ static this() {
         "activityAdditionalParams":"common/application/task/activityAdditionalParams", // Additional information provided by the external application as JSON. For internal use only.", 
         "stateCode":"common/application/task/stateCode", // Shows whether the task is open, completed, or canceled. Completed and canceled tasks are read-only and can't be edited.", 
         "stateCode_display":"common/application/task/stateCode_display", // ", 
-        "description":"common/application/task/description", // Type additional information to describe the task.", 
+        "description":"common/description", // Type additional information to describe the task.", 
         "percentComplete":"common/application/task/percentComplete", // Type the percentage complete value for the task to track tasks to completion.", 
         "statusCode":"common/application/task/statusCode", // Select the task's status.", 
         "statusCode_display":"common/application/task/statusCode_display", // ", 

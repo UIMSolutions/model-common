@@ -10,9 +10,10 @@ static this() {
       this.attributes([
         "productPriceLevelId":"common/foundation/pricelistItem/productPriceLevelId", //	Unique identifier of the price list.
         "createdOn":"common/foundation/pricelistItem/createdOn", //	Date and time when the price list was created.
-        "createdBy":"common/foundation/pricelistItem/createdBy", //	Unique identifier of the user who created the price list.
+        "createdBy":"common/createdBy", //	Unique identifier of the user who created the price list.
         "modifiedOn":"common/foundation/pricelistItem/modifiedOn", //	Date and time when the price list was last modified.
         "modifiedBy":"common/foundation/pricelistItem/modifiedBy", //	Unique identifier of the user who last modified the price list.
+        
         "createdOnBehalfBy":"common/foundation/pricelistItem/createdOnBehalfBy", //	Shows who created the record on behalf of another user.
         "modifiedOnBehalfBy":"common/foundation/pricelistItem/modifiedOnBehalfBy", //	Shows who last updated the record on behalf of another user.
         "versionNumber":"common/foundation/pricelistItem/versionNumber", //	Version Number

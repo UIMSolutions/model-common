@@ -18,7 +18,7 @@ static this() {
         "knowledgeArticleView":"common/application/knowledgeArticleViews/knowledgeArticleView", //	Number of Knowledge Article Views visited per day	
         "viewDate":"common/application/knowledgeArticleViews/viewDate", //	Information about the Day	
         "knowledgearticleId":"common/application/knowledgeArticleViews/knowledgearticleId", //	Choose the Knowledge Article.	
-        "createdBy":"common/application/knowledgeArticleViews/createdBy", //	Shows who created the record.	
+        "createdBy":"common/createdBy", //	Shows who created the record.	
         "createdOn":"common/application/knowledgeArticleViews/createdOn", //	Date and time when the record was created.	
         "createdOnBehalfBy":"common/application/knowledgeArticleViews/createdOnBehalfBy", //	Unique identifier of the delegate user who created the record.	
         "modifiedBy":"common/application/knowledgeArticleViews/modifiedBy", //	Shows who last updated the record.	
