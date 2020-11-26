@@ -6,24 +6,16 @@ static this() {
   // Information about products and their pricing information.
   gsCommon.objclasses("common/foundation/product", new class DEIMObjclass {
     this() {
-      super(); 
-      this.attributes([
-        "productId":"common/foundation/product/productId", //	Unique identifier of the product.	
-        "createdOn":"common/foundation/product/createdOn", //	Date and time when the record was created.	
-        "createdBy":"common/createdBy", //	Unique identifier of the user who created the product.	
-        "modifiedOn":"common/foundation/product/modifiedOn", //	Date and time when the record was modified.	
-        "modifiedBy":"common/foundation/product/modifiedBy", //	Unique identifier of the user who last modified the product.	
-        "description":"common/description", //	Description of the product.	
-
+      super();
+      this.objclass("common/entity").attributes([
         "createdOnBehalfBy":"common/foundation/product/createdOnBehalfBy", //	Unique identifier of the delegate user who created the product.	
         "modifiedOnBehalfBy":"common/foundation/product/modifiedOnBehalfBy", //	Unique identifier of the delegate user who last modified the product.	
         "organizationId":"common/foundation/product/organizationId", //	Unique identifier for the organization	
-        "versionNumber":"common/foundation/product/versionNumber", //	Version Number	
         "importSequenceNumber":"common/foundation/product/importSequenceNumber", //	Sequence number of the import that created this record.	
         "overriddenCreatedOn":"common/foundation/product/overriddenCreatedOn", //	Date and time that the record was migrated.	
         "timeZoneRuleVersionNumber":"common/foundation/product/timeZoneRuleVersionNumber", //	For internal use only.	
         "UTCConversionTimeZoneCode":"common/foundation/product/UTCConversionTimeZoneCode", //	Time zone code that was in use when the record was created.	
-        "name":"common/foundation/product/name", //	Name of the product.	
+        "title":"common/foundation/product/name", //	Name of the product.	
         "processId":"common/foundation/product/processId", //	Contains the id of the process associated with the entity.	
         "stageId":"common/foundation/product/stageId", //	Contains the id of the stage where the entity is located.	
         "traversedPath":"common/foundation/product/traversedPath", //	A comma separated list of string values representing the unique identifiers of stages in a Business Process Flow Instance in the order that they occur.	

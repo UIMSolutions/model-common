@@ -6,8 +6,8 @@ static this() {
   // Territory represents sales regions.
   gsCommon.objclasses("common/application/user", new class DEIMObjclass {
     this() {
-      super(); 
-      this.attributes([
+      super();
+      this.objclass("common/entity").attributes([
         "systemUserId":"common/application/user/systemUserId", //Unique identifier for the user.
         "organizationId":"common/application/user/organizationId", //Unique identifier of the organization associated with the user.
         "businessUnitId":"common/application/user/businessUnitId", //Unique identifier of the business unit with which the user is associated.
@@ -34,16 +34,11 @@ static this() {
         "photoUrl":"common/application/user/photoUrl", //URL for the Website on which a photo of the user is located.
         "domainName":"common/application/user/domainName", //Active Directory domain of which the user is a member.
         "passportLo":"common/application/user/passportLo", //For internal use only.
-        "createdOn":"common/application/user/createdOn", //Date and time when the user was created.
         "passportHi":"common/application/user/passportHi", //For internal use only.
         "disabledReason":"common/application/user/disabledReason", //Reason for disabling the user.
-        "modifiedOn":"common/application/user/modifiedOn", //Date and time when the user was last modified.
-        "createdBy":"common/createdBy", //Unique identifier of the user who created the user.
         "employeeId":"common/application/user/employeeId", //Employee identifier for the user.
-        "modifiedBy":"common/application/user/modifiedBy", //Unique identifier of the user who last modified the user.
         "isDisabled":"common/application/user/isDisabled", //Information about whether the user is enabled.
         "governmentId":"common/application/user/governmentId", //Government identifier for the user.
-        "versionNumber":"common/application/user/versionNumber", //Version number of the user.
         "address1AddressId":"common/application/user/address1AddressId", //Unique identifier for address 1.
         "address1AddressTypeCode":"common/application/user/address1AddressTypeCode", //Type of address for address 1, such as billing, shipping, or primary address.
         "address1AddressTypeCode_display":"common/application/user/address1AddressTypeCode_display", //

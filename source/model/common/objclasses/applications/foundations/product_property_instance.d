@@ -7,23 +7,16 @@ static this() {
   gsCommon.objclasses("common/foundation/property", new class DEIMObjclass {
     this() {
       super(); 
+      this.objclass("common/entity");
       this.attributes([
-        "dynamicPropertyId":"common/foundation/property/dynamicPropertyId", // Shows the unique identifier of the property.
-        "createdOn":"common/foundation/property/createdOn", // Date and time when the record was created.
-        "createdBy":"common/createdBy", // Unique identifier of the user who created the record.
-        "modifiedOn":"common/foundation/property/modifiedOn", // Date and time when the record was modified.
-        "modifiedBy":"common/foundation/property/modifiedBy", // Unique identifier of the user who modified the record.
-        "description":"common/description", // Type a description for the property.
-        
         "createdOnBehalfBy":"common/foundation/property/createdOnBehalfBy", // Unique identifier of the delegate user who created the record.
         "modifiedOnBehalfBy":"common/foundation/property/modifiedOnBehalfBy", // Unique identifier of the delegate user who modified the record.
         "organizationId":"common/foundation/property/organizationId", // Unique identifier for the organization
-        "versionNumber":"common/foundation/property/versionNumber", // Version Number
         "importSequenceNumber":"common/foundation/property/importSequenceNumber", // Sequence number of the import that created this record.
         "overriddenCreatedOn":"common/foundation/property/overriddenCreatedOn", // Date and time that the record was migrated.
         "timeZoneRuleVersionNumber":"common/foundation/property/timeZoneRuleVersionNumber", // For internal use only.
         "UTCConversionTimeZoneCode":"common/foundation/property/UTCConversionTimeZoneCode", // Time zone code that was in use when the record was created.
-        "name":"common/foundation/property/name", // Type the name of the property.
+        "title":"common/foundation/property/name", // Type the name of the property.
         "dataType":"common/foundation/property/dataType", // Select the data type of the property.
         "dataType_display":"common/foundation/property/dataType_display", // 
         "defaultValueInteger":"common/foundation/property/defaultValueInteger", // Shows the default value of the property for a whole number data type.

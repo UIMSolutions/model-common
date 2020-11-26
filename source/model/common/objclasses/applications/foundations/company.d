@@ -7,11 +7,8 @@ static this() {
   gsCommon.objclasses("common/foundation/company", new class DEIMObjclass {
     this() {
       super(); 
+      this.objclass("common/entity");
       this.attributes([
-        "createdOn":"common/foundation/company/createdOn", // Date and time when the record was created.
-        "createdBy":"common/createdBy", // Shows who created the record.
-        "modifiedOn":"common/foundation/company/modifiedOn", // Date and time when the record was modified.
-        "modifiedBy":"common/foundation/company/modifiedBy", // Shows who last updated the record.
         "createdOnBehalfBy":"common/foundation/company/createdOnBehalfBy", // Shows who created the record on behalf of another user.
         "modifiedOnBehalfBy":"common/foundation/company/modifiedOnBehalfBy", // Shows who last updated the record on behalf of another user.
         "overriddenCreatedOn":"common/foundation/company/overriddenCreatedOn", // Date and time that the record was migrated.
@@ -23,9 +20,7 @@ static this() {
         "owningTeam":"common/foundation/company/owningTeam", // Unique identifier for the team that owns the record.
         "timeZoneRuleVersionNumber":"common/foundation/company/timeZoneRuleVersionNumber", // For internal use only.
         "UTCConversionTimeZoneCode":"common/foundation/company/UTCConversionTimeZoneCode", // Time zone code that was in use when the record was created.
-        "versionNumber":"common/foundation/company/versionNumber", // Version Number
-        "companyId":"common/foundation/company/companyId", // Unique identifier of the company.
-        "name":"common/foundation/company/name", // A name for the company.
+        "title":"common/foundation/company/name", // A name for the company.
         "companyType":"common/foundation/company/companyType", // The type of company.
         "companyType_display":"common/foundation/company/companyType_display", // 
         "stateCode":"common/foundation/company/stateCode", // Status of the Company

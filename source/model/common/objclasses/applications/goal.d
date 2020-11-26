@@ -6,13 +6,8 @@ static this() {
   // Target objective for a user or a team for a specified time period.
   gsCommon.objclasses("common/application/goal", new class DEIMObjclass {
     this() {
-      super(); 
-      this.attributes([
-        "createdOn":"common//createdOn", //	Date and time when the record was created.	
-        "createdBy":"common/createdBy", //	Shows who created the record.	
-        "modifiedOn":"common/modifiedOn", //	Date and time when the record was modified.	
-        "modifiedBy":"common/modifiedBy", //	Shows who last updated the record.	
-
+      super();
+      this.objclass("common/entity").attributes([
         "createdOnBehalfBy":"common/application/goal/createdOnBehalfBy", //	Shows who created the record on behalf of another user.	
         "modifiedOnBehalfBy":"common/application/goal/modifiedOnBehalfBy", //	Shows who last updated the record on behalf of another user.	
         "overriddenCreatedOn":"common/application/goal/overriddenCreatedOn", //	Date and time that the record was migrated.	
@@ -24,8 +19,6 @@ static this() {
         "owningTeam":"common/application/goal/owningTeam", //	Unique identifier for the team that owns the record.	
         "timeZoneRuleVersionNumber":"common/application/goal/timeZoneRuleVersionNumber", //	For internal use only.	
         "UTCConversionTimeZoneCode":"common/application/goal/UTCConversionTimeZoneCode", //	Time zone code that was in use when the record was created.	
-        "versionNumber":"common/application/goal/versionNumber", //	Version Number	
-        "goalId":"common/application/goal/goalId", //	Unique identifier of the goal.	
         "stateCode":"common/application/goal/stateCode", //	Shows whether the goal is open, completed, or canceled. Completed and canceled goals are read-only and can't be edited.	
         "stateCode_display":"common/application/goal/stateCode_display", //		
         "statusCode":"common/application/goal/statusCode", //	Select the goal's status.	

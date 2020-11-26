@@ -6,12 +6,8 @@ static this() {
   // Generic activity representing work needed to be done.
   gsCommon.objclasses("common/application/task", new class DEIMObjclass {
     this() {
-      super(); 
-      this.attributes([
-        "createdOn":"common/application/task/createdOn", // Date and time when the record was created.", 
-        "createdBy":"common/createdBy", // Shows who created the record.", 
-        "modifiedOn":"common/application/task/modifiedOn", // Date and time when the record was modified.", 
-        "modifiedBy":"common/application/task/modifiedBy", // Shows who last updated the record.", 
+      super();
+      this.objclass("common/entity").attributes([
         "createdOnBehalfBy":"common/application/task/createdOnBehalfBy", // Shows who created the record on behalf of another user.", 
         "modifiedOnBehalfBy":"common/application/task/modifiedOnBehalfBy", // Shows who last updated the record on behalf of another user.", 
         "overriddenCreatedOn":"common/application/task/overriddenCreatedOn", // Date and time that the record was migrated.", 
@@ -23,7 +19,6 @@ static this() {
         "owningTeam":"common/application/task/owningTeam", // Unique identifier for the team that owns the record.", 
         "timeZoneRuleVersionNumber":"common/application/task/timeZoneRuleVersionNumber", // For internal use only.", 
         "UTCConversionTimeZoneCode":"common/application/task/UTCConversionTimeZoneCode", // Time zone code that was in use when the record was created.", 
-        "versionNumber":"common/application/task/versionNumber", // Version Number", 
         "activityId":"common/application/task/activityId", // Unique identifier of the activity.", 
         "activityTypeCode":"common/application/task/activityTypeCode", // Type of activity.", 
         "isBilled":"common/application/task/isBilled", // Information regarding whether the fax activity was billed as part of resolving a case.", 
@@ -46,7 +41,6 @@ static this() {
         "activityAdditionalParams":"common/application/task/activityAdditionalParams", // Additional information provided by the external application as JSON. For internal use only.", 
         "stateCode":"common/application/task/stateCode", // Shows whether the task is open, completed, or canceled. Completed and canceled tasks are read-only and can't be edited.", 
         "stateCode_display":"common/application/task/stateCode_display", // ", 
-        "description":"common/description", // Type additional information to describe the task.", 
         "percentComplete":"common/application/task/percentComplete", // Type the percentage complete value for the task to track tasks to completion.", 
         "statusCode":"common/application/task/statusCode", // Select the task's status.", 
         "statusCode_display":"common/application/task/statusCode_display", // ", 

@@ -6,12 +6,8 @@ static this() {
   // Organizational knowledge for internal and external use.
   gsCommon.objclasses("common/application/knowledgeArticle", new class DEIMObjclass {
     this() {
-      super(); 
-      this.attributes([
-        "createdOn":"common/application/knowledgeArticle/createdOn", //	Date and time when the record was created.	
-        "createdBy":"common/createdBy", //	Shows who created the record.	
-        "modifiedOn":"common/application/knowledgeArticle/modifiedOn", //	Date and time when the record was modified.	
-        "modifiedBy":"common/application/knowledgeArticle/modifiedBy", //	Shows who last updated the record.	
+      super();
+      this.objclass("common/entity").attributes([
         "createdOnBehalfBy":"common/application/knowledgeArticle/createdOnBehalfBy", //	Shows who created the record on behalf of another user.	
         "modifiedOnBehalfBy":"common/application/knowledgeArticle/modifiedOnBehalfBy", //	Shows who last updated the record on behalf of another user.	
         "overriddenCreatedOn":"common/application/knowledgeArticle/overriddenCreatedOn", //	Date and time that the record was migrated.	
@@ -23,7 +19,6 @@ static this() {
         "owningTeam":"common/application/knowledgeArticle/owningTeam", //	Unique identifier for the team that owns the record.	
         "timeZoneRuleVersionNumber":"common/application/knowledgeArticle/timeZoneRuleVersionNumber", //	For internal use only.	
         "UTCConversionTimeZoneCode":"common/application/knowledgeArticle/UTCConversionTimeZoneCode", //	Time zone code that was in use when the record was created.	
-        "versionNumber":"common/application/knowledgeArticle/versionNumber", //	Version Number	
         "knowledgearticleId":"common/application/knowledgeArticle/knowledgearticleId", //	Unique identifier for entity instances	
         "stateCode":"common/application/knowledgeArticle/stateCode", //	Shows whether the article is a draft or is published, archived, or discarded. Draft articles aren't available externally and can be edited. Published articles are available externally, based on applicable permissions, but can't be edited. All metadata changes are reflected in the published version. Archived and discarded articles aren't available externally and can't be edited.	
         "stateCode_display":"common/application/knowledgeArticle/stateCode_display", //		
@@ -41,7 +36,6 @@ static this() {
         "expirationDate":"common/application/knowledgeArticle/expirationDate", //	Enter an expiration date for the article. Leave this field blank for no expiration date.	
         "parentArticleContentId":"common/application/knowledgeArticle/parentArticleContentId", //	Contains the id of the parent article content associated with the entity.	
         "knowledgeArticleViews":"common/application/knowledgeArticle/knowledgeArticleViews", //	Shows the total number of article views.	
-        "description":"common/description", //	A short overview of the article, primarily used in search results and for search engine optimization.	
         "majorVersionNumber":"common/application/knowledgeArticle/majorVersionNumber", //	Shows the major version number of this article's content.	
         "minorVersionNumber":"common/application/knowledgeArticle/minorVersionNumber", //	Shows the minor version number of this article's content.	
         "languageLocaleId":"common/application/knowledgeArticle/languageLocaleId", //	Select the language that the article's content is in.	

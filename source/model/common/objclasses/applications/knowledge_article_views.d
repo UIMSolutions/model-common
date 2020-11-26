@@ -6,23 +6,18 @@ static this() {
   // No of times an article is viewed per day
   gsCommon.objclasses("common/application/knowledgeArticleViews", new class DEIMObjclass {
     this() {
-      super(); 
-      this.attributes([
+      super();
+      this.objclass("common/entity").attributes([
         "knowledgeArticleViewsId":"common/application/knowledgeArticleViews/knowledgeArticleViewsId", //	Unique identifier of the Knowledge Article Views	
         "timeZoneRuleVersionNumber":"common/application/knowledgeArticleViews/timeZoneRuleVersionNumber", //	For internal use only.	
         "transactionCurrencyId":"common/application/knowledgeArticleViews/transactionCurrencyId", //	Choose the local currency for the record to make sure budgets are reported in the correct currency.	
         "exchangeRate":"common/application/knowledgeArticleViews/exchangeRate", //	Shows the conversion rate of the record's currency. The exchange rate is used to convert all money fields in the record from the local currency to the system's default currency.	
         "importSequenceNumber":"common/application/knowledgeArticleViews/importSequenceNumber", //	Unique identifier of the data import or data migration that created this record.	
         "overriddenCreatedOn":"common/application/knowledgeArticleViews/overriddenCreatedOn", //	Date and time that the record was migrated.	
-        "versionNumber":"common/application/knowledgeArticleViews/versionNumber", //		
         "knowledgeArticleView":"common/application/knowledgeArticleViews/knowledgeArticleView", //	Number of Knowledge Article Views visited per day	
         "viewDate":"common/application/knowledgeArticleViews/viewDate", //	Information about the Day	
         "knowledgearticleId":"common/application/knowledgeArticleViews/knowledgearticleId", //	Choose the Knowledge Article.	
-        "createdBy":"common/createdBy", //	Shows who created the record.	
-        "createdOn":"common/application/knowledgeArticleViews/createdOn", //	Date and time when the record was created.	
         "createdOnBehalfBy":"common/application/knowledgeArticleViews/createdOnBehalfBy", //	Unique identifier of the delegate user who created the record.	
-        "modifiedBy":"common/application/knowledgeArticleViews/modifiedBy", //	Shows who last updated the record.	
-        "modifiedOn":"common/application/knowledgeArticleViews/modifiedOn", //	Shows the date and time when the record was last updated. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options.	
         "modifiedOnBehalfBy":"common/application/knowledgeArticleViews/modifiedOnBehalfBy", //	Unique identifier of the delegate user who modified the record.	
         "ownerId":"common/application/knowledgeArticleViews/ownerId", //	Owner Id	
         "ownerIdType":"common/application/knowledgeArticleViews/ownerIdType", //	The type of owner, either User or Team.	

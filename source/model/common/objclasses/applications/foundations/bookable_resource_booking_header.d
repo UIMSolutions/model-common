@@ -7,11 +7,9 @@ static this() {
   gsCommon.objclasses("common/foundation/bookableResourceBookingHeader", new class DEIMObjclass {
     this() {
       super(); 
+      this.objclass("common/entity");
       this.attributes([
-        "createdOn":"common/foundation/bookableResourceBookingHeader/createdOn", // Date and time when the record was created.
-        "createdBy":"common/createdBy", // Shows who created the record.
-        "modifiedOn":"common/foundation/bookableResourceBookingHeader/modifiedOn", // Date and time when the record was modified.
-        "modifiedBy":"common/foundation/bookableResourceBookingHeader/modifiedBy", // Shows who last updated the record.
+        "title":"common/name", // The title of the booking summary.
         "createdOnBehalfBy":"common/foundation/bookableResourceBookingHeader/createdOnBehalfBy", // Shows who created the record on behalf of another user.
         "modifiedOnBehalfBy":"common/foundation/bookableResourceBookingHeader/modifiedOnBehalfBy", // Shows who last updated the record on behalf of another user.
         "overriddenCreatedOn":"common/foundation/bookableResourceBookingHeader/overriddenCreatedOn", // Date and time that the record was migrated.
@@ -23,9 +21,6 @@ static this() {
         "owningTeam":"common/foundation/bookableResourceBookingHeader/owningTeam", // Unique identifier for the team that owns the record.
         "timeZoneRuleVersionNumber":"common/foundation/bookableResourceBookingHeader/timeZoneRuleVersionNumber", // For internal use only.
         "UTCConversionTimeZoneCode":"common/foundation/bookableResourceBookingHeader/UTCConversionTimeZoneCode", // Time zone code that was in use when the record was created.
-        "versionNumber":"common/foundation/bookableResourceBookingHeader/versionNumber", // Version Number
-        "bookableResourceBookingHeaderId":"common/foundation/bookableResourceBookingHeader/bookableResourceBookingHeaderId", // Unique identifier of the resource booking header.
-        "name":"common/foundation/bookableResourceBookingHeader/name", // The name of the booking summary.
         "processId":"common/foundation/bookableResourceBookingHeader/processId", // Contains the id of the process associated with the entity.
         "stageId":"common/foundation/bookableResourceBookingHeader/stageId", // Contains the id of the stage where the entity is located.
         "traversedPath":"common/foundation/bookableResourceBookingHeader/traversedPath", // A comma separated list of string values representing the unique identifiers of stages in a Business Process Flow Instance in the order that they occur.

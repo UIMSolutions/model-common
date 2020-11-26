@@ -6,12 +6,8 @@ static this() {
   // Tasks related to project.
   gsCommon.objclasses("common/crm/project/service/projectTaskDependency", new class DEIMObjclass {
     this() {
-      super(); 
-      this.attributes([
-        "createdOn":"common/crm/project/service/projectTaskDependency/createdOn", // Date and time when the record was created.
-        "createdBy":"common/crm/project/service/projectTaskDependency/createdBy", // Shows who created the record.
-        "modifiedOn":"common/crm/project/service/projectTaskDependency/modifiedOn", // Date and time when the record was modified.
-        "modifiedBy":"common/crm/project/service/projectTaskDependency/modifiedBy", // Shows who last updated the record.
+      super();
+      this.objclass("common/entity").attributes([
         "createdOnBehalfBy":"common/crm/project/service/projectTaskDependency/createdOnBehalfBy", // Shows who created the record on behalf of another user.
         "modifiedOnBehalfBy":"common/crm/project/service/projectTaskDependency/modifiedOnBehalfBy", // Shows who last updated the record on behalf of another user.
         "overriddenCreatedOn":"common/crm/project/service/projectTaskDependency/overriddenCreatedOn", // Date and time that the record was migrated.
@@ -23,13 +19,10 @@ static this() {
         "owningTeam":"common/crm/project/service/projectTaskDependency/owningTeam", // Unique identifier for the team that owns the record.
         "timeZoneRuleVersionNumber":"common/crm/project/service/projectTaskDependency/timeZoneRuleVersionNumber", // For internal use only.
         "UTCConversionTimeZoneCode":"common/crm/project/service/projectTaskDependency/UTCConversionTimeZoneCode", // Time zone code that was in use when the record was created.
-        "versionNumber":"common/crm/project/service/projectTaskDependency/versionNumber", // Version Number
-        "projectTaskDependencyId":"common/crm/project/service/projectTaskDependency/projectTaskDependencyId", // Unique identifier for entity instances
         "stateCode":"common/crm/project/service/projectTaskDependency/stateCode", // Status of the Project Task Dependency
         "stateCode_display":"common/crm/project/service/projectTaskDependency/stateCode_display", // 
         "statusCode":"common/crm/project/service/projectTaskDependency/statusCode", // Reason for the status of the Project Task Dependency
         "statusCode_display":"common/crm/project/service/projectTaskDependency/statusCode_display", // 
-        "description":"common/crm/project/service/projectTaskDependency/description", // Type the name of the custom entity.
         "linkType":"common/crm/project/service/projectTaskDependency/linkType", // Select the "Finish to Start" type of dependency.
         "linkType_display":"common/crm/project/service/projectTaskDependency/linkType_display", // 
         "predecessorTask":"common/crm/project/service/projectTaskDependency/predecessorTask", // Select the task that other tasks are dependent on.

@@ -6,12 +6,8 @@ static this() {
   // For internal use only.
   gsCommon.objclasses("common/application/socialActivity", new class DEIMObjclass {
     this() {
-      super(); 
-      this.attributes([
-        "createdOn":"common/application/socialActivity/createdOn", //	Date and time when the record was created.	
-        "createdBy":"common/createdBy", //	Shows who created the record.	
-        "modifiedOn":"common/application/socialActivity/modifiedOn", //	Date and time when the record was modified.	
-        "modifiedBy":"common/application/socialActivity/modifiedBy", //	Shows who last updated the record.	
+      super();
+      this.objclass("common/entity").attributes([
         "createdOnBehalfBy":"common/application/socialActivity/createdOnBehalfBy", //	Shows who created the record on behalf of another user.	
         "modifiedOnBehalfBy":"common/application/socialActivity/modifiedOnBehalfBy", //	Shows who last updated the record on behalf of another user.	
         "overriddenCreatedOn":"common/application/socialActivity/overriddenCreatedOn", //	Date and time that the record was migrated.	
@@ -23,7 +19,6 @@ static this() {
         "owningTeam":"common/application/socialActivity/owningTeam", //	Unique identifier for the team that owns the record.	
         "timeZoneRuleVersionNumber":"common/application/socialActivity/timeZoneRuleVersionNumber", //	For internal use only.	
         "UTCConversionTimeZoneCode":"common/application/socialActivity/UTCConversionTimeZoneCode", //	Time zone code that was in use when the record was created.	
-        "versionNumber":"common/application/socialActivity/versionNumber", //	Version Number	
         "activityId":"common/application/socialActivity/activityId", //	Unique identifier of the activity.	
         "activityTypeCode":"common/application/socialActivity/activityTypeCode", //	Type of activity.	
         "isBilled":"common/application/socialActivity/isBilled", //	Information regarding whether the fax activity was billed as part of resolving a case.	
@@ -48,7 +43,6 @@ static this() {
         "community":"common/application/socialActivity/community", //	Shows how contact about the activity originated, such as from Twitter or Facebook. This field is read-only.	
         "community_display":"common/application/socialActivity/community_display", //		
         "directionCode":"common/application/socialActivity/directionCode", //	Select the direction of the activity as incoming or outbound.	
-        "description":"common/description", //	Shows information about the social post content. This field is read-only.	
         "traversedPath":"common/application/socialActivity/traversedPath", //	For internal use only.	
         "processId":"common/application/socialActivity/processId", //	Unique identifier of the Process.	
         "stageId":"common/application/socialActivity/stageId", //	Unique identifier of the Stage.	

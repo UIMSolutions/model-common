@@ -6,20 +6,14 @@ static this() {
   // Contains information about a tracked support KPI for a specific customer.
   gsCommon.objclasses("common/application/slaItem", new class DEIMObjclass {
     this() {
-      super(); 
-      this.attributes([
+      super();
+      this.objclass("common/entity").attributes([
         "SLAItemId":"common/application/slaItem/SLAItemId", //	Unique identifier of the SLA Item.	
-        "name":"common/application/slaItem/name", //	Type a descriptive name of the service level agreement (SLA) item.	
+        "title":"common/application/slaItem/name", //	Type a descriptive name of the service level agreement (SLA) item.	
         "owningBusinessUnit":"common/application/slaItem/owningBusinessUnit", //	Unique identifier for the business unit that owns the record	
-        "description":"common/description", //	Type additional information to describe the SLA Item	
         "relatedField":"common/application/slaItem/relatedField", //	Select the service level agreement (SLA) key performance indicator (KPI) that this SLA Item is created for.	
         "SLAId":"common/application/slaItem/SLAId", //	Unique identifier for SLA associated with SLA Item.	
-        "createdOn":"common/application/slaItem/createdOn", //	Shows the date and time when the record was created. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options.	
-        "createdBy":"common/createdBy", //	Shows who created the record.	
-        "modifiedOn":"common/application/slaItem/modifiedOn", //	Shows the date and time when the record was last updated. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options.	
-        "modifiedBy":"common/application/slaItem/modifiedBy", //	Shows who last updated the record.	
         "exchangeRate":"common/application/slaItem/exchangeRate", //	Exchange rate between the currency associated with the SLA Item record and the base currency.	
-        "versionNumber":"common/application/slaItem/versionNumber", //	Version number of the SLA Item.	
         "transactionCurrencyId":"common/application/slaItem/transactionCurrencyId", //	Unique identifier of the currency associated with the SLA Item record.	
         "applicableWhenXml":"common/application/slaItem/applicableWhenXml", //	Condition for SLA item	
         "successConditionsXml":"common/application/slaItem/successConditionsXml", //	Condition for SLA item	

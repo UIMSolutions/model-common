@@ -6,12 +6,8 @@ static this() {
   // This entity is used to store social profile information of its associated account and contacts on different social channels.
   gsCommon.objclasses("common/application/socialProfile", new class DEIMObjclass {
     this() {
-      super(); 
-      this.attributes([
-        "createdOn":"common/application/socialProfile/createdOn", //	Date and time when the record was created.
-        "createdBy":"common/createdBy", //	Shows who created the record.
-        "modifiedOn":"common/application/socialProfile/modifiedOn", //	Date and time when the record was modified.
-        "modifiedBy":"common/application/socialProfile/modifiedBy", //	Shows who last updated the record.
+      super();
+      this.objclass("common/entity").attributes([
         "createdOnBehalfBy":"common/application/socialProfile/createdOnBehalfBy", //	Shows who created the record on behalf of another user.
         "modifiedOnBehalfBy":"common/application/socialProfile/modifiedOnBehalfBy", //	Shows who last updated the record on behalf of another user.
         "overriddenCreatedOn":"common/application/socialProfile/overriddenCreatedOn", //	Date and time that the record was migrated.
@@ -23,7 +19,6 @@ static this() {
         "owningTeam":"common/application/socialProfile/owningTeam", // Unique identifier for the team that owns the record.
         "timeZoneRuleVersionNumber":"common/application/socialProfile/timeZoneRuleVersionNumber", // For internal use only.
         "UTCConversionTimeZoneCode":"common/application/socialProfile/UTCConversionTimeZoneCode", // Time zone code that was in use when the record was created.
-        "versionNumber":"common/application/socialProfile/versionNumber", // Version Number
         "socialProfileId":"common/application/socialProfile/socialProfileId", // Unique Identifier of the social profile name.
         "profileName":"common/application/socialProfile/profileName", // Shows the name of the social profile on the corresponding social channel.
         "profileFullName":"common/application/socialProfile/profileFullName", // Shows the display name of the customer on this social profile.

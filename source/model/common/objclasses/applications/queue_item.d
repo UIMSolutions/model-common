@@ -6,8 +6,8 @@ static this() {
   // A specific item in a queue, such as a case record or an activity record.
   gsCommon.objclasses("common/application/queueItem", new class DEIMObjclass {
     this() {
-      super(); 
-      this.attributes([
+      super();
+      this.objclass("common/entity").attributes([
         "queueItemId":"common/application/queueItem/queueItemId", //	Unique identifier of the queue item.	
         "queueId":"common/application/queueItem/queueId", //	Choose the queue that the item is assigned to.	
         "objectId":"common/application/queueItem/objectId", //	Choose the activity, case, or article assigned to the queue.	
@@ -19,14 +19,9 @@ static this() {
         "priority":"common/application/queueItem/priority", //	Priority of the queue item.	
         "state":"common/application/queueItem/state", //	Status of the queue item.	
         "status":"common/application/queueItem/status", //	Reason for the status of the queue item.	
-        "createdOn":"common/application/queueItem/createdOn", //	Shows the date and time when the record was created. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options.	
-        "createdBy":"common/createdBy", //	Shows who created the record.	
-        "modifiedBy":"common/application/queueItem/modifiedBy", //	Shows who last updated the record.	
-        "modifiedOn":"common/application/queueItem/modifiedOn", //	Shows the date and time when the record was last updated. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options.	
         "toRecipients":"common/application/queueItem/toRecipients", //	Recipients listed on the To line of the message for email queue items.	
         "sender":"common/application/queueItem/sender", //	Sender who created the queue item.	
         "organizationId":"common/application/queueItem/organizationId", //	Unique identifier of the organization with which the queue item is associated.	
-        "versionNumber":"common/application/queueItem/versionNumber", //	Version number of the queue item.	
         "timeZoneRuleVersionNumber":"common/application/queueItem/timeZoneRuleVersionNumber", //	For internal use only.	
         "UTCConversionTimeZoneCode":"common/application/queueItem/UTCConversionTimeZoneCode", //	Time zone code that was in use when the record was created.	
         "overriddenCreatedOn":"common/application/queueItem/overriddenCreatedOn", //	Date and time that the record was migrated.	

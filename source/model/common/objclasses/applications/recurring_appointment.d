@@ -6,13 +6,8 @@ static this() {
   // The Master appointment of a recurring appointment series.
   gsCommon.objclasses("common/application/recurringAppointment", new class DEIMObjclass {
     this() {
-      super(); 
-      this.attributes([
-        "createdOn":"common/createdOn", //	Date and time when the record was created.	
-        "createdBy":"common/createdBy", //	Shows who created the record.	
-        "modifiedOn":"common/modifiedOn", //	Date and time when the record was modified.	
-        "modifiedBy":"common/modifiedBy", //	Shows who last updated the record.	
-
+      super();
+      this.objclass("common/entity").attributes([
         "createdOnBehalfBy":"common/application/recurringAppointment/createdOnBehalfBy", //	Shows who created the record on behalf of another user.	
         "modifiedOnBehalfBy":"common/application/recurringAppointment/modifiedOnBehalfBy", //	Shows who last updated the record on behalf of another user.	
         "overriddenCreatedOn":"common/application/recurringAppointment/overriddenCreatedOn", //	Date and time that the record was migrated.	
@@ -24,7 +19,6 @@ static this() {
         "owningTeam":"common/application/recurringAppointment/owningTeam", //	Unique identifier for the team that owns the record.	
         "timeZoneRuleVersionNumber":"common/application/recurringAppointment/timeZoneRuleVersionNumber", //	For internal use only.	
         "UTCConversionTimeZoneCode":"common/application/recurringAppointment/UTCConversionTimeZoneCode", //	Time zone code that was in use when the record was created.	
-        "versionNumber":"common/application/recurringAppointment/versionNumber", //	Version Number	
         "activityId":"common/application/recurringAppointment/activityId", //	Unique identifier of the activity.	
         "activityTypeCode":"common/application/recurringAppointment/activityTypeCode", //	Type of activity.	
         "isBilled":"common/application/recurringAppointment/isBilled", //	Information regarding whether the fax activity was billed as part of resolving a case.	
@@ -76,7 +70,6 @@ static this() {
         "isNthMonthly":"common/application/recurringAppointment/isNthMonthly", //	Indicates whether the recurring appointment series should occur after every N months. Valid for monthly recurrence pattern only.	
         "endTime":"common/application/recurringAppointment/endTime", //	End time of the associated activity.	
         "daysOfWeekMask":"common/application/recurringAppointment/daysOfWeekMask", //	Bitmask that represents the days of the week on which the recurring appointment occurs.	
-        "description":"common/description", //	Type additional information to describe the recurring appointment, such as key talking points or objectives.	
         "instance":"common/application/recurringAppointment/instance", //	Specifies the recurring appointment series to occur on every Nth day of a month. Valid for monthly and yearly recurrence patterns only.	
         "instance_display":"common/application/recurringAppointment/instance_display", //		
         "deletedExceptionsList":"common/application/recurringAppointment/deletedExceptionsList", //	List of deleted instances of the recurring appointment series.	

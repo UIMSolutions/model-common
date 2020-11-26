@@ -6,13 +6,8 @@ static this() {
   // Commitment representing a time interval with start/end times and duration.
   gsCommon.objclasses("common/application/appointment", new class DEIMObjclass {
     this() {
-      super(); 
-      this.attributes([
-        "createdOn":"common/createdOn", //	Date and time when the record was created.	
-        "createdBy":"common/createdBy", //	Shows who created the record.	
-        "modifiedOn":"common/modifiedOn", //	Date and time when the record was modified.	
-        "modifiedBy":"common/modifiedBy", //	Shows who last updated the record.	
-        
+      super();
+      this.objclass("common/entity").attributes([
         "createdOnBehalfBy":"common/application/appointment/createdOnBehalfBy", //	Shows who created the record on behalf of another user.	
         "modifiedOnBehalfBy":"common/application/appointment/modifiedOnBehalfBy", //	Shows who last updated the record on behalf of another user.	
         "overriddenCreatedOn":"common/application/appointment/overriddenCreatedOn", //	Date and time that the record was migrated.	
@@ -24,7 +19,6 @@ static this() {
         "owningTeam":"common/application/appointment/owningTeam", //	Unique identifier for the team that owns the record.	
         "timeZoneRuleVersionNumber":"common/application/appointment/timeZoneRuleVersionNumber", //	For internal use only.	
         "UTCConversionTimeZoneCode":"common/application/appointment/UTCConversionTimeZoneCode", //	Time zone code that was in use when the record was created.	
-        "versionNumber":"common/application/appointment/versionNumber", //	Version Number	
         "activityId":"common/application/appointment/activityId", //	Unique identifier of the activity.	
         "activityTypeCode":"common/application/appointment/activityTypeCode", //	Type of activity.	
         "isBilled":"common/application/appointment/isBilled", //	Information regarding whether the activity was billed as part of resolving a case.	
@@ -52,7 +46,6 @@ static this() {
         "requiredAttendees":"common/application/appointment/requiredAttendees", //	Enter the account, contact, lead, user, or other equipment resources that are required to attend the activity.	
         "optionalAttendees":"common/application/appointment/optionalAttendees", //	The account, contact, lead, user, or other equipment resources that are not needed at the activity, but can optionally attend.	
         "isAllDayEvent":"common/application/appointment/isAllDayEvent", //	Select whether the appointment is an all-day event to make sure that the required resources are scheduled for the full day.	
-        "description":"common/description", //	Type additional information to describe the purpose of the appointment.	
         "globalObjectId":"common/application/appointment/globalObjectId", //	Shows the ID of the appointment in Microsoft Office Outlook. The ID is used to synchronize the appointment between Microsoft Dynamics 365 and the correct Exchange account.	
         "statusCode":"common/application/appointment/statusCode", //	Select the appointment's status.	
         "statusCode_display":"common/application/appointment/statusCode_display", //		

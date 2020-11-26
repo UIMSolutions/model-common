@@ -7,11 +7,8 @@ static this() {
   gsCommon.objclasses("common/foundation/bookableResourceGroup", new class DEIMObjclass {
     this() {
       super(); 
+      this.objclass("common/entity");
       this.attributes([
-        "createdOn":"common/foundation/bookableResourceGroup/createdOn", // Date and time when the record was created.
-        "createdBy":"common/createdBy", // Shows who created the record.
-        "modifiedOn":"common/foundation/bookableResourceGroup/modifiedOn", // Date and time when the record was modified.
-        "modifiedBy":"common/foundation/bookableResourceGroup/modifiedBy", // Shows who last updated the record.
         "createdOnBehalfBy":"common/foundation/bookableResourceGroup/createdOnBehalfBy", // Shows who created the record on behalf of another user.
         "modifiedOnBehalfBy":"common/foundation/bookableResourceGroup/modifiedOnBehalfBy", // Shows who last updated the record on behalf of another user.
         "overriddenCreatedOn":"common/foundation/bookableResourceGroup/overriddenCreatedOn", // Date and time that the record was migrated.
@@ -23,9 +20,7 @@ static this() {
         "owningTeam":"common/foundation/bookableResourceGroup/owningTeam", // Unique identifier for the team that owns the record.
         "timeZoneRuleVersionNumber":"common/foundation/bookableResourceGroup/timeZoneRuleVersionNumber", // For internal use only.
         "UTCConversionTimeZoneCode":"common/foundation/bookableResourceGroup/UTCConversionTimeZoneCode", // Time zone code that was in use when the record was created.
-        "versionNumber":"common/foundation/bookableResourceGroup/versionNumber", // Version Number
-        "bookableResourceGroupId":"common/foundation/bookableResourceGroup/bookableResourceGroupId", // Unique identifier of the resource group.
-        "name":"common/foundation/bookableResourceGroup/name", // Type the name of the resource group.
+        "title":"common/foundation/bookableResourceGroup/name", // Type the name of the resource group.
         "childResource":"common/foundation/bookableResourceGroup/childResource", // The child resource that is a part of the group.
         "fromDate":"common/foundation/bookableResourceGroup/fromDate", // Enter the group membership start date.
         "parentResource":"common/foundation/bookableResourceGroup/parentResource", // The parent resource that is a part of the group.

@@ -6,14 +6,8 @@ static this() {
   // Activity that tracks the delivery of a letter. The activity can contain the electronic copy of the letter.
   gsCommon.objclasses("common/application/letter", new class DEIMObjclass {
     this() {
-      super(); 
-      this.attributes([
-        "createdOn":"common//createdOn", //	Date and time when the record was created.	
-        "createdBy":"common/createdBy", //	Shows who created the record.	
-        "modifiedOn":"common/modifiedOn", //	Date and time when the record was modified.	
-        "modifiedBy":"common/modifiedBy", //	Shows who last updated the record.	
-        "description":"common/description", //	Type the letter body or additional information to describe the letter, such as the primary message or the products and services described.	
-        
+      super();
+      this.objclass("common/entity").attributes([
         "createdOnBehalfBy":"common/application/letter/createdOnBehalfBy", //	Shows who created the record on behalf of another user.	
         "modifiedOnBehalfBy":"common/application/letter/modifiedOnBehalfBy", //	Shows who last updated the record on behalf of another user.	
         "overriddenCreatedOn":"common/application/letter/overriddenCreatedOn", //	Date and time that the record was migrated.	
@@ -25,7 +19,6 @@ static this() {
         "owningTeam":"common/application/letter/owningTeam", //	Unique identifier for the team that owns the record.	
         "timeZoneRuleVersionNumber":"common/application/letter/timeZoneRuleVersionNumber", //	For internal use only.	
         "UTCConversionTimeZoneCode":"common/application/letter/UTCConversionTimeZoneCode", //	Time zone code that was in use when the record was created.	
-        "versionNumber":"common/application/letter/versionNumber", //	Version Number	
         "activityId":"common/application/letter/activityId", //	Unique identifier of the activity.	
         "activityTypeCode":"common/application/letter/activityTypeCode", //	Type of activity.	
         "isBilled":"common/application/letter/isBilled", //	Information regarding whether the fax activity was billed as part of resolving a case.	

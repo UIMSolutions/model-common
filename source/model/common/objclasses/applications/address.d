@@ -6,22 +6,16 @@ static this() {
   // Address and shipping information. Used to store additional addresses for an account or contact.
   gsCommon.objclasses("common/application/address", new class DEIMObjclass {
     this() {
-      super(); 
-      this.attributes([
-        "createdBy":"common/createdBy", // 	Shows who created the record.	
-        "createdOn":"common/createdBy", // 	Shows the date and time when the record was created. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options.	
-        "modifiedBy":"common/application/address/modifiedBy", // 	Shows who last updated the record.	
-        "modifiedOn":"common/application/address/modifiedOn", // 	Shows the date and time when the record was last updated. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options.	
-
+      super();
+      this.objclass("common/entity").attributes([
         "parentId":"common/application/address/parentId", // Choose the customer's address.	
         "parentIdTypeCode":"common/application/address/parentIdTypeCode", // The name of the entity linked by parentId	
-        "customerAddressId":"common/application/address/customerAddressId", // Unique identifier of the customer address.	
         "addressNumber":"common/application/address/addressNumber", // 	Shows the number of the address, to indicate whether the address is the primary, secondary, or other address for the customer.	
         "objectTypeCode":"common/application/address/objectTypeCode", // 	Shows the type code of the customer record to indicate whether the address belongs to a customer account or contact.	
         "objectTypeCode_display":"common/application/address/objectTypeCode_display", // 		
         "addressTypeCode":"common/application/address/addressTypeCode", // 	Select the address type, such as primary or billing.	
         "addressTypeCode_display":"common/application/address/addressTypeCode_display", // 		
-        "name":"common/application/address/name", // 	Type a descriptive name for the customer's address, such as Corporate Headquarters.	
+        "title":"common/application/address/name", // 	Type a descriptive name for the customer's address, such as Corporate Headquarters.	
         "primaryContactName":"common/application/address/primaryContactName", // 	Type the name of the primary contact person for the customer's address.	
         "line1":"common/application/address/line1", // 	Type the first line of the customer's address to help identify the location.	
         "line2":"common/application/address/line2", // 	Type the second line of the customer's address.	
@@ -44,7 +38,6 @@ static this() {
         "telephone2":"common/application/address/telephone2", // 	Type a second phone number for the customer's address.	
         "telephone3":"common/application/address/telephone3", // 	Type a third phone number for the customer's address.	
         "fax":"common/application/address/fax", // 	Type the fax number associated with the customer's address.	
-        "versionNumber":"common/application/address/versionNumber", // 	Version number of the customer address.	
         "owningBusinessUnit":"common/application/address/owningBusinessUnit", // 	Shows the business unit that the record owner belongs to.	
         "owningUser":"common/application/address/owningUser", // 	Unique identifier of the user who owns the customer address.	
         "timeZoneRuleVersionNumber":"common/application/address/timeZoneRuleVersionNumber", // 	For internal use only.	

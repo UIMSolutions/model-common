@@ -6,8 +6,8 @@ static this() {
   // Structured content that is part of the knowledge base.
   gsCommon.objclasses("common/application/article", new class DEIMObjclass {
     this() {
-      super(); 
-      this.attributes([
+      super();
+      this.objclass("common/entity").attributes([
         "kbArticleId":"common/application/article/kbArticleId", //	Shows the ID of the article.	
         "kbArticleTemplateId":"common/application/article/kbArticleTemplateId", //	Choose the template that you want to use as a base for creating the new article.	
         "organizationId":"common/application/article/organizationId", //	Unique identifier of the organization associated with the article.	
@@ -16,17 +16,11 @@ static this() {
         "title":"common/application/article/title", //	Type a subject or descriptive name for the article to assist with article searches.	
         "number":"common/application/article/number", //	Knowledge base article number.	
         "content":"common/application/article/content", //	Description of the content of the knowledge base article.	
-        "description":"common/description", //	Type additional information that describes the knowledge base article.	
         "comments":"common/application/article/comments", //	Comments regarding the knowledge base article.	
-        "createdOn":"common/application/article/createdOn", //	Date and time when the knowledge base article was created.	
-        "createdBy":"common/createdBy", //	Unique identifier of the user who created the knowledge base article.	
-        "modifiedBy":"common/application/article/modifiedBy", //	Unique identifier of the user who last modified the knowledge base article.	
-        "modifiedOn":"common/application/article/modifiedOn", //	Date and time when the knowledge base article was last modified.	
         "stateCode":"common/application/article/stateCode", //	Shows whether the knowledge base article is in draft, unapproved, or published status. Published articles are read-only and can't be edited unless they are unpublished.	
         "stateCode_display":"common/application/article/stateCode_display", //		
         "statusCode":"common/application/article/statusCode", //	Select the article's status.	
         "statusCode_display":"common/application/article/statusCode_display", //		
-        "versionNumber":"common/application/article/versionNumber", //	Title of the knowledge base article.	
         "keyWords":"common/application/article/keyWords", //	Keywords to be used for searches in knowledge base articles.	
         "importSequenceNumber":"common/application/article/importSequenceNumber", //	Unique identifier of the data import or data migration that created this record.	
         "overriddenCreatedOn":"common/application/article/overriddenCreatedOn", //	Date and time that the record was migrated.	

@@ -6,13 +6,8 @@ static this() {
   // Person with whom a business unit has a relationship, such as customer, supplier, and colleague.
   gsCommon.objclasses("common/application/contact", new class DEIMObjclass {
     this() {
-      super(); 
-      this.attributes([
-        "createdOn":"common/createdOn", //	Date and time when the record was created.	
-        "createdBy":"common/createdBy", //	Shows who created the record.	
-        "modifiedOn":"common/modifiedOn", //	Date and time when the record was modified.	
-        "modifiedBy":"common/modifiedBy", //	Shows who last updated the record.	
-        
+      super();
+      this.objclass("common/entity").attributes([
         "createdOnBehalfBy":"common/application/contact/createdOnBehalfBy", //	Shows who created the record on behalf of another user.	
         "modifiedOnBehalfBy":"common/application/contact/modifiedOnBehalfBy", //	Shows who last updated the record on behalf of another user.	
         "overriddenCreatedOn":"common/application/contact/overriddenCreatedOn", //	Date and time that the record was migrated.	
@@ -24,7 +19,6 @@ static this() {
         "owningTeam":"common/application/contact/owningTeam", //	Unique identifier for the team that owns the record.	
         "timeZoneRuleVersionNumber":"common/application/contact/timeZoneRuleVersionNumber", //	For internal use only.	
         "UTCConversionTimeZoneCode":"common/application/contact/UTCConversionTimeZoneCode", //	Time zone code that was in use when the record was created.	
-        "versionNumber":"common/application/contact/versionNumber", //	Version Number	
         "contactId":"common/application/contact/contactId", //	Unique identifier of the contact.	
         "customerSizeCode":"common/application/contact/customerSizeCode", //	Select the size of the contact's company for segmentation and reporting purposes.	
         "customerSizeCode_display":"common/application/contact/customerSizeCode_display", //		
@@ -57,7 +51,6 @@ static this() {
         "birthDate":"common/application/contact/birthDate", //	Enter the contact's birthday for use in customer gift programs or other communications.	
         "governmentId":"common/application/contact/governmentId", //	Type the passport number or other government ID for the contact for use in documents or reports.	
         "yomiFullName":"common/application/contact/yomiFullName", //	Shows the combined Yomi first and last names of the contact so that the full phonetic name can be displayed in views and reports.	
-        "description":"common/description", //	Type additional information to describe the contact, such as an excerpt from the company's website.	
         "employeeId":"common/application/contact/employeeId", //	Type the employee ID or number for the contact for reference in orders, service cases, or other communications with the contact's organization.	
         "genderCode":"common/application/contact/genderCode", //	Select the contact's gender to make sure the contact is addressed correctly in sales calls, email, and marketing campaigns.	
         "genderCode_display":"common/application/contact/genderCode_display", //		

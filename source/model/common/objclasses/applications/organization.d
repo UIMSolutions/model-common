@@ -6,16 +6,11 @@ static this() {
   // Top level of the Microsoft Dynamics 365 business hierarchy. The organization can be a specific business, holding company, or corporation.
   gsCommon.objclasses("common/application/organization", new class DEIMObjclass {
     this() {
-      super(); 
-      this.attributes([
-        "createdOn":"common/createdOn", //	Date and time when the organization was created.	
-        "createdBy":"common/createdBy", //	Unique identifier of the user who created the organization.	
-        "modifiedOn":"common/modifiedOn", //	Date and time when the organization was last modified.	
-        "modifiedBy":"common/modifiedBy", //	Unique identifier of the user who last modified the organization.	
-
+      super();
+      this.objclass("common/entity").attributes([
         "fiscalYearFormat":"common/application/organization/fiscalYearFormat", //	Information that specifies how the name of the fiscal year is displayed throughout Microsoft CRM.	
         "organizationId":"common/application/organization/organizationId", //	Unique identifier of the organization.	
-        "name":"common/application/organization/name", //	Name of the organization. The name is set when Microsoft CRM is installed and should not be changed.	
+        "title":"common/application/organization/name", //	Name of the organization. The name is set when Microsoft CRM is installed and should not be changed.	
         "userGroupId":"common/application/organization/userGroupId", //	Unique identifier of the default group of users in the organization.	
         "privilegeUserGroupId":"common/application/organization/privilegeUserGroupId", //	Unique identifier of the default privilege for users in the organization.	
         "recurrenceExpansionJobBatchSize":"common/application/organization/recurrenceExpansionJobBatchSize", //	Specifies the value for number of instances created in on demand job in one shot.	
@@ -78,7 +73,6 @@ static this() {
         "allowAutoUnsubscribeAcknowledgement":"common/application/organization/allowAutoUnsubscribeAcknowledgement", //	Indicates whether automatic unsubscribe acknowledgement email is allowed to send.	
         "allowAutoUnsubscribe":"common/application/organization/allowAutoUnsubscribe", //	Indicates whether automatic unsubscribe is allowed.	
         "picture":"common/application/organization/picture", //	For internal use only.	
-        "versionNumber":"common/application/organization/versionNumber", //	Version number of the organization.	
         "trackingPrefix":"common/application/organization/trackingPrefix", //	History list of tracking token prefixes.	
         "minOutlookSyncInterval":"common/application/organization/minOutlookSyncInterval", //	Minimum allowed time between scheduled Outlook synchronizations.	
         "bulkOperationPrefix":"common/application/organization/bulkOperationPrefix", //	Prefix used for bulk operation numbering.	

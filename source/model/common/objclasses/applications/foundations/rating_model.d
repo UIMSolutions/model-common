@@ -7,11 +7,8 @@ static this() {
   gsCommon.objclasses("common/foundation/ratingModel", new class DEIMObjclass {
     this() {
       super(); 
+      this.objclass("common/entity");
       this.attributes([
-        "createdOn":"common/foundation/ratingModel/createdOn", // Date and time when the record was created.
-        "createdBy":"common/createdBy", // Shows who created the record.
-        "modifiedOn":"common/foundation/ratingModel/modifiedOn", // Date and time when the record was modified.
-        "modifiedBy":"common/foundation/ratingModel/modifiedBy", // Shows who last updated the record.
         "createdOnBehalfBy":"common/foundation/ratingModel/createdOnBehalfBy", // Shows who created the record on behalf of another user.
         "modifiedOnBehalfBy":"common/foundation/ratingModel/modifiedOnBehalfBy", // Shows who last updated the record on behalf of another user.
         "overriddenCreatedOn":"common/foundation/ratingModel/overriddenCreatedOn", // Date and time that the record was migrated.
@@ -23,9 +20,8 @@ static this() {
         "owningTeam":"common/foundation/ratingModel/owningTeam", // Unique identifier for the team that owns the record.
         "timeZoneRuleVersionNumber":"common/foundation/ratingModel/timeZoneRuleVersionNumber", // For internal use only.
         "UTCConversionTimeZoneCode":"common/foundation/ratingModel/UTCConversionTimeZoneCode", // Time zone code that was in use when the record was created.
-        "versionNumber":"common/foundation/ratingModel/versionNumber", // Version Number
         "ratingModelId":"common/foundation/ratingModel/ratingModelId", // Unique identifier of the rating model.
-        "name":"common/foundation/ratingModel/name", // Type the name of the rating model.
+        "title":"common/foundation/ratingModel/name", // Type the name of the rating model.
         "maxRatingValue":"common/foundation/ratingModel/maxRatingValue", // Enter the maximum rating value.
         "minRatingValue":"common/foundation/ratingModel/minRatingValue", // Enter the minimum rating value.
         "stateCode":"common/foundation/ratingModel/stateCode", // Status of the Rating Model

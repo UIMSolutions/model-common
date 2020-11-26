@@ -6,16 +6,10 @@ static this() {
   // Contains information about the tracked service-level KPIs for cases that belong to different customers.
   gsCommon.objclasses("common/application/slaKpiInstance", new class DEIMObjclass {
     this() {
-      super(); 
-      this.attributes([
-        "createdOn":"common/createdOn", //	For internal use only.	
-        "createdBy":"common/createdBy", //	For internal use only.	
-        "modifiedOn":"common/modifiedOn", //	For internal use only.	
-        "modifiedBy":"common/modifiedBy", //	For internal use only.	
-        "description":"common/description", //	For internal use only.	
-
+      super();
+      this.objclass("common/entity").attributes([
         "SLAKPIInstanceId":"common/application/slaKpiInstance/SLAKPIInstanceId", //	Unique identifier of the SLA KPI Instance.	
-        "name":"common/application/slaKpiInstance/name", //	Type a descriptive name for the service level agreement (SLA) key performance indicator (KPI) instance.	
+        "title":"common/application/slaKpiInstance/name", //	Type a descriptive name for the service level agreement (SLA) key performance indicator (KPI) instance.	
         "computedFailureTime":"common/application/slaKpiInstance/computedFailureTime", //	Computed Failure Date and time	
         "computedWarningTime":"common/application/slaKpiInstance/computedWarningTime", //	Computed Warning Date and time	
         "failureTime":"common/application/slaKpiInstance/failureTime", //	Enter the date and time when the service level agreement (SLA) key performance indicator (KPI) will expire.	
@@ -33,7 +27,6 @@ static this() {
         "exchangeRate":"common/application/slaKpiInstance/exchangeRate", //	For internal use only.	
         "createdOnBehalfBy":"common/application/slaKpiInstance/createdOnBehalfBy", //	For internal use only.	
         "modifiedOnBehalfBy":"common/application/slaKpiInstance/modifiedOnBehalfBy", //	For internal use only.	
-        "versionNumber":"common/application/slaKpiInstance/versionNumber", //	For internal use only.	
         "warningTimeReached":"common/application/slaKpiInstance/warningTimeReached", //	Shows information about whether the case has reached its warning time.	
         "warningTimeReached_display":"common/application/slaKpiInstance/warningTimeReached_display", //		
       ]); 

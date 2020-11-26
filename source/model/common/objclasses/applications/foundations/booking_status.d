@@ -6,12 +6,9 @@ static this() {
   // Allows creation of multiple sub statuses mapped to a booking status option.
   gsCommon.objclasses("common/foundation/bookingStatus", new class DEIMObjclass {
     this() {
-      super(); 
-      this.attributes([
-        "createdOn":"common/foundation/bookingStatus/createdOn", // Date and time when the record was created.
-        "createdBy":"common/createdBy", // Shows who created the record.
-        "modifiedOn":"common/foundation/bookingStatus/modifiedOn", // Date and time when the record was modified.
-        "modifiedBy":"common/foundation/bookingStatus/modifiedBy", // Shows who last updated the record.
+      super();
+      this.objclass("common/entity").attributes([
+        "title":"common/foundation/bookingStatus/name", // Type the name of the booking status.
         "createdOnBehalfBy":"common/foundation/bookingStatus/createdOnBehalfBy", // Shows who created the record on behalf of another user.
         "modifiedOnBehalfBy":"common/foundation/bookingStatus/modifiedOnBehalfBy", // Shows who last updated the record on behalf of another user.
         "overriddenCreatedOn":"common/foundation/bookingStatus/overriddenCreatedOn", // Date and time that the record was migrated.
@@ -23,10 +20,7 @@ static this() {
         "owningTeam":"common/foundation/bookingStatus/owningTeam", // Unique identifier for the team that owns the record.
         "timeZoneRuleVersionNumber":"common/foundation/bookingStatus/timeZoneRuleVersionNumber", // For internal use only.
         "UTCConversionTimeZoneCode":"common/foundation/bookingStatus/UTCConversionTimeZoneCode", // Time zone code that was in use when the record was created.
-        "versionNumber":"common/foundation/bookingStatus/versionNumber", // Version Number
         "bookingStatusId":"common/foundation/bookingStatus/bookingStatusId", // Unique identifier of the booking status.
-        "name":"common/foundation/bookingStatus/name", // Type the name of the booking status.
-        "description":"common/description", // Type a detailed description for the booking status.
         "stateCode":"common/foundation/bookingStatus/stateCode", // Status of the Booking Status
         "stateCode_display":"common/foundation/bookingStatus/stateCode_display", // 
         "status":"common/foundation/bookingStatus/status", // Select whether the booking status should be proposed, committed or canceled.

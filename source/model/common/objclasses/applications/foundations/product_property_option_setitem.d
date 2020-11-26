@@ -7,16 +7,11 @@ static this() {
   gsCommon.objclasses("common/foundation/propertyOptionSetItem", new class DEIMObjclass {
     this() {
       super(); 
+      this.objclass("common/entity");
       this.attributes([
-          "dynamicPropertyOptionSetValueId":"common/foundation/propertyOptionSetItem/dynamicPropertyOptionSetValueId", // Shows the unique identifier of the property option set item.
-          "createdOn":"common/foundation/propertyOptionSetItem/createdOn", // Date and time when the record was created.
-          "createdBy":"common/createdBy", // Unique identifier of the user who created the record.
-          "modifiedOn":"common/foundation/propertyOptionSetItem/modifiedOn", // Date and time when the record was modified.
-          "modifiedBy":"common/foundation/propertyOptionSetItem/modifiedBy", // Unique identifier of the user who modified the record.
           "createdOnBehalfBy":"common/foundation/propertyOptionSetItem/createdOnBehalfBy", // Unique identifier of the delegate user who created the record.
           "modifiedOnBehalfBy":"common/foundation/propertyOptionSetItem/modifiedOnBehalfBy", // Unique identifier of the delegate user who modified the record.
           "organizationId":"common/foundation/propertyOptionSetItem/organizationId", // Unique identifier for the organization
-          "versionNumber":"common/foundation/propertyOptionSetItem/versionNumber", // Version Number
           "importSequenceNumber":"common/foundation/propertyOptionSetItem/importSequenceNumber", // Sequence number of the import that created this record.
           "overriddenCreatedOn":"common/foundation/propertyOptionSetItem/overriddenCreatedOn", // Date and time that the record was migrated.
           "timeZoneRuleVersionNumber":"common/foundation/propertyOptionSetItem/timeZoneRuleVersionNumber", // For internal use only.

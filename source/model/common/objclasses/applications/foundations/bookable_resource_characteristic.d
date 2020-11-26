@@ -7,11 +7,8 @@ static this() {
   gsCommon.objclasses("common/foundation/bookableResourceCharacteristic", new class DEIMObjclass {
     this() {
       super(); 
+      this.objclass("common/entity");
       this.attributes([
-        "createdOn":"common/foundation/bookableResourceCharacteristic/createdOn", // Date and time when the record was created.
-        "createdBy":"common/createdBy", // Shows who created the record.
-        "modifiedOn":"common/foundation/bookableResourceCharacteristic/modifiedOn", // Date and time when the record was modified.
-        "modifiedBy":"common/foundation/bookableResourceCharacteristic/modifiedBy", // Shows who last updated the record.
         "createdOnBehalfBy":"common/foundation/bookableResourceCharacteristic/createdOnBehalfBy", // Shows who created the record on behalf of another user.
         "modifiedOnBehalfBy":"common/foundation/bookableResourceCharacteristic/modifiedOnBehalfBy", // Shows who last updated the record on behalf of another user.
         "overriddenCreatedOn":"common/foundation/bookableResourceCharacteristic/overriddenCreatedOn", // Date and time that the record was migrated.
@@ -23,9 +20,7 @@ static this() {
         "owningTeam":"common/foundation/bookableResourceCharacteristic/owningTeam", // Unique identifier for the team that owns the record.
         "timeZoneRuleVersionNumber":"common/foundation/bookableResourceCharacteristic/timeZoneRuleVersionNumber", // For internal use only.
         "UTCConversionTimeZoneCode":"common/foundation/bookableResourceCharacteristic/UTCConversionTimeZoneCode", // Time zone code that was in use when the record was created.
-        "versionNumber":"common/foundation/bookableResourceCharacteristic/versionNumber", // Version Number
-        "bookableResourceCharacteristicId":"common/foundation/bookableResourceCharacteristic/bookableResourceCharacteristicId", // Unique identifier of the resource characteristic.
-        "name":"common/foundation/bookableResourceCharacteristic/name", // Type the name of the association between the resource and characteristic.
+        "title":"common/foundation/bookableResourceCharacteristic/name", // Type the name of the association between the resource and characteristic.
         "processId":"common/foundation/bookableResourceCharacteristic/processId", // Contains the id of the process associated with the entity.
         "stageId":"common/foundation/bookableResourceCharacteristic/stageId", // Contains the id of the stage where the entity is located.
         "traversedPath":"common/foundation/bookableResourceCharacteristic/traversedPath", // A comma separated list of string values representing the unique identifiers of stages in a Business Process Flow Instance in the order that they occur.

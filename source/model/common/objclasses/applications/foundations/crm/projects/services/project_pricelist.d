@@ -6,8 +6,8 @@ static this() {
   // 
   gsCommon.objclasses("common/crm/project/service/projectPriceList", new class DEIMObjclass {
     this() {
-      super(); 
-      this.attributes([
+      super();
+      this.objclass("common/entity").attributes([
         createdOn", // Date and time when the record was created.
 createdBy", // Shows who created the record.
 modifiedOn", // Date and time when the record was modified.

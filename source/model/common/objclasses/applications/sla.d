@@ -6,26 +6,20 @@ static this() {
   // Contains information about the tracked service-level KPIs for cases that belong to different customers.
   gsCommon.objclasses("common/application/sla", new class DEIMObjclass {
     this() {
-      super(); 
-      this.attributes([
+      super();
+      this.objclass("common/entity").attributes([
         "SLAId":"common/application/sla/SLAId", //	Unique identifier of the SLA.	
-        "name":"common/application/sla/name", //	Type a descriptive name of the service level agreement (SLA).	
+        "title":"common/application/sla/name", //	Type a descriptive name of the service level agreement (SLA).	
         "businessHoursId":"common/application/sla/businessHoursId", //	Choose the business hours for calculating SLA item timelines.	
         "objectTypeCode":"common/application/sla/objectTypeCode", //	Choose the entity type that the SLA is defined.	
         "objectTypeCode_display":"common/application/sla/objectTypeCode_display", //		
         "owningBusinessUnit":"common/application/sla/owningBusinessUnit", //	Unique identifier for the business unit that owns the record	
         "owningUser":"common/application/sla/owningUser", //	Unique identifier for the user that owns the record.	
         "owningTeam":"common/application/sla/owningTeam", //	Unique identifier for the team that owns the record.	
-        "description":"common/description", //	Type additional information to describe the SLA	
         "changedAttributeList":"common/application/sla/changedAttributeList", //	Type additional information to describe the SLA	
         "applicableFrom":"common/application/sla/applicableFrom", //	Select the field that specifies the date and time from which the SLA items will be calculated for the case record. For example, if you select the Case Created On field, SLA calculation will begin from the time the case is created.	
         "isDefault":"common/application/sla/isDefault", //	Tells whether this SLA is the default one.	
-        "createdOn":"common/application/sla/createdOn", //	Shows the date and time when the record was created. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options.	
-        "createdBy":"common/createdBy", //	Shows who created the record.	
-        "modifiedOn":"common/application/sla/modifiedOn", //	Shows the date and time when the record was last updated. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options.	
-        "modifiedBy":"common/application/sla/modifiedBy", //	Shows who last updated the record.	
         "exchangeRate":"common/application/sla/exchangeRate", //	Exchange rate between the currency associated with the SLA record and the base currency.	
-        "versionNumber":"common/application/sla/versionNumber", //	Version number of the SLA.	
         "transactionCurrencyId":"common/application/sla/transactionCurrencyId", //	Unique identifier of the currency associated with the SLA record.	
         "stateCode":"common/application/sla/stateCode", //	Shows whether the Service Level Agreement (SLA) is active or inactive.	
         "stateCode_display":"common/application/sla/stateCode_display", //		

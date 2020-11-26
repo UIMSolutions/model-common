@@ -6,13 +6,8 @@ static this() {
   // Business that represents a customer or potential customer. The company that is billed in business transactions.
   gsCommon.objclasses("common/application/account", new class DEIMObjclass {
     this() {
-      super(); 
-      this.attributes([
-        "createdOn": "common/application/createdOn", //	Date and time when the record was created.	
-        "createdBy":"base/uuid", //	Shows who created the record.	
-        "modifiedOn":"common/application/account/modifiedOn", //	Date and time when the record was modified.	
-        "modifiedBy":"base/uuid", //	Shows who last updated the record.	
-        
+      super();
+      this.objclass("common/entity").attributes([
         "createdOnBehalfBy":"base/uuid", //	Shows who created the record on behalf of another user.	
         "modifiedOnBehalfBy":"base/uuid", //	Shows who last updated the record on behalf of another user.	
         "overriddenCreatedOn":"common/application/account/overriddenCreatedOn", //	Date and time that the record was migrated.	
@@ -24,8 +19,6 @@ static this() {
         "owningTeam":"common/application/account/owningTeam", //	Unique identifier for the team that owns the record.	
         "timeZoneRuleVersionNumber":"common/application/account/timeZoneRuleVersionNumber", //	For internal use only.	
         "UTCConversionTimeZoneCode":"common/application/account/UTCConversionTimeZoneCode", //	Time zone code that was in use when the record was created.	
-        "versionNumber":"common/application/account/versionNumber", //	Version Number	
-        "accountId":"base/uuid", //	Unique identifier of the account.	
         "accountCategoryCode":"common/application/account/accountCategoryCode", //	Select a category to indicate whether the customer account is standard or preferred.	
         "accountCategoryCode_display":"common/application/account/accountCategoryCode_display", //		
         "customerSizeCode":"common/application/account/customerSizeCode", //	Select the size category or range of the account for segmentation and reporting purposes.	
@@ -51,11 +44,10 @@ static this() {
         "shippingMethodCode_display":"common/application/account/shippingMethodCode_display", //		
         "primaryContactId":"base/uuid", // Choose the primary contact for the account to provide quick access to contact details.	
         "participatesInWorkflow":"common/application/account/participatesInWorkflow", //	For system use only. Legacy Microsoft Dynamics CRM 3.0 workflow data.	
-        "name":"common/application/account/name", // Type the company or business name.	
+        "title":"common/application/account/name", // Type the company or business name.	
         "accountNumber":"common/application/account/accountNumber", // Type an ID number or code for the account to quickly search and identify the account in system views.	
         "revenue":"common/application/account/revenue", // Type the annual revenue for the account, used as an indicator in financial performance analysis.	
         "numberOfEmployees":"common/application/account/numberOfEmployees", // Type the number of employees that work at the account for use in marketing segmentation and demographic analysis.	
-        "description":"common/description", // Type additional information to describe the account, such as an excerpt from the company's website.	
         "SIC":"common/application/account/SIC", // Type the Standard Industrial Classification (SIC) code that indicates the account's primary industry of business, for use in marketing segmentation and demographic analysis.	
         "ownershipCode":"common/application/account/ownershipCode", // Select the account's ownership structure, such as public or private.	
         "ownershipCode_display":"common/application/account/ownershipCode_display", // 	

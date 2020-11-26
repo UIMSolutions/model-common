@@ -6,12 +6,8 @@ static this() {
   // Activity that tracks call outcome and number of pages for a fax and optionally stores an electronic copy of the document.
   gsCommon.objclasses("common/application/fax", new class DEIMObjclass {
     this() {
-      super(); 
-      this.attributes([
-        "createdOn":"common/application/fax/createdOn", //	Date and time when the record was created.	
-        "createdBy":"common/createdBy", //		Shows who created the record.	
-        "modifiedOn":"common/application/fax/modifiedOn", //		Date and time when the record was modified.	
-        "modifiedBy":"common/application/fax/modifiedBy", //		Shows who last updated the record.	
+      super();
+      this.objclass("common/entity").attributes([
         "createdOnBehalfBy":"common/application/fax/createdOnBehalfBy", //		Shows who created the record on behalf of another user.	
         "modifiedOnBehalfBy":"common/application/fax/modifiedOnBehalfBy", //		Shows who last updated the record on behalf of another user.	
         "overriddenCreatedOn":"common/application/fax/overriddenCreatedOn", //		Date and time that the record was migrated.	
@@ -23,7 +19,6 @@ static this() {
         "owningTeam":"common/application/fax/owningTeam", //		Unique identifier for the team that owns the record.	
         "timeZoneRuleVersionNumber":"common/application/fax/timeZoneRuleVersionNumber", //		For internal use only.	
         "UTCConversionTimeZoneCode":"common/application/fax/UTCConversionTimeZoneCode", //		Time zone code that was in use when the record was created.	
-        "versionNumber":"common/application/fax/versionNumber", //		Version Number	
         "activityId":"common/application/fax/activityId", //		Unique identifier of the activity.	
         "activityTypeCode":"common/application/fax/activityTypeCode", //		Type of activity.	
         "isBilled":"common/application/fax/isBilled", //		Information regarding whether the fax activity was billed as part of resolving a case.	
@@ -51,7 +46,6 @@ static this() {
         "stateCode":"common/application/fax/stateCode", //		Shows whether the fax activity is open, completed, or canceled. Completed and canceled fax activities are read-only and can't be edited.	
         "stateCode_display":"common/application/fax/stateCode_display", //			
         "numberOfPages":"common/application/fax/numberOfPages", //		Type the number of pages included in the fax.	
-        "description":"common/description", //		Type additional information to describe the fax, such as the primary message or the products and services featured.	
         "faxNumber":"common/application/fax/faxNumber", //		Type the recipient's fax number.	
         "tsid":"common/application/fax/tsid", //		Type the Transmitting Subscriber ID (TSID) associated with a send action. This is typically a combination of the recipient's fax or phone number and company name.	
         "statusCode":"common/application/fax/statusCode", //		Select the fax's status.	

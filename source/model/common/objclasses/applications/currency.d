@@ -5,18 +5,12 @@ import model.common;
 static this() {
   gsCommon.objclasses("common/application/currency", new class DEIMObjclass {
     this() {
-      super(); 
-      this.attributes([
-        "createdOn":"common/createdOn", // Date and time when the transaction currency was created.	
-        "createdBy":"common/createdBy", // Unique identifier of the user who created the transaction currency.	
-        "modifiedOn":"common/modifiedOn", // Date and time when the transaction currency was last modified.	
-        "modifiedBy":"common/modifiedBy", // Unique identifier of the user who last modified the transaction currency.	
-
+      super();
+      this.objclass("common/entity").attributes([
         "statusCode":"common/application/currency/statusCode", //	Reason for the status of the transaction currency.	
         "statusCode_display":"common/application/currency/statusCode_display", // 	
         "stateCode":"common/application/currency/stateCode", // Status of the transaction currency.	
         "stateCode_display":"common/application/currency/stateCode_display", // 	
-        "versionNumber":"common/application/currency/versionNumber", // Version number of the transaction currency.	
         "importSequenceNumber":"common/application/currency/importSequenceNumber", // Unique identifier of the data import or data migration that created this record.	
         "overriddenCreatedOn":"common/application/currency/overriddenCreatedOn", // Date and time that the record was migrated.	
         "transactionCurrencyId":"common/application/currency/transactionCurrencyId", // Unique identifier of the transaction currency.	

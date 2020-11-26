@@ -7,17 +7,11 @@ static this() {
   gsCommon.objclasses("common/foundation/productAssociation", new class DEIMObjclass {
     this() {
       super(); 
-      this.attributes([
-        "productAssociationId":"common/foundation/productAssociation/productAssociationId", // Shows the unique identifier of the product association.
-        "createdOn":"common/foundation/productAssociation/createdOn", // Date and time when the record was created.
-        "createdBy":"common/createdBy", // Shows who created the record.
-        "modifiedOn":"common/foundation/productAssociation/modifiedOn", // Date and time when the record was modified.
-        "modifiedBy":"common/foundation/productAssociation/modifiedBy", // Shows who last updated the record.
-        
+      this.objclass("common/entity");
+      this.attributes([        
         "createdOnBehalfBy":"common/foundation/productAssociation/createdOnBehalfBy", // Shows who created the record on behalf of another user.
         "modifiedOnBehalfBy":"common/foundation/productAssociation/modifiedOnBehalfBy", // Shows who created the record on behalf of another user.
         "organizationId":"common/foundation/productAssociation/organizationId", // Unique identifier for the organization
-        "versionNumber":"common/foundation/productAssociation/versionNumber", // Version Number
         "importSequenceNumber":"common/foundation/productAssociation/importSequenceNumber", // Sequence number of the import that created this record.
         "overriddenCreatedOn":"common/foundation/productAssociation/overriddenCreatedOn", // Date and time that the record was migrated.
         "timeZoneRuleVersionNumber":"common/foundation/productAssociation/timeZoneRuleVersionNumber", // For internal use only.

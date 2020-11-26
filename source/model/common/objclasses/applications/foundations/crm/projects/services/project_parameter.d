@@ -6,8 +6,8 @@ static this() {
   // List of settings that determine the behavior of the project-based service solution.
   gsCommon.objclasses("common/crm/project/service/projectParameter", new class DEIMObjclass {
     this() {
-      super(); 
-      this.attributes([
+      super();
+      this.objclass("common/entity").attributes([
         projectParameterId", // Shows the entity instances.
 createdOn", // Date and time when the record was created.
 createdBy", // Unique identifier of the user who created the record.

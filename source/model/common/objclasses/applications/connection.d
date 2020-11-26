@@ -6,25 +6,18 @@ static this() {
   // Relationship between two entities.
   gsCommon.objclasses("common/application/connection", new class DEIMObjclass {
     this() {
-      super(); 
-      this.attributes([
-        "createdOn":"common/createdOn", //	Shows the date and time when the record was created. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options.	
-        "createdBy":"common/createdBy", //	Shows who created the record.	
-        "modifiedOn":"common/application/connection/modifiedOn", //	Shows the date and time when the record was last updated. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options.	
-        "modifiedBy":"common/modifiedBy", //	Shows who last updated the record.	
-
+      super();
+      this.objclass("common/entity").attributes([
         "owningUser":"common/application/connection/owningUser", //	Unique identifier of the user who owns the connection.	
         "statusCode":"common/application/connection/statusCode", //	Reason for the status of the connection.	
         "statusCode_display":"common/application/connection/statusCode_display", //		
         "importSequenceNumber":"common/application/connection/importSequenceNumber", //	Unique identifier of the data import or data migration that created this record.	
         "connectionId":"common/application/connection/connectionId", //	Unique identifier of the connection.	
-        "versionNumber":"common/application/connection/versionNumber", //	Version number of the connection.	
         "effectiveStart":"common/application/connection/effectiveStart", //	Enter the start date of the connection.	
         "isMaster":"common/application/connection/isMaster", //	Indicates that this is the master record.	
         "ownerId":"common/application/connection/ownerId", //	Owner Id	
         "ownerIdType":"common/application/connection/ownerIdType", //	The type of owner, either User or Team.	
         "relatedConnectionId":"common/application/connection/relatedConnectionId", //	Unique identifier for the reciprocal connection record.	
-        "description":"common/description", //	Type additional information to describe the connection, such as the length or quality of the relationship.	
         "owningBusinessUnit":"common/application/connection/owningBusinessUnit", //	Shows the business unit that the record owner belongs to.	
         "overriddenCreatedOn":"common/application/connection/overriddenCreatedOn", //	Date and time that the record was migrated.	
         "record2Id":"common/application/connection/record2Id", //	Unique identifier of the target record.	
@@ -45,7 +38,7 @@ static this() {
         "record2ObjectTypeCode_display":"common/application/connection/record2ObjectTypeCode_display", //		
         "record1ObjectTypeCode":"common/application/connection/record1ObjectTypeCode", //	Shows the record type of the source record.	
         "record1ObjectTypeCode_display":"common/application/connection/record1ObjectTypeCode_display", //		
-        "name":"common/application/connection/name", //	Name of the connection.	
+        "title":"common/application/connection/name", //	Name of the connection.	
         "entityImageId":"common/application/connection/entityImageId", //	For internal use only.	
       ]); 
 

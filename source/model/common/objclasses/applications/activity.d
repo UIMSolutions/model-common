@@ -6,13 +6,8 @@ static this() {
   // Task performed, or to be performed, by a user. An activity is any action for which an entry can be made on a calendar.
   gsCommon.objclasses("common/application/activity", new class DEIMObjclass {
     this() {
-      super(); 
-      this.attributes([
-        "createdOn":"common/createdBy", // Date and time when the record was created.	
-        "createdBy":"common/createdBy", // 	Shows who created the record.	
-        "modifiedOn":"common/application/activity/modifiedOn", // 	Date and time when the record was modified.	
-        "modifiedBy":"common/application/activity/modifiedBy", // 	Shows who last updated the record.	
-        
+      super();
+      this.objclass("common/entity").attributes([        
         "createdOnBehalfBy":"common/application/activity/createdOnBehalfBy", // 	Shows who created the record on behalf of another user.	
         "modifiedOnBehalfBy":"common/application/activity/modifiedOnBehalfBy", // 	Shows who last updated the record on behalf of another user.	
         "ownerId":"common/application/activity/ownerId", // 	Owner Id	
@@ -22,8 +17,6 @@ static this() {
         "owningTeam":"common/application/activity/owningTeam", // 	Unique identifier for the team that owns the record.	
         "timeZoneRuleVersionNumber":"common/application/activity/timeZoneRuleVersionNumber", // 	For internal use only.	
         "UTCConversionTimeZoneCode":"common/application/activity/UTCConversionTimeZoneCode", // 	Time zone code that was in use when the record was created.	
-        "versionNumber":"common/application/activity/versionNumber", // 	Version Number	
-        "activityId":"common/application/activity/activityId", // 	Unique identifier of the activity.	
         "activityTypeCode":"common/application/activity/activityTypeCode", // 	Type of activity.	
         "isBilled":"common/application/activity/isBilled", // 	Information regarding whether the activity was billed as part of resolving a case.	
         "isRegularActivity":"common/application/activity/isRegularActivity", // 	Information regarding whether the activity is a regular activity type or event type.	
@@ -56,7 +49,6 @@ static this() {
         "exchangeItemId":"common/application/activity/exchangeItemId", // 	The message id of activity which is returned from Exchange Server.	
         "exchangeWebLink":"common/application/activity/exchangeWebLink", // 	Shows the web link of Activity of type email.	
         "postponeActivityProcessingUntil":"common/application/activity/postponeActivityProcessingUntil", // 	For internal use only.	
-        "description":"common/description", // 	Description of the activity.	
         "stateCode":"common/application/activity/stateCode", // 	Status of the activity.	
         "stateCode_display":"common/application/activity/stateCode_display", // 		
         "statusCode":"common/application/activity/statusCode", // 	Reason for the status of the activity.	

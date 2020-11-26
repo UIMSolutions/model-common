@@ -6,8 +6,9 @@ static this() {
   // Container for feedback and ratings for knowledge articles.
   gsCommon.objclasses("common/application/feedback", new class DEIMObjclass {
     this() {
-      super(); 
-      this.attributes([
+      super();
+      this.objclass("common/entity").attributes([
+        "title":"common/application/feedback/title", //	Type a title for the feedback.	
         "feedbackId":"common/application/feedback/feedbackId", //	FeedbackId	
         "rating":"common/application/feedback/rating", //	Specifies how helpful the related record was.	
         "minRating":"common/application/feedback/minRating", //	Enter the minimum rating value.	
@@ -20,13 +21,8 @@ static this() {
         "stateCode_display":"common/application/feedback/stateCode_display", //		
         "statusCode":"common/application/feedback/statusCode", //	Select the feedback's status.	
         "statusCode_display":"common/application/feedback/statusCode_display", //		
-        "versionNumber":"common/application/feedback/versionNumber", //	Version number of the feedback.	
         "regardingObjectId":"common/application/feedback/regardingObjectId", //	Shows the record that the feedback is associated with.	
-        "createdBy":"common/createdBy", //	Shows who created the record.	
-        "createdOn":"common/application/feedback/createdOn", //	Shows the date and time when the record was created. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options.	
         "createdOnBehalfBy":"common/application/feedback/createdOnBehalfBy", //	Shows who created the record on behalf of another user.	
-        "modifiedBy":"common/application/feedback/modifiedBy", //	Shows who last updated the record.	
-        "modifiedOn":"common/application/feedback/modifiedOn", //	Shows the date and time when the record was last updated. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options.	
         "modifiedOnBehalfBy":"common/application/feedback/modifiedOnBehalfBy", //	Unique identifier of the delegate user who modified the record.	
         "ownerId":"common/application/feedback/ownerId", //	Owner Id	
         "ownerIdType":"common/application/feedback/ownerIdType", //	The type of owner, either User or Team.	
@@ -39,7 +35,6 @@ static this() {
         "overriddenCreatedOn":"common/application/feedback/overriddenCreatedOn", //	Date and time that the record was migrated.	
         "transactionCurrencyId":"common/application/feedback/transactionCurrencyId", //	Choose the local currency for the record to make sure budgets are reported in the correct currency.	
         "exchangeRate":"common/application/feedback/exchangeRate", //	Shows the conversion rate of the record's currency. The exchange rate is used to convert all money fields in the record from the local currency to the system's default currency.	
-        "title":"common/application/feedback/title", //	Type a title for the feedback.	
         "createdByContact":"common/application/feedback/createdByContact", //	Shows the contact who created the record.	
         "createdOnBehalfByContact":"common/application/feedback/createdOnBehalfByContact", //	Shows the contact who created the record on behalf of another user.	
       ]); 

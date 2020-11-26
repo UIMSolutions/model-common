@@ -7,11 +7,8 @@ static this() {
   gsCommon.objclasses("common/foundation/bookableResourceCategoryAssociation", new class DEIMObjclass {
     this() {
       super(); 
+      this.objclass("common/entity");
       this.attributes([
-        "createdOn":"common/foundation/bookableResourceCategoryAssociation/createdOn", // Date and time when the record was created.
-        "createdBy":"common/createdBy", // Shows who created the record.
-        "modifiedOn":"common/foundation/bookableResourceCategoryAssociation/modifiedOn", // Date and time when the record was modified.
-        "modifiedBy":"common/foundation/bookableResourceCategoryAssociation/modifiedBy", // Shows who last updated the record.
         "createdOnBehalfBy":"common/foundation/bookableResourceCategoryAssociation/createdOnBehalfBy", // Shows who created the record on behalf of another user.
         "modifiedOnBehalfBy":"common/foundation/bookableResourceCategoryAssociation/modifiedOnBehalfBy", // Shows who last updated the record on behalf of another user.
         "overriddenCreatedOn":"common/foundation/bookableResourceCategoryAssociation/overriddenCreatedOn", // Date and time that the record was migrated.
@@ -23,9 +20,8 @@ static this() {
         "owningTeam":"common/foundation/bookableResourceCategoryAssociation/owningTeam", // Unique identifier for the team that owns the record.
         "timeZoneRuleVersionNumber":"common/foundation/bookableResourceCategoryAssociation/timeZoneRuleVersionNumber", // For internal use only.
         "UTCConversionTimeZoneCode":"common/foundation/bookableResourceCategoryAssociation/UTCConversionTimeZoneCode", // Time zone code that was in use when the record was created.
-        "versionNumber":"common/foundation/bookableResourceCategoryAssociation/versionNumber", // Version Number
         "bookableResourceCategoryAssnId":"common/foundation/bookableResourceCategoryAssociation/bookableResourceCategoryAssnId", // Unique identifier of the resource and category association.
-        "name":"common/foundation/bookableResourceCategoryAssociation/name", // The name of the association beween a resource and a category.
+        "title":"common/foundation/bookableResourceCategoryAssociation/name", // The name of the association beween a resource and a category.
         "resource":"common/foundation/bookableResourceCategoryAssociation/resource", // Shows the resource associated with the category.
         "resourceCategory":"common/foundation/bookableResourceCategoryAssociation/resourceCategory", // Choose a category to associate with the resource.
         "stateCode":"common/foundation/bookableResourceCategoryAssociation/stateCode", // Status of the Resource Category Assn

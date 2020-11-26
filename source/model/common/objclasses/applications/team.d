@@ -6,19 +6,12 @@ static this() {
   // Collection of system users that routinely collaborate. Teams can be used to simplify record sharing and provide team members with common access to organization data when team members belong to different Business Units.
   gsCommon.objclasses("common/application/team", new class DEIMObjclass {
     this() {
-      super(); 
-      this.attributes([
-        "teamId":"common/application/team/teamId", // Unique identifier for the team.	
+      super();
+      this.objclass("common/entity").attributes([
+        "title":"common/application/team/name", // Name of the team.	
         "organizationId":"common/application/team/organizationId", // Unique identifier of the organization associated with the team.	
         "businessUnitId":"common/application/team/businessUnitId", // Unique identifier of the business unit with which the team is associated.	
-        "name":"common/application/team/name", // Name of the team.	
-        "description":"common/description", // Description of the team.	
         "emailAddress":"common/application/team/emailAddress", // Email address for the team.	
-        "createdOn":"common/application/createdOn", // Date and time when the team was created.	
-        "modifiedOn":"common/application/team/modifiedOn", // Date and time when the team was last modified.	
-        "createdBy":"common/createdBy", // Unique identifier of the user who created the team.	
-        "modifiedBy":"common/application/team/modifiedBy", // Unique identifier of the user who last modified the team.	
-        "versionNumber":"common/application/team/versionNumber", // Version number of the team.	
         "importSequenceNumber":"common/application/team/importSequenceNumber", // Unique identifier of the data import or data migration that created this record.	
         "overriddenCreatedOn":"common/application/team/overriddenCreatedOn", // Date and time that the record was migrated.	
         "administratorId":"common/application/team/administratorId", // Unique identifier of the user primary responsible for the team.	

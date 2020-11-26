@@ -7,22 +7,16 @@ static this() {
   gsCommon.objclasses("common/foundation/productRelationship", new class DEIMObjclass {
     this() {
       super(); 
+      this.objclass("common/entity");
       this.attributes([
-        "productSubstituteId":"common/foundation/productRelationship/productSubstituteId", // Shows the unique identifier of the product relationship.
-        "createdOn":"common/foundation/productRelationship/createdOn", // Date and time when the record was created.
-        "createdBy":"common/createdBy", // Shows who created the record.
-        "modifiedOn":"common/foundation/productRelationship/modifiedOn", // Date and time when the record was modified.
-        "modifiedBy":"common/foundation/productRelationship/modifiedBy", // Shows who last updated the record.
-        
+        "title":"common/name", // name
         "createdOnBehalfBy":"common/foundation/productRelationship/createdOnBehalfBy", // Shows who created the record on behalf of another user.
         "modifiedOnBehalfBy":"common/foundation/productRelationship/modifiedOnBehalfBy", // Shows who created the record on behalf of another user.
         "organizationId":"common/foundation/productRelationship/organizationId", // Unique identifier for the organization
-        "versionNumber":"common/foundation/productRelationship/versionNumber", // Version Number
         "importSequenceNumber":"common/foundation/productRelationship/importSequenceNumber", // Sequence number of the import that created this record.
         "overriddenCreatedOn":"common/foundation/productRelationship/overriddenCreatedOn", // Date and time that the record was migrated.
         "timeZoneRuleVersionNumber":"common/foundation/productRelationship/timeZoneRuleVersionNumber", // For internal use only.
         "UTCConversionTimeZoneCode":"common/foundation/productRelationship/UTCConversionTimeZoneCode", // Time zone code that was in use when the record was created.
-        "name":"common/foundation/productRelationship/name", // name
         "productId":"common/foundation/productRelationship/productId", // Shows the product that the relationship is defined for.
         "salesRelationshipType":"common/foundation/productRelationship/salesRelationshipType", // Select the type of the product relationship.
         "salesRelationshipType_display":"common/foundation/productRelationship/salesRelationshipType_display", // 

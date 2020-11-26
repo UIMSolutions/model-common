@@ -6,20 +6,12 @@ static this() {
   // Template for a knowledge base article that contains the standard attributes of an article.
   gsCommon.objclasses("common/application/articleTemplate", new class DEIMObjclass {
     this() {
-      super(); 
-      this.attributes([
-        "createdOn":"common/createdOn", //	Date and time when the knowledge base article template was created.	
-        "createdBy":"common/createdBy", //	Unique identifier of the user who created the knowledge base article template.	
-        "modifiedOn":"common/modifiedOn", //	Date and time when the knowledge base article template was last modified.	
-        "modifiedBy":"common/modifiedBy", //	Unique identifier of the user who last modified the knowledge base article template.	
-
-        "kbArticleTemplateId":"common/application/articleTemplate/kbArticleTemplateId", //	Unique identifier of the knowledge base article template.	
+      super();
+      this.objclass("common/entity").attributes([
         "structureXml":"common/application/articleTemplate/structureXml", //	XML structure of the knowledge base article.	
         "organizationId":"common/application/articleTemplate/organizationId", //	Unique identifier of the organization associated with the template.	
         "formatXml":"common/application/articleTemplate/formatXml", //	XML format of the knowledge base article template.	
         "title":"common/application/articleTemplate/title", //	Title of the knowledge base article template.	
-        "versionNumber":"common/application/articleTemplate/versionNumber", //		
-        "description":"common/description", //	Description of the knowledge base article template.	
         "isActive":"common/application/articleTemplate/isActive", //	Information about whether the knowledge base article is active.	
         "overriddenCreatedOn":"common/application/articleTemplate/overriddenCreatedOn", //	Date and time that the record was migrated.	
         "languageCode":"common/application/articleTemplate/languageCode", //	Language of the Article Template	

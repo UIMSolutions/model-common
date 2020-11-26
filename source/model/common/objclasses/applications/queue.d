@@ -6,30 +6,22 @@ static this() {
   // A list of records that require action, such as accounts, activities, and cases.
   gsCommon.objclasses("common/application/queue", new class DEIMObjclass {
     this() {
-      super(); 
-      this.attributes([
-        "createdOn":"common/createdOn", //	Date and time when the queue was created.	
-        "createdBy":"common/createdBy", //	Unique identifier of the user who created the queue record.	
-        "modifiedOn":"common/modifiedOn", //	Date and time when the queue was last modified.	
-        "modifiedBy":"common/modifiedBy", //	Unique identifier of the user who last modified the queue.	
-
-        "queueId":"common/application/queue/queueId", //	Unique identifier of the queue.	
+      super();
+      this.objclass("common/entity").attributes([
         "businessUnitId":"common/application/queue/businessUnitId", //	Unique identifier of the business unit with which the queue is associated.	
         "organizationId":"common/application/queue/organizationId", //	Unique identifier of the organization associated with the queue.	
         "emailAddress":"common/application/queue/emailAddress", //	Email address that is associated with the queue.	
         "primaryUserId":"common/application/queue/primaryUserId", //	Unique identifier of the owner of the queue.	
         "queueTypeCode":"common/application/queue/queueTypeCode", //	Type of queue that is automatically assigned when a user or queue is created. The type can be public, private, or work in process.	
         "queueTypeCode_display":"common/application/queue/queueTypeCode_display", //		
-        "name":"common/application/queue/name", //	Name of the queue.	
-        "description":"common/description", //	Description of the queue.	
+        "title":"common/application/queue/name", //	Name of the queue.	
         "queueSemantics":"common/application/queue/queueSemantics", //	For internal use only.	
-        "versionNumber":"common/application/queue/versionNumber", //	Version number of the queue.	
         "ignoreUnsolicitedEmail":"common/application/queue/ignoreUnsolicitedEmail", //	Information that specifies whether a queue is to ignore unsolicited email (deprecated).	
         "isFaxQueue":"common/application/queue/isFaxQueue", //	Indication of whether a queue is the fax delivery queue.	
         "emailPassword":"common/application/queue/emailPassword", //	This attribute is no longer used. The data is now in the Mailbox.Password attribute.	
         "incomingEmailDeliveryMethod":"common/application/queue/incomingEmailDeliveryMethod", //	Incoming email delivery method for the queue.	
         "incomingEmailDeliveryMethod_display":"common/application/queue/incomingEmailDeliveryMethod_display", //		
-        //"":"common/application/queue/emailUsername", //	This attribute is no longer used. The data is now in the Mailbox.UserName attribute.	
+        //:"common/application/queue/emailUsername", //	This attribute is no longer used. The data is now in the Mailbox.UserName attribute.	
         "outgoingEmailDeliveryMethod":"common/application/queue/outgoingEmailDeliveryMethod", //	Outgoing email delivery method for the queue.	
         "outgoingEmailDeliveryMethod_display":"common/application/queue/outgoingEmailDeliveryMethod_display", //		
         "allowEmailCredentials":"common/application/queue/allowEmailCredentials", //	This attribute is no longer used. The data is now in the Mailbox.AllowEmailConnectorToUseCredentials attribute.	

@@ -6,17 +6,10 @@ static this() {
   // Business, division, or department in the Microsoft Dynamics 365 database.
   gsCommon.objclasses("common/application/businessUnit", new class DEIMObjclass {
     this() {
-      super(); 
-      this.attributes([
-        "businessUnitId":"common/application/businessUnit/businessUnitId", //	Unique identifier of the business unit.	
-        "createdOn":"common/application/businessUnit/createdOn", //	Date and time when the business unit was created.	
-        "createdBy":"common/createdBy", //	Unique identifier of the user who created the business unit.	
-        "modifiedOn":"common/application/businessUnit/modifiedOn", //	Date and time when the business unit was last modified.	
-        "modifiedBy":"common/application/businessUnit/modifiedBy", //	Unique identifier of the user who last modified the business unit.	
-        "versionNumber":"common/application/businessUnit/versionNumber", //	Version number of the business unit.	
+      super();
+      this.objclass("common/entity").attributes([
         "organizationId":"common/application/businessUnit/organizationId", //	Unique identifier of the organization associated with the business unit.	
-        "name":"common/application/businessUnit/name", //	Name of the business unit.	
-        "description":"common/description", //	Description of the business unit.	
+        "title":"common/application/businessUnit/name", //	Name of the business unit.	
         "divisionName":"common/application/businessUnit/divisionName", //	Name of the division to which the business unit belongs.	
         "fileAsName":"common/application/businessUnit/fileAsName", //	Alternative name under which the business unit can be filed.	
         "tickerSymbol":"common/application/businessUnit/tickerSymbol", //	Stock exchange ticker symbol for the business unit.	

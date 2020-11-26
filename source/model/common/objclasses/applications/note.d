@@ -6,8 +6,8 @@ static this() {
   // Note that is attached to one or more objects, including other notes.
   gsCommon.objclasses("common/application/note", new class DEIMObjclass {
     this() {
-      super(); 
-      this.attributes([
+      super();
+      this.objclass("common/entity").attributes([
         "annotationId":"common/application/note/annotationId", //	Unique identifier of the note.	
         "objectTypeCode":"common/application/note/objectTypeCode", //	Type of entity with which the note is associated.	
         "objectTypeCode_display":"common/application/note/objectTypeCode_display", //		
@@ -21,13 +21,8 @@ static this() {
         "mimeType":"common/application/note/mimeType", //	MIME type of the note's attachment.	
         "langId":"common/application/note/langId", //	Language identifier for the note.	
         "documentBody":"common/application/note/documentBody", //	Contents of the note's attachment.	
-        "createdOn":"common/application/note/createdOn", //	Date and time when the note was created.	
         "fileSize":"common/application/note/fileSize", //	File size of the note.	
         "fileName":"common/application/note/fileName", //	File name of the note.	
-        "createdBy":"common/createdBy", //	Unique identifier of the user who created the note.	
-        "modifiedBy":"common/application/note/modifiedBy", //	Unique identifier of the user who last modified the note.	
-        "modifiedOn":"common/application/note/modifiedOn", //	Date and time when the note was last modified.	
-        "versionNumber":"common/application/note/versionNumber", //	Version number of the note.	
         "ownerId":"common/application/note/ownerId", //	Owner Id	
         "ownerIdType":"common/application/note/ownerIdType", //	The type of owner, either User or Team.	
         "stepId":"common/application/note/stepId", //	workflow step id associated with the note.	
