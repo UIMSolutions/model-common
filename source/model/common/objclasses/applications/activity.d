@@ -4,13 +4,13 @@ import model.common;
 
 static this() {
   // Task performed, or to be performed, by a user. An activity is any action for which an entry can be made on a calendar.
-  gsCommon.objclasses("common/application/activity", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/activity", new class DEIMObjclass {
     this() {
       super();
       this.objclass("common/entity").attributes([        
-        "createdOnBehalfBy":"common/application/activity/createdOnBehalfBy", // 	Shows who created the record on behalf of another user.	
-        "modifiedOnBehalfBy":"common/application/activity/modifiedOnBehalfBy", // 	Shows who last updated the record on behalf of another user.	
-        "ownerId":"common/application/activity/ownerId", // 	Owner Id	
+        "createdOnBehalfBy":"common/createdOnBehalfBy", // 	Shows who created the record on behalf of another user.	
+        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", // 	Shows who last updated the record on behalf of another user.	
+        "ownerId":"common/ownerId", // 	Owner Id	
         "ownerIdType":"common/application/activity/ownerIdType", // 	The type of owner, either User or Team.	
         "owningBusinessUnit":"common/application/activity/owningBusinessUnit", // 	Unique identifier for the business unit that owns the record	
         "owningUser":"common/application/activity/owningUser", // 	Unique identifier of the user that owns the activity.	

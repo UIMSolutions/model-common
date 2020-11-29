@@ -4,13 +4,13 @@ import model.common;
 
 static this() {
   // Information about a product property.
-  gsCommon.objclasses("common/foundation/productAssociation", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/foundation/productAssociation", new class DEIMObjclass {
     this() {
       super(); 
       this.objclass("common/entity");
       this.attributes([        
-        "createdOnBehalfBy":"common/foundation/productAssociation/createdOnBehalfBy", // Shows who created the record on behalf of another user.
-        "modifiedOnBehalfBy":"common/foundation/productAssociation/modifiedOnBehalfBy", // Shows who created the record on behalf of another user.
+        "createdOnBehalfBy":"common/createdOnBehalfBy", // Shows who created the record on behalf of another user.
+        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", // Shows who created the record on behalf of another user.
         "organizationId":"common/foundation/productAssociation/organizationId", // Unique identifier for the organization
         "importSequenceNumber":"common/foundation/productAssociation/importSequenceNumber", // Sequence number of the import that created this record.
         "overriddenCreatedOn":"common/foundation/productAssociation/overriddenCreatedOn", // Date and time that the record was migrated.

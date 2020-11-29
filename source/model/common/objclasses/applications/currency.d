@@ -3,7 +3,7 @@ module model.common.objclasses.applications.currency;
 import model.common;
 
 static this() {
-  gsCommon.objclasses("common/application/currency", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/currency", new class DEIMObjclass {
     this() {
       super();
       this.objclass("common/entity").attributes([
@@ -20,8 +20,8 @@ static this() {
         "ISOCurrencyCode":"common/application/currency/ISOCurrencyCode", // ISO currency code for the transaction currency.	
         "organizationId":"common/application/currency/organizationId", // Unique identifier of the organization associated with the transaction currency.	
         "currencyPrecision":"common/application/currency/currencyPrecision", // Number of decimal places that can be used for currency.	
-        "createdOnBehalfBy":"common/application/currency/createdOnBehalfBy", // Unique identifier of the delegate user who created the transactioncurrency.	
-        "modifiedOnBehalfBy":"common/application/currency/modifiedOnBehalfBy", // Unique identifier of the delegate user who last modified the transactioncurrency.	
+        "createdOnBehalfBy":"common/createdOnBehalfBy", // Unique identifier of the delegate user who created the transactioncurrency.	
+        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", // Unique identifier of the delegate user who last modified the transactioncurrency.	
         "entityImageId":"common/application/currency/entityImageId", // For internal use only.	
       ]); 
 

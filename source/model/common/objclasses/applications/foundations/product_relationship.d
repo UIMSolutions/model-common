@@ -4,14 +4,14 @@ import model.common;
 
 static this() {
   // Information about the selling relationship between two products, including the relationship type, such as up-sell, cross-sell, substitute, or accessory.
-  gsCommon.objclasses("common/foundation/productRelationship", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/foundation/productRelationship", new class DEIMObjclass {
     this() {
       super(); 
       this.objclass("common/entity");
       this.attributes([
         "title":"common/name", // name
-        "createdOnBehalfBy":"common/foundation/productRelationship/createdOnBehalfBy", // Shows who created the record on behalf of another user.
-        "modifiedOnBehalfBy":"common/foundation/productRelationship/modifiedOnBehalfBy", // Shows who created the record on behalf of another user.
+        "createdOnBehalfBy":"common/createdOnBehalfBy", // Shows who created the record on behalf of another user.
+        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", // Shows who created the record on behalf of another user.
         "organizationId":"common/foundation/productRelationship/organizationId", // Unique identifier for the organization
         "importSequenceNumber":"common/foundation/productRelationship/importSequenceNumber", // Sequence number of the import that created this record.
         "overriddenCreatedOn":"common/foundation/productRelationship/overriddenCreatedOn", // Date and time that the record was migrated.

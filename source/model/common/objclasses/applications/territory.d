@@ -4,13 +4,13 @@ import model.common;
 
 static this() {
   // Territory represents sales regions.
-  gsCommon.objclasses("common/application/territory", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/territory", new class DEIMObjclass {
     this() {
       super();
       this.objclass("common/entity").attributes([
         "title":"common/application/territory/name", // Name of the territory.	
-        "createdOnBehalfBy":"common/application/territory/createdOnBehalfBy", // Unique identifier of the delegate user who created the territory.	
-        "modifiedOnBehalfBy":"common/application/territory/modifiedOnBehalfBy", // Unique identifier of the delegate user who last modified the territory.	
+        "createdOnBehalfBy":"common/createdOnBehalfBy", // Unique identifier of the delegate user who created the territory.	
+        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", // Unique identifier of the delegate user who last modified the territory.	
         "organizationId":"common/application/territory/organizationId", // Unique identifier for the organization	
         "importSequenceNumber":"common/application/territory/importSequenceNumber", // Sequence number of the import that created this record.	
         "overriddenCreatedOn":"common/application/territory/overriddenCreatedOn", // Date and time that the record was migrated.	

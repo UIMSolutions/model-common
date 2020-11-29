@@ -4,7 +4,7 @@ import model.common;
 
 static this() {
   // Contains information about the tracked service-level KPIs for cases that belong to different customers.
-  gsCommon.objclasses("common/application/slaKpiInstance", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/slaKpiInstance", new class DEIMObjclass {
     this() {
       super();
       this.objclass("common/entity").attributes([
@@ -13,7 +13,7 @@ static this() {
         "computedFailureTime":"common/application/slaKpiInstance/computedFailureTime", //	Computed Failure Date and time	
         "computedWarningTime":"common/application/slaKpiInstance/computedWarningTime", //	Computed Warning Date and time	
         "failureTime":"common/application/slaKpiInstance/failureTime", //	Enter the date and time when the service level agreement (SLA) key performance indicator (KPI) will expire.	
-        "ownerId":"common/application/slaKpiInstance/ownerId", //	Owner Id	
+        "ownerId":"common/ownerId", //	Owner Id	
         "ownerIdType":"common/application/slaKpiInstance/ownerIdType", //	The type of owner, either User or Team.	
         "owningUser":"common/application/slaKpiInstance/owningUser", //	Owning User.	
         "owningTeam":"common/application/slaKpiInstance/owningTeam", //	OwningTeam.	
@@ -25,8 +25,8 @@ static this() {
         "warningTime":"common/application/slaKpiInstance/warningTime", //	Enter the date and time when the service level agreement (SLA) key performance indicator (KPI)will go to a warning state.	
         "transactionCurrencyId":"common/application/slaKpiInstance/transactionCurrencyId", //	Choose the local currency for the record to make sure budgets are reported in the correct currency.	
         "exchangeRate":"common/application/slaKpiInstance/exchangeRate", //	For internal use only.	
-        "createdOnBehalfBy":"common/application/slaKpiInstance/createdOnBehalfBy", //	For internal use only.	
-        "modifiedOnBehalfBy":"common/application/slaKpiInstance/modifiedOnBehalfBy", //	For internal use only.	
+        "createdOnBehalfBy":"common/createdOnBehalfBy", //	For internal use only.	
+        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", //	For internal use only.	
         "warningTimeReached":"common/application/slaKpiInstance/warningTimeReached", //	Shows information about whether the case has reached its warning time.	
         "warningTimeReached_display":"common/application/slaKpiInstance/warningTimeReached_display", //		
       ]); 

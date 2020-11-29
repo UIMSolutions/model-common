@@ -4,15 +4,15 @@ import model.common;
 
 static this() {
   // Commitment representing a time interval with start/end times and duration.
-  gsCommon.objclasses("common/application/appointment", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/appointment", new class DEIMObjclass {
     this() {
       super();
       this.objclass("common/entity").attributes([
-        "createdOnBehalfBy":"common/application/appointment/createdOnBehalfBy", //	Shows who created the record on behalf of another user.	
-        "modifiedOnBehalfBy":"common/application/appointment/modifiedOnBehalfBy", //	Shows who last updated the record on behalf of another user.	
+        "createdOnBehalfBy":"common/createdOnBehalfBy", //	Shows who created the record on behalf of another user.	
+        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", //	Shows who last updated the record on behalf of another user.	
         "overriddenCreatedOn":"common/application/appointment/overriddenCreatedOn", //	Date and time that the record was migrated.	
         "importSequenceNumber":"common/application/appointment/importSequenceNumber", //	Unique identifier of the data import or data migration that created this record.	
-        "ownerId":"common/application/appointment/ownerId", //	Owner Id	
+        "ownerId":"common/ownerId", //	Owner Id	
         "ownerIdType":"common/application/appointment/ownerIdType", //	The type of owner, either User or Team.	
         "owningBusinessUnit":"common/application/appointment/owningBusinessUnit", //	Unique identifier for the business unit that owns the record	
         "owningUser":"common/application/appointment/owningUser", //	Unique identifier of the user that owns the activity.	

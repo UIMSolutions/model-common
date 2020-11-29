@@ -3,7 +3,7 @@ module model.common.attclasses.entity.modifiedon;
 import model.common;
 
 static this() {
-  gsCommon.attclasses("entity/modifiedOn", new class DEIMAttclass {
+  gsCommon.attclasses.entity("entity/modifiedOn", new class DEIMAttclass {
     this() {
       super(); 
       _attclassName = "base/dateTime/nullable";
@@ -11,6 +11,6 @@ static this() {
   });
 }
 unittest {
-  assert(gsCommon.attclasses("entity/modifiedOn").name == "entity/modifiedOn");
+//  assert(gsCommon.attclasses.entity("entity/modifiedOn").name == "entity/modifiedOn");
 }
     

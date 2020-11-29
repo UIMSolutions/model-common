@@ -4,7 +4,7 @@ import model.common;
 
 static this() {
   // Relationship between two entities.
-  gsCommon.objclasses("common/application/connection", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/connection", new class DEIMObjclass {
     this() {
       super();
       this.objclass("common/entity").attributes([
@@ -15,7 +15,7 @@ static this() {
         "connectionId":"common/application/connection/connectionId", //	Unique identifier of the connection.	
         "effectiveStart":"common/application/connection/effectiveStart", //	Enter the start date of the connection.	
         "isMaster":"common/application/connection/isMaster", //	Indicates that this is the master record.	
-        "ownerId":"common/application/connection/ownerId", //	Owner Id	
+        "ownerId":"common/ownerId", //	Owner Id	
         "ownerIdType":"common/application/connection/ownerIdType", //	The type of owner, either User or Team.	
         "relatedConnectionId":"common/application/connection/relatedConnectionId", //	Unique identifier for the reciprocal connection record.	
         "owningBusinessUnit":"common/application/connection/owningBusinessUnit", //	Shows the business unit that the record owner belongs to.	
@@ -29,8 +29,8 @@ static this() {
         "record1IdObjectTypeCode":"common/application/connection/record1IdObjectTypeCode", //	The name of the entity linked by record1Id	
         "stateCode":"common/application/connection/stateCode", //	Shows whether the connection is active or inactive. Inactive connections are read-only and can't be edited unless they are reactivated.	
         "stateCode_display":"common/application/connection/stateCode_display", //		
-        "modifiedOnBehalfBy":"common/application/connection/modifiedOnBehalfBy", //	Shows who last updated the record on behalf of another user.	
-        "createdOnBehalfBy":"common/application/connection/createdOnBehalfBy", //	Shows who created the record on behalf of another user.	
+        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", //	Shows who last updated the record on behalf of another user.	
+        "createdOnBehalfBy":"common/createdOnBehalfBy", //	Shows who created the record on behalf of another user.	
         "owningTeam":"common/application/connection/owningTeam", //	Unique identifier of the team who owns the connection.	
         "transactionCurrencyId":"common/application/connection/transactionCurrencyId", //	Choose the local currency for the record to make sure budgets are reported in the correct currency.	
         "exchangeRate":"common/application/connection/exchangeRate", //	Shows the conversion rate of the record's currency. The exchange rate is used to convert all money fields in the record from the local currency to the system's default currency.	

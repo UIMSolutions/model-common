@@ -4,7 +4,7 @@ import model.common;
 
 static this() {
   // Signature for email message
-  gsCommon.objclasses("common/application/emailSignature", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/emailSignature", new class DEIMObjclass {
     this() {
       super();
       this.objclass("common/entity").attributes([
@@ -16,7 +16,7 @@ static this() {
         "title":"common/application/emailSignature/title", //	Title of the email signature.	
         "owningUser":"common/application/emailSignature/owningUser", //	Unique identifier of the user who owns the email signature.	
         "presentationXml":"common/application/emailSignature/presentationXml", //	XML data for the body of the email signature.	
-        "ownerId":"common/application/emailSignature/ownerId", //	Owner Id	
+        "ownerId":"common/ownerId", //	Owner Id	
         "ownerIdType":"common/application/emailSignature/ownerIdType", //	The type of owner, either User or Team.	
         "generationTypeCode":"common/application/emailSignature/generationTypeCode", //	For internal use only.	
         "languageCode":"common/application/emailSignature/languageCode", //	Language of the email signature.	
@@ -24,8 +24,8 @@ static this() {
         "overwriteTime":"common/application/emailSignature/overwriteTime", //	For internal use only.	
         "componentState":"common/application/emailSignature/componentState", //	For internal use only.	
         "componentState_display":"common/application/emailSignature/componentState_display", //		
-        "createdOnBehalfBy":"common/application/emailSignature/createdOnBehalfBy", //	Unique identifier of the delegate user who created the email signature.	
-        "modifiedOnBehalfBy":"common/application/emailSignature/modifiedOnBehalfBy", //	Unique identifier of the delegate user who last modified the email signature.	
+        "createdOnBehalfBy":"common/createdOnBehalfBy", //	Unique identifier of the delegate user who created the email signature.	
+        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", //	Unique identifier of the delegate user who last modified the email signature.	
         "owningTeam":"common/application/emailSignature/owningTeam", //	Unique identifier of the team who owns the email signature.	
         "isCustomizable":"common/application/emailSignature/isCustomizable", //	Information that specifies whether this component can be customized.	
         "overriddenCreatedOn":"common/application/emailSignature/overriddenCreatedOn", //	Date and time that the record was migrated.	

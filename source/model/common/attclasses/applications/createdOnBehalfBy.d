@@ -1,12 +1,12 @@
-module model.common.attclasses.applications.ownerid;
+module model.common.attclasses.applications.createdOnBehalfBy;
 
 import model.common;
 
 static this() {
-  gsCommon.attclasses.entity("common/ownerId", new class DEIMAttclass {
+  gsCommon.attclasses.entity("common/createdOnBehalfBy", new class DEIMAttclass {
     this() {
       super(); 
-      _attclassName = "dataFormat/guid";
+      _attclassName = "dataFormat/guid/isNullable/true";
     }
   });
 }

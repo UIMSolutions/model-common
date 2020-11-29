@@ -4,16 +4,16 @@ import model.common;
 
 static this() {
   // Resource that has capacity which can be allocated to work.
-  gsCommon.objclasses("common/foundation/bookableResource", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/foundation/bookableResource", new class DEIMObjclass {
     this() {
       super(); 
       this.objclass("common/entity");
       this.attributes([
-        "createdOnBehalfBy":"common/foundation/bookableResource/createdOnBehalfBy", // Shows who created the record on behalf of another user.
-        "modifiedOnBehalfBy":"common/foundation/bookableResource/modifiedOnBehalfBy", // Shows who last updated the record on behalf of another user.
+        "createdOnBehalfBy":"common/createdOnBehalfBy", // Shows who created the record on behalf of another user.
+        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", // Shows who last updated the record on behalf of another user.
         "overriddenCreatedOn":"common/foundation/bookableResource/overriddenCreatedOn", // Date and time that the record was migrated.
         "importSequenceNumber":"common/foundation/bookableResource/importSequenceNumber", // Unique identifier of the data import or data migration that created this record.
-        "ownerId":"common/foundation/bookableResource/ownerId", // Owner Id
+        "ownerId":"common/ownerId", // Owner Id
         "ownerIdType":"common/foundation/bookableResource/ownerIdType", // The type of owner, either User or Team.
         "owningBusinessUnit":"common/foundation/bookableResource/owningBusinessUnit", // Unique identifier for the business unit that owns the record
         "owningUser":"common/foundation/bookableResource/owningUser", // Unique identifier of the user that owns the activity.

@@ -4,15 +4,15 @@ import model.common;
 
 static this() {
   // Target objective for a user or a team for a specified time period.
-  gsCommon.objclasses("common/application/goal", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/goal", new class DEIMObjclass {
     this() {
       super();
       this.objclass("common/entity").attributes([
-        "createdOnBehalfBy":"common/application/goal/createdOnBehalfBy", //	Shows who created the record on behalf of another user.	
-        "modifiedOnBehalfBy":"common/application/goal/modifiedOnBehalfBy", //	Shows who last updated the record on behalf of another user.	
+        "createdOnBehalfBy":"common/createdOnBehalfBy", //	Shows who created the record on behalf of another user.	
+        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", //	Shows who last updated the record on behalf of another user.	
         "overriddenCreatedOn":"common/application/goal/overriddenCreatedOn", //	Date and time that the record was migrated.	
         "importSequenceNumber":"common/application/goal/importSequenceNumber", //	Unique identifier of the data import or data migration that created this record.	
-        "ownerId":"common/application/goal/ownerId", //	Owner Id	
+        "ownerId":"common/ownerId", //	Owner Id	
         "ownerIdType":"common/application/goal/ownerIdType", //	The type of owner, either User or Team.	
         "owningBusinessUnit":"common/application/goal/owningBusinessUnit", //	Unique identifier for the business unit that owns the record	
         "owningUser":"common/application/goal/owningUser", //	Unique identifier of the user that owns the activity.	

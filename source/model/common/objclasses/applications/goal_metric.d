@@ -4,13 +4,13 @@ import model.common;
 
 static this() {
   // Type of measurement for a goal, such as money amount or count.
-  gsCommon.objclasses("common/application/goalMetric", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/goalMetric", new class DEIMObjclass {
     this() {
       super();
       this.objclass("common/entity").attributes([
         "title":"common/application/goalMetric/name", //	Name of the goal metric.	
-        "createdOnBehalfBy":"common/application/goalMetric/createdOnBehalfBy", //	Unique identifier of the delegate user who created the record.	
-        "modifiedOnBehalfBy":"common/application/goalMetric/modifiedOnBehalfBy", //	Unique identifier of the delegate user who modified the record.	
+        "createdOnBehalfBy":"common/createdOnBehalfBy", //	Unique identifier of the delegate user who created the record.	
+        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", //	Unique identifier of the delegate user who modified the record.	
         "organizationId":"common/application/goalMetric/organizationId", //	Unique identifier of the organization.	
         "stateCode":"common/application/goalMetric/stateCode", //	Status of the goal metric.	
         "stateCode_display":"common/application/goalMetric/stateCode_display", //		

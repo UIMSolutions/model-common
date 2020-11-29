@@ -4,7 +4,7 @@ import model.common;
 
 static this() {
   // Role describing a relationship between a two records.
-  gsCommon.objclasses("common/application/connectionRole", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/connectionRole", new class DEIMObjclass {
     this() {
       super();
       this.objclass("common/entity").attributes([
@@ -21,8 +21,8 @@ static this() {
         "componentState_display":"common/application/connectionRole/componentState_display", //		
         "overwriteTime":"common/application/connectionRole/overwriteTime", //	Date and time when the record was last overwritten.	
         "connectionRoleIdUnique":"common/application/connectionRole/connectionRoleIdUnique", //	Unique identifier of the published or unpublished connection role record.	
-        "modifiedOnBehalfBy":"common/application/connectionRole/modifiedOnBehalfBy", //	Unique identifier of the delegate user who modified the relationship role.	
-        "createdOnBehalfBy":"common/application/connectionRole/createdOnBehalfBy", //	Unique identifier of the delegate user who created the relationship role.	
+        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", //	Unique identifier of the delegate user who modified the relationship role.	
+        "createdOnBehalfBy":"common/createdOnBehalfBy", //	Unique identifier of the delegate user who created the relationship role.	
         "isManaged":"common/application/connectionRole/isManaged", //	Indicates whether the solution component is part of a managed solution.	
         "isCustomizable":"common/application/connectionRole/isCustomizable", //	Information that specifies whether this component can be customized.	
         "introducedVersion":"common/application/connectionRole/introducedVersion", //	Version in which the form is introduced.	

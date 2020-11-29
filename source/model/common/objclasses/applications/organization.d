@@ -4,7 +4,7 @@ import model.common;
 
 static this() {
   // Top level of the Microsoft Dynamics 365 business hierarchy. The organization can be a specific business, holding company, or corporation.
-  gsCommon.objclasses("common/application/organization", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/organization", new class DEIMObjclass {
     this() {
       super();
       this.objclass("common/entity").attributes([
@@ -153,8 +153,8 @@ static this() {
         "pastExpansionWindow":"common/application/organization/pastExpansionWindow", //	Specifies the maximum number of months in past for which the recurring activities can be created.	
         "recurrenceExpansionSynchCreateMax":"common/application/organization/recurrenceExpansionSynchCreateMax", //	Specifies the maximum number of instances to be created synchronously after creating a recurring appointment.	
         "recurrenceDefaultNumberOfOccurrences":"common/application/organization/recurrenceDefaultNumberOfOccurrences", //	Specifies the default value for number of occurrences field in the recurrence dialog.	
-        "createdOnBehalfBy":"common/application/organization/createdOnBehalfBy", //	Unique identifier of the delegate user who created the organization.	
-        "modifiedOnBehalfBy":"common/application/organization/modifiedOnBehalfBy", //	Unique identifier of the delegate user who last modified the organization.	
+        "createdOnBehalfBy":"common/createdOnBehalfBy", //	Unique identifier of the delegate user who created the organization.	
+        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", //	Unique identifier of the delegate user who last modified the organization.	
         "getStartedPaneContentEnabled":"common/application/organization/getStartedPaneContentEnabled", //	Indicates whether Get Started content is enabled for this organization.	
         "useReadForm":"common/application/organization/useReadForm", //	Indicates whether the read-optimized form should be enabled for this organization.	
         "initialVersion":"common/application/organization/initialVersion", //	Initial version of the organization.	

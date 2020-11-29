@@ -17,12 +17,15 @@ static this() {
       super();
       this.name("Common");
 
-      this.attclasses(
-        EIMAttclass.name("base/integer"), 
-        EIMAttclass.name("base/string"), 
-        EIMAttclass.name("base/timestamp"), 
-        EIMAttclass.name("base/url"), 
-        EIMAttclass.name("base/uuid"));
+      this.attclasses.entity(
+        EIMAttclass("base/integer"), 
+        EIMAttclass("base/string"), 
+        EIMAttclass("base/timestamp"), 
+        EIMAttclass("base/url"), 
+        EIMAttclass("base/uuid"));
     }
   };
+}
+unittest {
+  // writeln(gsCommon.objclasses);
 }

@@ -4,7 +4,7 @@ import model.common;
 
 static this() {
   // Collection of system users that routinely collaborate. Teams can be used to simplify record sharing and provide team members with common access to organization data when team members belong to different Business Units.
-  gsCommon.objclasses("common/application/team", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/team", new class DEIMObjclass {
     this() {
       super();
       this.objclass("common/entity").attributes([
@@ -17,8 +17,8 @@ static this() {
         "administratorId":"common/application/team/administratorId", // Unique identifier of the user primary responsible for the team.	
         "isDefault":"common/application/team/isDefault", // Information about whether the team is a default business unit team.	
         "yomiName":"common/application/team/yomiName", // Pronunciation of the full name of the team, written in phonetic hiragana or katakana characters.	
-        "createdOnBehalfBy":"common/application/team/createdOnBehalfBy", // Unique identifier of the delegate user who created the team.	
-        "modifiedOnBehalfBy":"common/application/team/modifiedOnBehalfBy", // Unique identifier of the delegate user who last modified the team.	
+        "createdOnBehalfBy":"common/createdOnBehalfBy", // Unique identifier of the delegate user who created the team.	
+        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", // Unique identifier of the delegate user who last modified the team.	
         "traversedPath":"common/application/team/traversedPath", // For internal use only.	
         "queueId":"common/application/team/queueId", // Unique identifier of the default queue for the team.	
         "transactionCurrencyId":"common/application/team/transactionCurrencyId", // Unique identifier of the currency associated with the team.	

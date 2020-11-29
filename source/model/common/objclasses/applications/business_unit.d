@@ -4,7 +4,7 @@ import model.common;
 
 static this() {
   // Business, division, or department in the Microsoft Dynamics 365 database.
-  gsCommon.objclasses("common/application/businessUnit", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/businessUnit", new class DEIMObjclass {
     this() {
       super();
       this.objclass("common/entity").attributes([
@@ -75,8 +75,8 @@ static this() {
         "calendarId":"common/application/businessUnit/calendarId", //	Fiscal calendar associated with the business unit.	
         "overriddenCreatedOn":"common/application/businessUnit/overriddenCreatedOn", //	Date and time that the record was migrated.	
         "importSequenceNumber":"common/application/businessUnit/importSequenceNumber", //	Unique identifier of the data import or data migration that created this record.	
-        "createdOnBehalfBy":"common/application/businessUnit/createdOnBehalfBy", //	Unique identifier of the delegate user who created the businessunit.	
-        "modifiedOnBehalfBy":"common/application/businessUnit/modifiedOnBehalfBy", //	Unique identifier of the delegate user who last modified the businessunit.	
+        "createdOnBehalfBy":"common/createdOnBehalfBy", //	Unique identifier of the delegate user who created the businessunit.	
+        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", //	Unique identifier of the delegate user who last modified the businessunit.	
         "transactionCurrencyId":"common/application/businessUnit/transactionCurrencyId", //	Unique identifier of the currency associated with the businessunit.	
         "exchangeRate":"common/application/businessUnit/exchangeRate", // Exchange rate for the currency associated with the businessunit with respect to the base currency.	
       ]); 

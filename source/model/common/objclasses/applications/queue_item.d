@@ -4,7 +4,7 @@ import model.common;
 
 static this() {
   // A specific item in a queue, such as a case record or an activity record.
-  gsCommon.objclasses("common/application/queueItem", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/queueItem", new class DEIMObjclass {
     this() {
       super();
       this.objclass("common/entity").attributes([
@@ -26,7 +26,7 @@ static this() {
         "UTCConversionTimeZoneCode":"common/application/queueItem/UTCConversionTimeZoneCode", //	Time zone code that was in use when the record was created.	
         "overriddenCreatedOn":"common/application/queueItem/overriddenCreatedOn", //	Date and time that the record was migrated.	
         "workerIdModifiedOn":"common/application/queueItem/workerIdModifiedOn", //	Shows the date and time when the queue item was last assigned to a user.	
-        "ownerId":"common/application/queueItem/ownerId", //	Owner Id	
+        "ownerId":"common/ownerId", //	Owner Id	
         "ownerIdType":"common/application/queueItem/ownerIdType", //	The type of owner, either User or Team.	
         "owningUser":"common/application/queueItem/owningUser", //	Unique identifier of the user who owns the queue item.	
         "workerId":"common/application/queueItem/workerId", //	Shows who is working on the queue item.	
@@ -36,8 +36,8 @@ static this() {
         "statusCode_display":"common/application/queueItem/statusCode_display", //		
         "stateCode":"common/application/queueItem/stateCode", //	Shows whether the queue record is active or inactive. Inactive queue records are read-only and can't be edited unless they are reactivated.	
         "stateCode_display":"common/application/queueItem/stateCode_display", //		
-        "createdOnBehalfBy":"common/application/queueItem/createdOnBehalfBy", //	Shows who created the record on behalf of another user.	
-        "modifiedOnBehalfBy":"common/application/queueItem/modifiedOnBehalfBy", //	Unique identifier of the delegate user who last modified the queueitem.	
+        "createdOnBehalfBy":"common/createdOnBehalfBy", //	Shows who created the record on behalf of another user.	
+        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", //	Unique identifier of the delegate user who last modified the queueitem.	
         "transactionCurrencyId":"common/application/queueItem/transactionCurrencyId", //	Choose the local currency for the record to make sure budgets are reported in the correct currency.	
         "exchangeRate":"common/application/queueItem/exchangeRate", //	Shows the conversion rate of the record's currency. The exchange rate is used to convert all money fields in the record from the local currency to the system's default currency.	
         "importSequenceNumber":"common/application/queueItem/importSequenceNumber", //	Unique identifier of the data import or data migration that created this record.		

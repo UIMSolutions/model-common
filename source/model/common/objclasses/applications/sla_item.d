@@ -4,7 +4,7 @@ import model.common;
 
 static this() {
   // Contains information about a tracked support KPI for a specific customer.
-  gsCommon.objclasses("common/application/slaItem", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/slaItem", new class DEIMObjclass {
     this() {
       super();
       this.objclass("common/entity").attributes([
@@ -27,11 +27,11 @@ static this() {
         "failureAfter":"common/application/slaItem/failureAfter", //	Select how soon the success criteria must be met until the SLA item is considered failed and failure actions are initiated. The actual duration is based on the business hours as specified in the associated SLA record.	
         "warnAfter":"common/application/slaItem/warnAfter", //	Select how soon the success criteria must be met before warning actions are initiated. The actual duration is based on the business hours as specified in the associated SLA record.	
         "owningUser":"common/application/slaItem/owningUser", //	Unique identifier of the user who owns the SLA Item record.	
-        "ownerId":"common/application/slaItem/ownerId", //	Owner Id	
+        "ownerId":"common/ownerId", //	Owner Id	
         "ownerIdType":"common/application/slaItem/ownerIdType", //	The type of owner, either User or Team.	
         "workflowId":"common/application/slaItem/workflowId", //	Workflow associated with the SLA Item.	
-        "createdOnBehalfBy":"common/application/slaItem/createdOnBehalfBy", //	Shows who created the record on behalf of another user.	
-        "modifiedOnBehalfBy":"common/application/slaItem/modifiedOnBehalfBy", //	Shows who created the record on behalf of another user.	
+        "createdOnBehalfBy":"common/createdOnBehalfBy", //	Shows who created the record on behalf of another user.	
+        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", //	Shows who created the record on behalf of another user.	
       ]); 
 
     }

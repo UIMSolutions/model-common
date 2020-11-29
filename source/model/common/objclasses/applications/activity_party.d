@@ -4,7 +4,7 @@ import model.common;
 
 static this() {
   // Person or group associated with an activity. An activity can have multiple activity parties.
-  gsCommon.objclasses("common/application/activityParty", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/activityParty", new class DEIMObjclass {
     this() {
       super();
       this.objclass("common/entity").attributes([
@@ -22,7 +22,7 @@ static this() {
         "exchangeEntryId":"common/application/activityParty/exchangeEntryId", //		For internal use only.	
         "doNotPostalMail":"common/application/activityParty/doNotPostalMail", //		Information about whether to allow sending postal mail to the lead.	
         "doNotPhone":"common/application/activityParty/doNotPhone", //		Information about whether to allow phone calls to the lead.	
-        "ownerId":"common/application/activityParty/ownerId", //		Owner Id	
+        "ownerId":"common/ownerId", //		Owner Id	
         "ownerIdType":"common/application/activityParty/ownerIdType", //		The type of owner, either User or Team.	
         "instanceTypeCode":"common/application/activityParty/instanceTypeCode", //		Type of instance of a recurring series.	
         "instanceTypeCode_display":"common/application/activityParty/instanceTypeCode_display", //			

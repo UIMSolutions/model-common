@@ -4,16 +4,16 @@ import model.common;
 
 static this() {
   // Associates resources with their characteristics and specifies the proficiency level of a resource for that characteristic.
-  gsCommon.objclasses("common/foundation/bookableResourceCharacteristic", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/foundation/bookableResourceCharacteristic", new class DEIMObjclass {
     this() {
       super(); 
       this.objclass("common/entity");
       this.attributes([
-        "createdOnBehalfBy":"common/foundation/bookableResourceCharacteristic/createdOnBehalfBy", // Shows who created the record on behalf of another user.
-        "modifiedOnBehalfBy":"common/foundation/bookableResourceCharacteristic/modifiedOnBehalfBy", // Shows who last updated the record on behalf of another user.
+        "createdOnBehalfBy":"common/createdOnBehalfBy", // Shows who created the record on behalf of another user.
+        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", // Shows who last updated the record on behalf of another user.
         "overriddenCreatedOn":"common/foundation/bookableResourceCharacteristic/overriddenCreatedOn", // Date and time that the record was migrated.
         "importSequenceNumber":"common/foundation/bookableResourceCharacteristic/importSequenceNumber", // Unique identifier of the data import or data migration that created this record.
-        "ownerId":"common/foundation/bookableResourceCharacteristic/ownerId", // Owner Id
+        "ownerId":"common/ownerId", // Owner Id
         "ownerIdType":"common/foundation/bookableResourceCharacteristic/ownerIdType", // The type of owner, either User or Team.
         "owningBusinessUnit":"common/foundation/bookableResourceCharacteristic/owningBusinessUnit", // Unique identifier for the business unit that owns the record
         "owningUser":"common/foundation/bookableResourceCharacteristic/owningUser", // Unique identifier of the user that owns the activity.

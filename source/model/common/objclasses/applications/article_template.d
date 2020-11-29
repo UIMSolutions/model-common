@@ -4,7 +4,7 @@ import model.common;
 
 static this() {
   // Template for a knowledge base article that contains the standard attributes of an article.
-  gsCommon.objclasses("common/application/articleTemplate", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/articleTemplate", new class DEIMObjclass {
     this() {
       super();
       this.objclass("common/entity").attributes([
@@ -21,8 +21,8 @@ static this() {
         "componentState_display":"common/application/articleTemplate/componentState_display", //		
         "solutionId":"common/application/articleTemplate/solutionId", //	Unique identifier of the associated solution.	
         "overwriteTime":"common/application/articleTemplate/overwriteTime", //	For internal use only.	
-        "createdOnBehalfBy":"common/application/articleTemplate/createdOnBehalfBy", //	Unique identifier of the delegate user who created the kbarticletemplate.	
-        "modifiedOnBehalfBy":"common/application/articleTemplate/modifiedOnBehalfBy", //	Unique identifier of the delegate user who last modified the kbarticletemplate.	
+        "createdOnBehalfBy":"common/createdOnBehalfBy", //	Unique identifier of the delegate user who created the kbarticletemplate.	
+        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", //	Unique identifier of the delegate user who last modified the kbarticletemplate.	
         "isManaged":"common/application/articleTemplate/isManaged", //		
         "isCustomizable":"common/application/articleTemplate/isCustomizable", //	Information that specifies whether this component can be customized.	
         "introducedVersion":"common/application/articleTemplate/introducedVersion", //	Version in which the form is introduced.	

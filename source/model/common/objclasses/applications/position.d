@@ -4,7 +4,7 @@ import model.common;
 
 static this() {
   // Position of a user in the hierarchy
-  gsCommon.objclasses("common/application/position", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/position", new class DEIMObjclass {
     this() {
       super();
       this.objclass("common/entity").attributes([

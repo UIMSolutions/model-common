@@ -4,15 +4,15 @@ import model.common;
 
 static this() {
   // Person with whom a business unit has a relationship, such as customer, supplier, and colleague.
-  gsCommon.objclasses("common/application/contact", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/contact", new class DEIMObjclass {
     this() {
       super();
       this.objclass("common/entity").attributes([
-        "createdOnBehalfBy":"common/application/contact/createdOnBehalfBy", //	Shows who created the record on behalf of another user.	
-        "modifiedOnBehalfBy":"common/application/contact/modifiedOnBehalfBy", //	Shows who last updated the record on behalf of another user.	
+        "createdOnBehalfBy":"common/createdOnBehalfBy", //	Shows who created the record on behalf of another user.	
+        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", //	Shows who last updated the record on behalf of another user.	
         "overriddenCreatedOn":"common/application/contact/overriddenCreatedOn", //	Date and time that the record was migrated.	
         "importSequenceNumber":"common/application/contact/importSequenceNumber", //	Unique identifier of the data import or data migration that created this record.	
-        "ownerId":"common/application/ownerId", //	Owner Id	
+        "ownerId":"common/ownerId", //	Owner Id	
         "ownerIdType":"common/application/contact/ownerIdType", //	The type of owner, either User or Team.	
         "owningBusinessUnit":"common/application/contact/owningBusinessUnit", //	Unique identifier for the business unit that owns the record	
         "owningUser":"common/application/contact/owningUser", //	Unique identifier of the user that owns the activity.	

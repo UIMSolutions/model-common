@@ -4,7 +4,7 @@ import model.common;
 
 static this() {
   // Contains information about the tracked service-level KPIs for cases that belong to different customers.
-  gsCommon.objclasses("common/application/sla", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/sla", new class DEIMObjclass {
     this() {
       super();
       this.objclass("common/entity").attributes([
@@ -31,7 +31,7 @@ static this() {
         "overwriteTime":"common/application/sla/overwriteTime", //	For internal use only.	
         "isManaged":"common/application/sla/isManaged", //	For internal use only.	
         "SLAIdUnique":"common/application/sla/SLAIdUnique", //	For internal use only.	
-        "ownerId":"common/application/sla/ownerId", //	Owner Id	
+        "ownerId":"common/ownerId", //	Owner Id	
         "ownerIdType":"common/application/sla/ownerIdType", //	The type of owner, either User or Team.	
         "applicableFromPickList":"common/application/sla/applicableFromPickList", //	Select the field that specifies the date and time from which the SLA items will be calculated. For example, if you select the Case Created On field, SLA calculation will begin from the time the case is created.	
         "applicableFromPickList_display":"common/application/sla/applicableFromPickList_display", //		
@@ -39,8 +39,8 @@ static this() {
         "allowPauseResume":"common/application/sla/allowPauseResume", //	Select whether this SLA will allow pausing and resuming during the time calculation.	
         "SLAType":"common/application/sla/SLAType", //	Select the type of service level agreement (SLA).	
         "SLAType_display":"common/application/sla/SLAType_display", //		
-        "createdOnBehalfBy":"common/application/sla/createdOnBehalfBy", //	Shows who created the record on behalf of another user.	
-        "modifiedOnBehalfBy":"common/application/sla/modifiedOnBehalfBy", //	Shows who created the record on behalf of another user.	
+        "createdOnBehalfBy":"common/createdOnBehalfBy", //	Shows who created the record on behalf of another user.	
+        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", //	Shows who created the record on behalf of another user.	
         "primaryEntityOTC":"common/application/sla/primaryEntityOTC", //	Shows the primary entity that the SLA has been created for.	
       ]); 
 

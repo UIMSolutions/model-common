@@ -4,7 +4,7 @@ import model.common;
 
 static this() {
   // Structured content that is part of the knowledge base.
-  gsCommon.objclasses("common/application/article", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/article", new class DEIMObjclass {
     this() {
       super();
       this.objclass("common/entity").attributes([
@@ -24,8 +24,8 @@ static this() {
         "keyWords":"common/application/article/keyWords", //	Keywords to be used for searches in knowledge base articles.	
         "importSequenceNumber":"common/application/article/importSequenceNumber", //	Unique identifier of the data import or data migration that created this record.	
         "overriddenCreatedOn":"common/application/article/overriddenCreatedOn", //	Date and time that the record was migrated.	
-        "createdOnBehalfBy":"common/application/article/createdOnBehalfBy", //	Unique identifier of the delegate user who created the article.	
-        "modifiedOnBehalfBy":"common/application/article/modifiedOnBehalfBy", //	Unique identifier of the delegate user who last modified the kbarticle.	
+        "createdOnBehalfBy":"common/createdOnBehalfBy", //	Unique identifier of the delegate user who created the article.	
+        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", //	Unique identifier of the delegate user who last modified the kbarticle.	
         "languageCode":"common/application/article/languageCode", //	Select which language the article must be available in. This list is based on the list of language packs that are installed in your Microsoft Dynamics 365 environment.	
         "exchangeRate":"common/application/article/exchangeRate", //	Shows the conversion rate of the record's currency. The exchange rate is used to convert all money fields in the record from the local currency to the system's default currency.	
         "transactionCurrencyId":"common/application/article/transactionCurrencyId", //	Choose the local currency for the record to make sure budgets are reported in the correct currency.	

@@ -4,13 +4,13 @@ import model.common;
 
 static this() {
   // Item with a name and value in a property option set type.
-  gsCommon.objclasses("common/foundation/propertyOptionSetItem", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/foundation/propertyOptionSetItem", new class DEIMObjclass {
     this() {
       super(); 
       this.objclass("common/entity");
       this.attributes([
-          "createdOnBehalfBy":"common/foundation/propertyOptionSetItem/createdOnBehalfBy", // Unique identifier of the delegate user who created the record.
-          "modifiedOnBehalfBy":"common/foundation/propertyOptionSetItem/modifiedOnBehalfBy", // Unique identifier of the delegate user who modified the record.
+          "createdOnBehalfBy":"common/createdOnBehalfBy", // Unique identifier of the delegate user who created the record.
+          "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", // Unique identifier of the delegate user who modified the record.
           "organizationId":"common/foundation/propertyOptionSetItem/organizationId", // Unique identifier for the organization
           "importSequenceNumber":"common/foundation/propertyOptionSetItem/importSequenceNumber", // Sequence number of the import that created this record.
           "overriddenCreatedOn":"common/foundation/propertyOptionSetItem/overriddenCreatedOn", // Date and time that the record was migrated.

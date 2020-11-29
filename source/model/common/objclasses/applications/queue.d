@@ -4,7 +4,7 @@ import model.common;
 
 static this() {
   // A list of records that require action, such as accounts, activities, and cases.
-  gsCommon.objclasses("common/application/queue", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/queue", new class DEIMObjclass {
     this() {
       super();
       this.objclass("common/entity").attributes([
@@ -27,7 +27,7 @@ static this() {
         "allowEmailCredentials":"common/application/queue/allowEmailCredentials", //	This attribute is no longer used. The data is now in the Mailbox.AllowEmailConnectorToUseCredentials attribute.	
         "incomingEmailFilteringMethod":"common/application/queue/incomingEmailFilteringMethod", //	Convert Incoming Email To Activities	
         "incomingEmailFilteringMethod_display":"common/application/queue/incomingEmailFilteringMethod_display", //		
-        "ownerId":"common/application/queue/ownerId", //	Owner Id	
+        "ownerId":"common/ownerId", //	Owner Id	
         "ownerIdType":"common/application/queue/ownerIdType", //	The type of owner, either User or Team.	
         "overriddenCreatedOn":"common/application/queue/overriddenCreatedOn", //	Date and time that the record was migrated.	
         "statusCode":"common/application/queue/statusCode", //	Reason for the status of the queue.	
@@ -36,8 +36,8 @@ static this() {
         "owningUser":"common/application/queue/owningUser", //	Unique identifier of the user who owns the queue.	
         "stateCode":"common/application/queue/stateCode", //	Status of the queue.	
         "stateCode_display":"common/application/queue/stateCode_display", //		
-        "createdOnBehalfBy":"common/application/queue/createdOnBehalfBy", //	Unique identifier of the delegate user who created the queue.	
-        "modifiedOnBehalfBy":"common/application/queue/modifiedOnBehalfBy", //	Unique identifier of the delegate user who last modified the queue.	
+        "createdOnBehalfBy":"common/createdOnBehalfBy", //	Unique identifier of the delegate user who created the queue.	
+        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", //	Unique identifier of the delegate user who last modified the queue.	
         "numberOfItems":"common/application/queue/numberOfItems", //	Number of Queue items associated with the queue.	
         "numberOfMembers":"common/application/queue/numberOfMembers", //	Number of Members associated with the queue.	
         "importSequenceNumber":"common/application/queue/importSequenceNumber", //	Unique identifier of the data import or data migration that created this record.	

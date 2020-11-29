@@ -4,7 +4,7 @@ import model.common;
 
 static this() {
   // Territory represents sales regions.
-  gsCommon.objclasses("common/application/user", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/user", new class DEIMObjclass {
     this() {
       super();
       this.objclass("common/entity").attributes([
@@ -108,9 +108,9 @@ static this() {
         "yomiFirstName":"common/application/user/yomiFirstName", //Pronunciation of the first name of the user, written in phonetic hiragana or katakana characters.
         "isIntegrationUser":"common/application/user/isIntegrationUser", //Check if user is an integration user.
         "defaultFiltersPopulated":"common/application/user/defaultFiltersPopulated", //Indicates if default outlook filters have been populated.
-        "createdOnBehalfBy":"common/application/user/createdOnBehalfBy", //Unique identifier of the delegate user who created the systemuser.
+        "createdOnBehalfBy":"common/createdOnBehalfBy", //Unique identifier of the delegate user who created the systemuser.
         "queueId":"common/application/user/queueId", //Unique identifier of the default queue for the user.
-        "modifiedOnBehalfBy":"common/application/user/modifiedOnBehalfBy", //Unique identifier of the delegate user who last modified the systemuser.
+        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", //Unique identifier of the delegate user who last modified the systemuser.
         "emailRouterAccessApproval":"common/application/user/emailRouterAccessApproval", //Shows the status of the primary email address.
         "emailRouterAccessApproval_display":"common/application/user/emailRouterAccessApproval_display", //
         "transactionCurrencyId":"common/application/user/transactionCurrencyId", //Unique identifier of the currency associated with the systemuser.

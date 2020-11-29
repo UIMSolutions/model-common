@@ -4,7 +4,7 @@ import model.common;
 
 static this() {
   // User membership in Teams
-  gsCommon.objclasses("common/application/teamMembership", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/teamMembership", new class DEIMObjclass {
     this() {
       super();
       this.objclass("common/entity").attributes([

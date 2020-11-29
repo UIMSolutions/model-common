@@ -4,15 +4,15 @@ import model.common;
 
 static this() {
   // Delivery entity in an engagement.
-  gsCommon.objclasses("common/crm/project/service/project", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/crm/project/service/project", new class DEIMObjclass {
     this() {
       super();
       this.objclass("common/entity").attributes([
-        "createdOnBehalfBy":"common/crm/project/service/project/createdOnBehalfBy", // Shows who created the record on behalf of another user.
-        "modifiedOnBehalfBy":"common/crm/project/service/project/modifiedOnBehalfBy", // Shows who last updated the record on behalf of another user.
+        "createdOnBehalfBy":"common/createdOnBehalfBy", // Shows who created the record on behalf of another user.
+        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", // Shows who last updated the record on behalf of another user.
         "overriddenCreatedOn":"common/crm/project/service/project/overriddenCreatedOn", // Date and time that the record was migrated.
         "importSequenceNumber":"common/crm/project/service/project/importSequenceNumber", // Sequence number of the import that created this record.
-        "ownerId":"common/crm/project/service/project/ownerId", // Owner Id
+        "ownerId":"common/ownerId", // Owner Id
         "ownerIdType":"common/crm/project/service/project/ownerIdType", // The type of owner, either User or Team.
         "owningBusinessUnit":"common/crm/project/service/project/owningBusinessUnit", // Unique identifier for the business unit that owns the record
         "owningUser":"common/crm/project/service/project/owningUser", // Unique identifier for the user that owns the record.
@@ -105,5 +105,5 @@ static this() {
   });
 }
 unittest {
-  // assert(gsModel.gsCommon("bsi/person").name == "bsi/person");
+  assert(gsCommon.objclasses.entity("common/crm/project/service/project").name == "common/crm/project/service/project");
 }

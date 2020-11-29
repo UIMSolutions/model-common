@@ -4,12 +4,12 @@ import model.common;
 
 static this() {
   // Grouping of units.
-  gsCommon.objclasses("common/foundation/unitGroup", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/foundation/unitGroup", new class DEIMObjclass {
     this() {
       super();
       this.objclass("common/entity").attributes([
-        "createdOnBehalfBy":"common/foundation/unitGroup/createdOnBehalfBy", // Unique identifier of the delegate user who created the uomschedule.
-        "modifiedOnBehalfBy":"common/foundation/unitGroup/modifiedOnBehalfBy", // Unique identifier of the delegate user who last modified the uomschedule.
+        "createdOnBehalfBy":"common/createdOnBehalfBy", // Unique identifier of the delegate user who created the uomschedule.
+        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", // Unique identifier of the delegate user who last modified the uomschedule.
         "organizationId":"common/foundation/unitGroup/organizationId", // Unique identifier for the organization
         "importSequenceNumber":"common/foundation/unitGroup/importSequenceNumber", // Sequence number of the import that created this record.
         "overriddenCreatedOn":"common/foundation/unitGroup/overriddenCreatedOn", // Date and time that the record was migrated.

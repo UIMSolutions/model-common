@@ -4,15 +4,15 @@ import model.common;
 
 static this() {
   // Activity that tracks the delivery of a letter. The activity can contain the electronic copy of the letter.
-  gsCommon.objclasses("common/application/letter", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/letter", new class DEIMObjclass {
     this() {
       super();
       this.objclass("common/entity").attributes([
-        "createdOnBehalfBy":"common/application/letter/createdOnBehalfBy", //	Shows who created the record on behalf of another user.	
-        "modifiedOnBehalfBy":"common/application/letter/modifiedOnBehalfBy", //	Shows who last updated the record on behalf of another user.	
+        "createdOnBehalfBy":"common/createdOnBehalfBy", //	Shows who created the record on behalf of another user.	
+        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", //	Shows who last updated the record on behalf of another user.	
         "overriddenCreatedOn":"common/application/letter/overriddenCreatedOn", //	Date and time that the record was migrated.	
         "importSequenceNumber":"common/application/letter/importSequenceNumber", //	Unique identifier of the data import or data migration that created this record.	
-        "ownerId":"common/application/letter/ownerId", //	Owner Id	
+        "ownerId":"common/ownerId", //	Owner Id	
         "ownerIdType":"common/application/letter/ownerIdType", //	The type of owner, either User or Team.	
         "owningBusinessUnit":"common/application/letter/owningBusinessUnit", //	Unique identifier for the business unit that owns the record	
         "owningUser":"common/application/letter/owningUser", //	Unique identifier of the user that owns the activity.	

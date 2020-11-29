@@ -4,7 +4,7 @@ import model.common;
 
 static this() {
   // Address and shipping information. Used to store additional addresses for an account or contact.
-  gsCommon.objclasses("common/application/address", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/address", new class DEIMObjclass {
     this() {
       super();
       this.objclass("common/entity").attributes([
@@ -44,10 +44,10 @@ static this() {
         "overriddenCreatedOn":"common/application/address/overriddenCreatedOn", // 	Date and time that the record was migrated.	
         "UTCConversionTimeZoneCode":"common/application/address/UTCConversionTimeZoneCode", // 	Time zone code that was in use when the record was created.	
         "importSequenceNumber":"common/application/address/importSequenceNumber", // 	Unique identifier of the data import or data migration that created this record.	
-        "ownerId":"common/application/ownerId", // 	Owner Id	
+        "ownerId":"common/ownerId", // 	Owner Id	
         "ownerIdType":"common/application/address/ownerIdType", // 	The type of owner, either User or Team.	
-        "createdOnBehalfBy":"common/application/address/createdOnBehalfBy", // 	Shows who created the record on behalf of another user.	
-        "modifiedOnBehalfBy":"common/application/address/modifiedOnBehalfBy", // 	Shows who last updated the record on behalf of another user.	
+        "createdOnBehalfBy":"common/createdOnBehalfBy", // 	Shows who created the record on behalf of another user.	
+        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", // 	Shows who last updated the record on behalf of another user.	
         "transactionCurrencyId":"common/application/address/transactionCurrencyId", // 	Choose the local currency for the record to make sure budgets are reported in the correct currency.	
         "exchangeRate":"common/application/address/exchangeRate", // 	Shows the conversion rate of the record's currency. The exchange rate is used to convert all money fields in the record from the local currency to the system's default currency.	
         "composite":"common/application/address/composite", // 	Shows the complete address.	

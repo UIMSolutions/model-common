@@ -4,12 +4,12 @@ import model.common;
 
 static this() {
   // Base class fpr entities
-  gsCommon.objclasses("common/entiity", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/entiity", new class DEIMObjclass {
     this() {
       super();
       this.objclass("common/entity").attributes([
         "id":"common/id", // Unique identifier of the entity.
-        "title":"common/id", // name of entity.
+        "name":"common/name", // name of entity.
         "createdOn":"common/createdOn", // Date and time when the entity was created.
         "createdBy":"common/createdBy", // Shows who created the entity.
         "modifiedOn":"common/modifiedOn", // Date and time when the entity was modified.

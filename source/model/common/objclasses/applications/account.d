@@ -4,7 +4,7 @@ import model.common;
 
 static this() {
   // Business that represents a customer or potential customer. The company that is billed in business transactions.
-  gsCommon.objclasses("common/application/account", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/account", new class DEIMObjclass {
     this() {
       super();
       this.objclass("common/entity").attributes([
@@ -12,7 +12,7 @@ static this() {
         "modifiedOnBehalfBy":"base/uuid", //	Shows who last updated the record on behalf of another user.	
         "overriddenCreatedOn":"common/application/account/overriddenCreatedOn", //	Date and time that the record was migrated.	
         "importSequenceNumber":"common/application/account/importSequenceNumber", //	Unique identifier of the data import or data migration that created this record.	
-        "ownerId":"common/application/ownerId", //	Owner Id	
+        "ownerId":"common/ownerId", //	Owner Id	
         "ownerIdType":"common/application/account/ownerIdType", //	The type of owner, either User or Team.	
         "owningBusinessUnit":"common/application/account/owningBusinessUnit", //	Unique identifier for the business unit that owns the record	
         "owningUser":"common/application/account/owningUser", //	Unique identifier for the user that owns the record.	

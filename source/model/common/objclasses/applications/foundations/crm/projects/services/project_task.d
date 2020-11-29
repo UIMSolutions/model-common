@@ -4,15 +4,15 @@ import model.common;
 
 static this() {
   // Tasks related to project.
-  gsCommon.objclasses("common/crm/project/service/projectTask", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/crm/project/service/projectTask", new class DEIMObjclass {
     this() {
       super();
       this.objclass("common/entity").attributes([
-        "createdOnBehalfBy":"common/crm/project/service/projectTask/createdOnBehalfBy", // Shows who created the record on behalf of another user.
-        "modifiedOnBehalfBy":"common/crm/project/service/projectTask/modifiedOnBehalfBy", // Shows who last updated the record on behalf of another user.
+        "createdOnBehalfBy":"common/createdOnBehalfBy", // Shows who created the record on behalf of another user.
+        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", // Shows who last updated the record on behalf of another user.
         "overriddenCreatedOn":"common/crm/project/service/projectTask/overriddenCreatedOn", // Date and time that the record was migrated.
         "importSequenceNumber":"common/crm/project/service/projectTask/importSequenceNumber", // Sequence number of the import that created this record.
-        "ownerId":"common/crm/project/service/projectTask/ownerId", // Owner Id
+        "ownerId":"common/ownerId", // Owner Id
         "ownerIdType":"common/crm/project/service/projectTask/ownerIdType", // The type of owner, either User or Team.
         "owningBusinessUnit":"common/crm/project/service/projectTask/owningBusinessUnit", // Unique identifier for the business unit that owns the record
         "owningUser":"common/crm/project/service/projectTask/owningUser", // Unique identifier for the user that owns the record.

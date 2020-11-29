@@ -4,13 +4,13 @@ import model.common;
 
 static this() {
   // Entity that defines pricing levels.
-  gsCommon.objclasses("common/foundation/pricelist", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/foundation/pricelist", new class DEIMObjclass {
     this() {
       super(); 
       this.objclass("common/entity");
       this.attributes([
-        "createdOnBehalfBy":"common/foundation/pricelist/createdOnBehalfBy", //	Unique identifier of the delegate user who created the pricelevel.
-        "modifiedOnBehalfBy":"common/foundation/pricelist/modifiedOnBehalfBy", //	Unique identifier of the delegate user who last modified the pricelevel.
+        "createdOnBehalfBy":"common/createdOnBehalfBy", //	Unique identifier of the delegate user who created the pricelevel.
+        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", //	Unique identifier of the delegate user who last modified the pricelevel.
         "organizationId":"common/foundation/pricelist/organizationId", //	Unique identifier for the organization
         "importSequenceNumber":"common/foundation/pricelist/importSequenceNumber", //	Sequence number of the import that created this record.
         "overriddenCreatedOn":"common/foundation/pricelist/overriddenCreatedOn", //	Date and time that the record was migrated.

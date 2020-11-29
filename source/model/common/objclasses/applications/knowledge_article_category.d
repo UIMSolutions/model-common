@@ -4,7 +4,7 @@ import model.common;
 
 static this() {
   // Category for a Knowledge Article.
-  gsCommon.objclasses("common/application/knowledgeArticleCategory", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/knowledgeArticleCategory", new class DEIMObjclass {
     this() {
       super();
       this.objclass("common/entity").attributes([

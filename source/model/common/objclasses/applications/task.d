@@ -4,15 +4,15 @@ import model.common;
 
 static this() {
   // Generic activity representing work needed to be done.
-  gsCommon.objclasses("common/application/task", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/task", new class DEIMObjclass {
     this() {
       super();
       this.objclass("common/entity").attributes([
-        "createdOnBehalfBy":"common/application/task/createdOnBehalfBy", // Shows who created the record on behalf of another user.", 
-        "modifiedOnBehalfBy":"common/application/task/modifiedOnBehalfBy", // Shows who last updated the record on behalf of another user.", 
+        "createdOnBehalfBy":"common/createdOnBehalfBy", // Shows who created the record on behalf of another user.", 
+        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", // Shows who last updated the record on behalf of another user.", 
         "overriddenCreatedOn":"common/application/task/overriddenCreatedOn", // Date and time that the record was migrated.", 
         "importSequenceNumber":"common/application/task/importSequenceNumber", // Unique identifier of the data import or data migration that created this record.", 
-        "ownerId":"common/application/task/ownerId", // Owner Id", 
+        "ownerId":"common/ownerId", // Owner Id", 
         "ownerIdType":"common/application/task/ownerIdType", // The type of owner, either User or Team.", 
         "owningBusinessUnit":"common/application/task/owningBusinessUnit", // Unique identifier for the business unit that owns the record", 
         "owningUser":"common/application/task/owningUser", // Unique identifier of the user that owns the activity.", 

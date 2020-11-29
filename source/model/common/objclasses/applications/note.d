@@ -4,7 +4,7 @@ import model.common;
 
 static this() {
   // Note that is attached to one or more objects, including other notes.
-  gsCommon.objclasses("common/application/note", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/note", new class DEIMObjclass {
     this() {
       super();
       this.objclass("common/entity").attributes([
@@ -23,13 +23,13 @@ static this() {
         "documentBody":"common/application/note/documentBody", //	Contents of the note's attachment.	
         "fileSize":"common/application/note/fileSize", //	File size of the note.	
         "fileName":"common/application/note/fileName", //	File name of the note.	
-        "ownerId":"common/application/note/ownerId", //	Owner Id	
+        "ownerId":"common/ownerId", //	Owner Id	
         "ownerIdType":"common/application/note/ownerIdType", //	The type of owner, either User or Team.	
         "stepId":"common/application/note/stepId", //	workflow step id associated with the note.	
         "overriddenCreatedOn":"common/application/note/overriddenCreatedOn", //	Date and time that the record was migrated.	
         "importSequenceNumber":"common/application/note/importSequenceNumber", //	Unique identifier of the data import or data migration that created this record.	
-        "createdOnBehalfBy":"common/application/note/createdOnBehalfBy", //	Unique identifier of the delegate user who created the annotation.	
-        "modifiedOnBehalfBy":"common/application/note/modifiedOnBehalfBy", //	Unique identifier of the delegate user who last modified the annotation.	
+        "createdOnBehalfBy":"common/createdOnBehalfBy", //	Unique identifier of the delegate user who created the annotation.	
+        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", //	Unique identifier of the delegate user who last modified the annotation.	
         "owningTeam":"common/application/note/owningTeam", //	Unique identifier of the team who owns the note.		
       ]); 
 

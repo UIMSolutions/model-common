@@ -4,7 +4,7 @@ import model.common;
 
 static this() {
   // Comment on a knowledge base article.
-  gsCommon.objclasses("common/application/articleComment", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/articleComment", new class DEIMObjclass {
     this() {
       super();
       this.objclass("common/entity").attributes([
@@ -13,8 +13,8 @@ static this() {
         "title":"common/application/articleComment/title", //	Title of the knowledge base article comment.	
         "commentText":"common/application/articleComment/commentText", //	Comment text for the knowledge base article.	
         "organizationId":"common/application/articleComment/organizationId", //	Unique identifier of the organization with which the article comment is associated.	
-        "createdOnBehalfBy":"common/application/articleComment/createdOnBehalfBy", //	Unique identifier of the delegate user who created the kbarticlecomment.	
-        "modifiedOnBehalfBy":"common/application/articleComment/modifiedOnBehalfBy", //	Unique identifier of the delegate user who last modified the kbarticlecomment.	
+        "createdOnBehalfBy":"common/createdOnBehalfBy", //	Unique identifier of the delegate user who created the kbarticlecomment.	
+        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", //	Unique identifier of the delegate user who last modified the kbarticlecomment.	
       ]); 
 
     }

@@ -4,12 +4,12 @@ import model.common;
 
 static this() {
   // Unit of measure.
-  gsCommon.objclasses("common/foundation/unit", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/foundation/unit", new class DEIMObjclass {
     this() {
       super();
       this.objclass("common/entity").attributes([
-        "createdOnBehalfBy":"common/foundation/unit/createdOnBehalfBy", // Unique identifier of the delegate user who created the uom.
-        "modifiedOnBehalfBy":"common/foundation/unit/modifiedOnBehalfBy", // Unique identifier of the delegate user who last modified the uom.
+        "createdOnBehalfBy":"common/createdOnBehalfBy", // Unique identifier of the delegate user who created the uom.
+        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", // Unique identifier of the delegate user who last modified the uom.
         "importSequenceNumber":"common/foundation/unit/importSequenceNumber", // Sequence number of the import that created this record.
         "overriddenCreatedOn":"common/foundation/unit/overriddenCreatedOn", // Date and time that the record was migrated.
         "timeZoneRuleVersionNumber":"common/foundation/unit/timeZoneRuleVersionNumber", // For internal use only.
