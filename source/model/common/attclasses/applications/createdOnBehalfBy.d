@@ -6,7 +6,7 @@ static this() {
   gsCommon.attclasses.entity("common/createdOnBehalfBy", new class DEIMAttclass {
     this() {
       super(); 
-      _attclassName = "dataFormat/guid/isNullable/true";
+      _attclassName = "dataFormat/guid/nullable/true";
     }
   });
 }

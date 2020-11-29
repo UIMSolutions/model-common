@@ -9,9 +9,9 @@ static this() {
       super(); 
       this.objclass("common/entity");
       this.attributes([
-        "createdOnBehalfBy":"common/createdOnBehalfBy", // Unique identifier of the delegate user who created the record.
-        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", // Unique identifier of the delegate user who modified the record.
-        "organizationId":"common/foundation/property/organizationId", // Unique identifier for the organization
+        "createdOnBehalfBy":"dataformat/guid/nullable/true", // Unique identifier of the delegate user who created the record.
+        "modifiedOnBehalfBy":"dataformat/guid/nullable/true", // Unique identifier of the delegate user who modified the record.
+        "organizationId":"dataformat/guid/nullable/false", // Unique identifier for the organization
         "importSequenceNumber":"common/foundation/property/importSequenceNumber", // Sequence number of the import that created this record.
         "overriddenCreatedOn":"common/foundation/property/overriddenCreatedOn", // Date and time that the record was migrated.
         "timeZoneRuleVersionNumber":"common/foundation/property/timeZoneRuleVersionNumber", // For internal use only.

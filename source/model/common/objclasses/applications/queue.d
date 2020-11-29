@@ -8,8 +8,8 @@ static this() {
     this() {
       super();
       this.objclass("common/entity").attributes([
-        "businessUnitId":"common/application/queue/businessUnitId", //	Unique identifier of the business unit with which the queue is associated.	
-        "organizationId":"common/application/queue/organizationId", //	Unique identifier of the organization associated with the queue.	
+        "businessUnitId":"dataformat/guid/nullable/false", //	Unique identifier of the business unit with which the queue is associated.	
+        "organizationId":"dataformat/guid/nullable/false", //	Unique identifier of the organization associated with the queue.	
         "emailAddress":"common/application/queue/emailAddress", //	Email address that is associated with the queue.	
         "primaryUserId":"common/application/queue/primaryUserId", //	Unique identifier of the owner of the queue.	
         "queueTypeCode":"common/application/queue/queueTypeCode", //	Type of queue that is automatically assigned when a user or queue is created. The type can be public, private, or work in process.	
@@ -36,8 +36,8 @@ static this() {
         "owningUser":"common/application/queue/owningUser", //	Unique identifier of the user who owns the queue.	
         "stateCode":"common/application/queue/stateCode", //	Status of the queue.	
         "stateCode_display":"common/application/queue/stateCode_display", //		
-        "createdOnBehalfBy":"common/createdOnBehalfBy", //	Unique identifier of the delegate user who created the queue.	
-        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", //	Unique identifier of the delegate user who last modified the queue.	
+        "createdOnBehalfBy":"dataformat/guid/nullable/true", //	Unique identifier of the delegate user who created the queue.	
+        "modifiedOnBehalfBy":"dataformat/guid/nullable/true", //	Unique identifier of the delegate user who last modified the queue.	
         "numberOfItems":"common/application/queue/numberOfItems", //	Number of Queue items associated with the queue.	
         "numberOfMembers":"common/application/queue/numberOfMembers", //	Number of Members associated with the queue.	
         "importSequenceNumber":"common/application/queue/importSequenceNumber", //	Unique identifier of the data import or data migration that created this record.	

@@ -9,9 +9,9 @@ static this() {
       super(); 
       this.objclass("common/entity");
       this.attributes([
-        "createdOnBehalfBy":"common/createdOnBehalfBy", //	Unique identifier of the delegate user who created the pricelevel.
-        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", //	Unique identifier of the delegate user who last modified the pricelevel.
-        "organizationId":"common/foundation/pricelist/organizationId", //	Unique identifier for the organization
+        "createdOnBehalfBy":"dataformat/guid/nullable/true", //	Unique identifier of the delegate user who created the pricelevel.
+        "modifiedOnBehalfBy":"dataformat/guid/nullable/true", //	Unique identifier of the delegate user who last modified the pricelevel.
+        "organizationId":"dataformat/guid/nullable/false", //	Unique identifier for the organization
         "importSequenceNumber":"common/foundation/pricelist/importSequenceNumber", //	Sequence number of the import that created this record.
         "overriddenCreatedOn":"common/foundation/pricelist/overriddenCreatedOn", //	Date and time that the record was migrated.
         "timeZoneRuleVersionNumber":"common/foundation/pricelist/timeZoneRuleVersionNumber", //	For internal use only.

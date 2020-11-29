@@ -15,14 +15,14 @@ static this() {
         "statusCode_display":"common/application/connectionRole/statusCode_display", //		
         "category":"common/application/connectionRole/category", //	Categories for connection roles.	
         "category_display":"common/application/connectionRole/category_display", //		
-        "organizationId":"common/application/connectionRole/organizationId", //	Unique identifier of the organization that this connection role belongs to.	
+        "organizationId":"dataformat/guid/nullable/false", //	Unique identifier of the organization that this connection role belongs to.	
         "solutionId":"common/application/connectionRole/solutionId", //	Unique identifier of the associated solution.	
         "componentState":"common/application/connectionRole/componentState", //	State of the component.	
         "componentState_display":"common/application/connectionRole/componentState_display", //		
         "overwriteTime":"common/application/connectionRole/overwriteTime", //	Date and time when the record was last overwritten.	
         "connectionRoleIdUnique":"common/application/connectionRole/connectionRoleIdUnique", //	Unique identifier of the published or unpublished connection role record.	
-        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", //	Unique identifier of the delegate user who modified the relationship role.	
-        "createdOnBehalfBy":"common/createdOnBehalfBy", //	Unique identifier of the delegate user who created the relationship role.	
+        "modifiedOnBehalfBy":"dataformat/guid/nullable/true", //	Unique identifier of the delegate user who modified the relationship role.	
+        "createdOnBehalfBy":"dataformat/guid/nullable/true", //	Unique identifier of the delegate user who created the relationship role.	
         "isManaged":"common/application/connectionRole/isManaged", //	Indicates whether the solution component is part of a managed solution.	
         "isCustomizable":"common/application/connectionRole/isCustomizable", //	Information that specifies whether this component can be customized.	
         "introducedVersion":"common/application/connectionRole/introducedVersion", //	Version in which the form is introduced.	

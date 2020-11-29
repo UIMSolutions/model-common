@@ -17,8 +17,8 @@ static this() {
         "knowledgeArticleView":"common/application/knowledgeArticleViews/knowledgeArticleView", //	Number of Knowledge Article Views visited per day	
         "viewDate":"common/application/knowledgeArticleViews/viewDate", //	Information about the Day	
         "knowledgearticleId":"common/application/knowledgeArticleViews/knowledgearticleId", //	Choose the Knowledge Article.	
-        "createdOnBehalfBy":"common/createdOnBehalfBy", //	Unique identifier of the delegate user who created the record.	
-        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", //	Unique identifier of the delegate user who modified the record.	
+        "createdOnBehalfBy":"dataformat/guid/nullable/true", //	Unique identifier of the delegate user who created the record.	
+        "modifiedOnBehalfBy":"dataformat/guid/nullable/true", //	Unique identifier of the delegate user who modified the record.	
         "ownerId":"common/ownerId", //	Owner Id	
         "ownerIdType":"common/application/knowledgeArticleViews/ownerIdType", //	The type of owner, either User or Team.	
         "owningBusinessUnit":"common/application/knowledgeArticleViews/owningBusinessUnit", //	Unique identifier of the business unit that owns the knowledge article views.	

@@ -25,8 +25,8 @@ static this() {
         "warningTime":"common/application/slaKpiInstance/warningTime", //	Enter the date and time when the service level agreement (SLA) key performance indicator (KPI)will go to a warning state.	
         "transactionCurrencyId":"common/application/slaKpiInstance/transactionCurrencyId", //	Choose the local currency for the record to make sure budgets are reported in the correct currency.	
         "exchangeRate":"common/application/slaKpiInstance/exchangeRate", //	For internal use only.	
-        "createdOnBehalfBy":"common/createdOnBehalfBy", //	For internal use only.	
-        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", //	For internal use only.	
+        "createdOnBehalfBy":"dataformat/guid/nullable/true", //	For internal use only.	
+        "modifiedOnBehalfBy":"dataformat/guid/nullable/true", //	For internal use only.	
         "warningTimeReached":"common/application/slaKpiInstance/warningTimeReached", //	Shows information about whether the case has reached its warning time.	
         "warningTimeReached_display":"common/application/slaKpiInstance/warningTimeReached_display", //		
       ]); 

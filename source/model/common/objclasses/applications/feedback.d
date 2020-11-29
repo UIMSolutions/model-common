@@ -22,8 +22,8 @@ static this() {
         "statusCode":"common/application/feedback/statusCode", //	Select the feedback's status.	
         "statusCode_display":"common/application/feedback/statusCode_display", //		
         "regardingObjectId":"common/application/feedback/regardingObjectId", //	Shows the record that the feedback is associated with.	
-        "createdOnBehalfBy":"common/createdOnBehalfBy", //	Shows who created the record on behalf of another user.	
-        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", //	Unique identifier of the delegate user who modified the record.	
+        "createdOnBehalfBy":"dataformat/guid/nullable/true", //	Shows who created the record on behalf of another user.	
+        "modifiedOnBehalfBy":"dataformat/guid/nullable/true", //	Unique identifier of the delegate user who modified the record.	
         "ownerId":"common/ownerId", //	Owner Id	
         "ownerIdType":"common/application/feedback/ownerIdType", //	The type of owner, either User or Team.	
         "owningBusinessUnit":"common/application/feedback/owningBusinessUnit", //	Unique identifier of the business unit that owns the knowledge article views.	
@@ -36,7 +36,7 @@ static this() {
         "transactionCurrencyId":"common/application/feedback/transactionCurrencyId", //	Choose the local currency for the record to make sure budgets are reported in the correct currency.	
         "exchangeRate":"common/application/feedback/exchangeRate", //	Shows the conversion rate of the record's currency. The exchange rate is used to convert all money fields in the record from the local currency to the system's default currency.	
         "createdByContact":"common/application/feedback/createdByContact", //	Shows the contact who created the record.	
-        "createdOnBehalfByContact":"common/createdOnBehalfByContact", //	Shows the contact who created the record on behalf of another user.	
+        "createdOnBehalfByContact":"dataformat/guid/nullable/trueContact", //	Shows the contact who created the record on behalf of another user.	
       ]); 
 
     }

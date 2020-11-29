@@ -9,9 +9,9 @@ static this() {
       super();
       this.objclass("common/entity").attributes([
         "title":"common/application/goalMetric/name", //	Name of the goal metric.	
-        "createdOnBehalfBy":"common/createdOnBehalfBy", //	Unique identifier of the delegate user who created the record.	
-        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", //	Unique identifier of the delegate user who modified the record.	
-        "organizationId":"common/application/goalMetric/organizationId", //	Unique identifier of the organization.	
+        "createdOnBehalfBy":"dataformat/guid/nullable/true", //	Unique identifier of the delegate user who created the record.	
+        "modifiedOnBehalfBy":"dataformat/guid/nullable/true", //	Unique identifier of the delegate user who modified the record.	
+        "organizationId":"dataformat/guid/nullable/false", //	Unique identifier of the organization.	
         "stateCode":"common/application/goalMetric/stateCode", //	Status of the goal metric.	
         "stateCode_display":"common/application/goalMetric/stateCode_display", //		
         "statusCode":"common/application/goalMetric/statusCode", //	Reason for the status of the goal metric.	

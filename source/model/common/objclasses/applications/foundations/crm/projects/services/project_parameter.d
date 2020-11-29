@@ -8,9 +8,9 @@ static this() {
     this() {
       super();
       this.objclass("common/entity").attributes([
-        "createdOnBehalfBy":"common/createdOnBehalfBy", // Unique identifier of the delegate user who created the record.
-        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", // Unique identifier of the delegate user who modified the record.
-        "organizationId":"common/crm/project/service/projectParameter/organizationId", // Unique identifier for the organization
+        "createdOnBehalfBy":"dataformat/guid/nullable/true", // Unique identifier of the delegate user who created the record.
+        "modifiedOnBehalfBy":"dataformat/guid/nullable/true", // Unique identifier of the delegate user who modified the record.
+        "organizationId":"dataformat/guid/nullable/false", // Unique identifier for the organization
         "stateCode":"common/crm/project/service/projectParameter/stateCode", // Status of the Project Parameter
         "stateCode_display":"common/crm/project/service/projectParameter/stateCode_display", // 
         "statusCode":"common/crm/project/service/projectParameter/statusCode", // Reason for the status of the Project Parameter

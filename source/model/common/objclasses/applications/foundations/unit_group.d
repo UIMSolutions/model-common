@@ -8,9 +8,9 @@ static this() {
     this() {
       super();
       this.objclass("common/entity").attributes([
-        "createdOnBehalfBy":"common/createdOnBehalfBy", // Unique identifier of the delegate user who created the uomschedule.
-        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", // Unique identifier of the delegate user who last modified the uomschedule.
-        "organizationId":"common/foundation/unitGroup/organizationId", // Unique identifier for the organization
+        "createdOnBehalfBy":"dataformat/guid/nullable/true", // Unique identifier of the delegate user who created the uomschedule.
+        "modifiedOnBehalfBy":"dataformat/guid/nullable/true", // Unique identifier of the delegate user who last modified the uomschedule.
+        "organizationId":"dataformat/guid/nullable/false", // Unique identifier for the organization
         "importSequenceNumber":"common/foundation/unitGroup/importSequenceNumber", // Sequence number of the import that created this record.
         "overriddenCreatedOn":"common/foundation/unitGroup/overriddenCreatedOn", // Date and time that the record was migrated.
         "timeZoneRuleVersionNumber":"common/foundation/unitGroup/timeZoneRuleVersionNumber", // For internal use only.

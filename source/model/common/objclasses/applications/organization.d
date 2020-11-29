@@ -9,7 +9,7 @@ static this() {
       super();
       this.objclass("common/entity").attributes([
         "fiscalYearFormat":"common/application/organization/fiscalYearFormat", //	Information that specifies how the name of the fiscal year is displayed throughout Microsoft CRM.	
-        "organizationId":"common/application/organization/organizationId", //	Unique identifier of the organization.	
+        "organizationId":"dataformat/guid/nullable/false", //	Unique identifier of the organization.	
         "title":"common/application/organization/name", //	Name of the organization. The name is set when Microsoft CRM is installed and should not be changed.	
         "userGroupId":"common/application/organization/userGroupId", //	Unique identifier of the default group of users in the organization.	
         "privilegeUserGroupId":"common/application/organization/privilegeUserGroupId", //	Unique identifier of the default privilege for users in the organization.	
@@ -125,7 +125,7 @@ static this() {
         "ISVIntegrationCode_display":"common/application/organization/ISVIntegrationCode_display", //		
         "decimalSymbol":"common/application/organization/decimalSymbol", //	Symbol used for decimal in Microsoft Dynamics 365.	
         "maxUploadFileSize":"common/application/organization/maxUploadFileSize", //	Maximum allowed size of an attachment.	
-        "isAppMode":"common/application/organization/isAppMode", //	Indicates whether loading of Microsoft Dynamics 365 in a browser window that does not have address, tool, and menu bars is enabled.	
+        "isAppMode":"dataformat/boolean/nullable/false", //	Indicates whether loading of Microsoft Dynamics 365 in a browser window that does not have address, tool, and menu bars is enabled.	
         "enablePricingOnCreate":"common/application/organization/enablePricingOnCreate", //	Enable pricing calculations on a Create call.	
         "isSOPIntegrationEnabled":"common/application/organization/isSOPIntegrationEnabled", //	Enable sales order processing integration.	
         "PMDesignator":"common/application/organization/PMDesignator", //	PM designator to use throughout Microsoft Dynamics 365.	
@@ -153,8 +153,8 @@ static this() {
         "pastExpansionWindow":"common/application/organization/pastExpansionWindow", //	Specifies the maximum number of months in past for which the recurring activities can be created.	
         "recurrenceExpansionSynchCreateMax":"common/application/organization/recurrenceExpansionSynchCreateMax", //	Specifies the maximum number of instances to be created synchronously after creating a recurring appointment.	
         "recurrenceDefaultNumberOfOccurrences":"common/application/organization/recurrenceDefaultNumberOfOccurrences", //	Specifies the default value for number of occurrences field in the recurrence dialog.	
-        "createdOnBehalfBy":"common/createdOnBehalfBy", //	Unique identifier of the delegate user who created the organization.	
-        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", //	Unique identifier of the delegate user who last modified the organization.	
+        "createdOnBehalfBy":"dataformat/guid/nullable/true", //	Unique identifier of the delegate user who created the organization.	
+        "modifiedOnBehalfBy":"dataformat/guid/nullable/true", //	Unique identifier of the delegate user who last modified the organization.	
         "getStartedPaneContentEnabled":"common/application/organization/getStartedPaneContentEnabled", //	Indicates whether Get Started content is enabled for this organization.	
         "useReadForm":"common/application/organization/useReadForm", //	Indicates whether the read-optimized form should be enabled for this organization.	
         "initialVersion":"common/application/organization/initialVersion", //	Initial version of the organization.	
@@ -204,7 +204,7 @@ static this() {
         "emailConnectionChannel":"common/application/organization/emailConnectionChannel", //	Select if you want to use the Email Router or server-side synchronization for email processing.	
         "emailConnectionChannel_display":"common/application/organization/emailConnectionChannel_display", //		
         "defaultEmailServerProfileId":"common/application/organization/defaultEmailServerProfileId", //	Unique identifier of the default email server profile.	
-        "isAutoSaveEnabled":"common/application/organization/isAutoSaveEnabled", //	Information on whether auto save is enabled.	
+        "isAutoSaveEnabled":"dataformat/boolean/nullable/false", //	Information on whether auto save is enabled.	
         "bingMapsApiKey":"common/application/organization/bingMapsApiKey", //	Api Key to be used in requests to Bing Maps services.	
         "generateAlertsForErrors":"common/application/organization/generateAlertsForErrors", //	Indicates whether alerts will be generated for errors.	
         "generateAlertsForInformation":"common/application/organization/generateAlertsForInformation", //	Indicates whether alerts will be generated for information.	
@@ -229,7 +229,7 @@ static this() {
         "maxDepthForHierarchicalSecurityModel":"common/application/organization/maxDepthForHierarchicalSecurityModel", //	Maximum depth for hierarchy security propagation.	
         "slaPauseStates":"common/application/organization/slaPauseStates", //	Contains the on hold case status values.	
         "socialInsightsEnabled":"common/application/organization/socialInsightsEnabled", //	Flag for whether the organization is using Social Insights.	
-        "isAppointmentAttachmentSyncEnabled":"common/application/organization/isAppointmentAttachmentSyncEnabled", //	Enable or disable attachments sync for outlook and exchange.	
+        "isAppointmentAttachmentSyncEnabled":"dataformat/boolean/nullable/false", //	Enable or disable attachments sync for outlook and exchange.	
         "isAssignedTasksSyncEnabled":"common/application/organization/isAssignedTasksSyncEnabled", //	Enable or disable assigned tasks sync for outlook and exchange.	
         "isContactMailingAddressSyncEnabled":"common/application/organization/isContactMailingAddressSyncEnabled", //	Enable or disable mailing address sync for outlook and exchange.	
         "maxSupportedInternetExplorerVersion":"common/application/organization/maxSupportedInternetExplorerVersion", //	The maximum version of IE to run browser emulation for in Outlook client	

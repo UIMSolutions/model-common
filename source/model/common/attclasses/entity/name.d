@@ -7,7 +7,7 @@ static this() {
   classes.entity("entity/name", new class DEIMAttclass {
     this() {
       super(); 
-      _attclassName = "dataFormat/string/maximumLength/100/isNullable/true";
+      _attclassName = "dataFormat/string/maximumLength/100/nullable/true";
     }
   });
 }

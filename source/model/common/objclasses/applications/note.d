@@ -28,8 +28,8 @@ static this() {
         "stepId":"common/application/note/stepId", //	workflow step id associated with the note.	
         "overriddenCreatedOn":"common/application/note/overriddenCreatedOn", //	Date and time that the record was migrated.	
         "importSequenceNumber":"common/application/note/importSequenceNumber", //	Unique identifier of the data import or data migration that created this record.	
-        "createdOnBehalfBy":"common/createdOnBehalfBy", //	Unique identifier of the delegate user who created the annotation.	
-        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", //	Unique identifier of the delegate user who last modified the annotation.	
+        "createdOnBehalfBy":"dataformat/guid/nullable/true", //	Unique identifier of the delegate user who created the annotation.	
+        "modifiedOnBehalfBy":"dataformat/guid/nullable/true", //	Unique identifier of the delegate user who last modified the annotation.	
         "owningTeam":"common/application/note/owningTeam", //	Unique identifier of the team who owns the note.		
       ]); 
 

@@ -8,9 +8,9 @@ static this() {
     this() {
       super();
       this.objclass("common/entity").attributes([
-        "createdOnBehalfBy":"common/createdOnBehalfBy", //	Unique identifier of the delegate user who created the product.	
-        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", //	Unique identifier of the delegate user who last modified the product.	
-        "organizationId":"common/foundation/product/organizationId", //	Unique identifier for the organization	
+        "createdOnBehalfBy":"dataformat/guid/nullable/true", //	Unique identifier of the delegate user who created the product.	
+        "modifiedOnBehalfBy":"dataformat/guid/nullable/true", //	Unique identifier of the delegate user who last modified the product.	
+        "organizationId":"dataformat/guid/nullable/false", //	Unique identifier for the organization	
         "importSequenceNumber":"common/foundation/product/importSequenceNumber", //	Sequence number of the import that created this record.	
         "overriddenCreatedOn":"common/foundation/product/overriddenCreatedOn", //	Date and time that the record was migrated.	
         "timeZoneRuleVersionNumber":"common/foundation/product/timeZoneRuleVersionNumber", //	For internal use only.	

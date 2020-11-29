@@ -10,7 +10,7 @@ static this() {
       this.objclass("common/entity").attributes([
         "createdOnBehalfBy":"common/application/position/createdOnBehalfBy", //	Unique identifier of the delegate user who created the record.	
         "modifiedOnBehalfBy":"common/application/position/modifiedOnBehalfBy", //	Unique identifier of the delegate user who modified the record.	
-        "organizationId":"common/application/position/organizationId", //	Unique identifier for the organization	
+        "organizationId":"dataformat/guid/nullable/false", //	Unique identifier for the organization	
         "stateCode":"common/application/position/stateCode", //	Status of the Position	
         "stateCode_display":"common/application/position/stateCode_display", //		
         "statusCode":"common/application/position/statusCode", //	Reason for the status of the Position	

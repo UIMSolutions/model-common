@@ -21,7 +21,7 @@ static this() {
         "status":"common/application/queueItem/status", //	Reason for the status of the queue item.	
         "toRecipients":"common/application/queueItem/toRecipients", //	Recipients listed on the To line of the message for email queue items.	
         "sender":"common/application/queueItem/sender", //	Sender who created the queue item.	
-        "organizationId":"common/application/queueItem/organizationId", //	Unique identifier of the organization with which the queue item is associated.	
+        "organizationId":"dataformat/guid/nullable/false", //	Unique identifier of the organization with which the queue item is associated.	
         "timeZoneRuleVersionNumber":"common/application/queueItem/timeZoneRuleVersionNumber", //	For internal use only.	
         "UTCConversionTimeZoneCode":"common/application/queueItem/UTCConversionTimeZoneCode", //	Time zone code that was in use when the record was created.	
         "overriddenCreatedOn":"common/application/queueItem/overriddenCreatedOn", //	Date and time that the record was migrated.	
@@ -36,8 +36,8 @@ static this() {
         "statusCode_display":"common/application/queueItem/statusCode_display", //		
         "stateCode":"common/application/queueItem/stateCode", //	Shows whether the queue record is active or inactive. Inactive queue records are read-only and can't be edited unless they are reactivated.	
         "stateCode_display":"common/application/queueItem/stateCode_display", //		
-        "createdOnBehalfBy":"common/createdOnBehalfBy", //	Shows who created the record on behalf of another user.	
-        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", //	Unique identifier of the delegate user who last modified the queueitem.	
+        "createdOnBehalfBy":"dataformat/guid/nullable/true", //	Shows who created the record on behalf of another user.	
+        "modifiedOnBehalfBy":"dataformat/guid/nullable/true", //	Unique identifier of the delegate user who last modified the queueitem.	
         "transactionCurrencyId":"common/application/queueItem/transactionCurrencyId", //	Choose the local currency for the record to make sure budgets are reported in the correct currency.	
         "exchangeRate":"common/application/queueItem/exchangeRate", //	Shows the conversion rate of the record's currency. The exchange rate is used to convert all money fields in the record from the local currency to the system's default currency.	
         "importSequenceNumber":"common/application/queueItem/importSequenceNumber", //	Unique identifier of the data import or data migration that created this record.		

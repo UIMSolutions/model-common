@@ -8,8 +8,8 @@ static this() {
     this() {
       super();
       this.objclass("common/entity").attributes([
-        "createdOnBehalfBy":"common/createdOnBehalfBy", // Shows who created the record on behalf of another user.
-        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", // Shows who last updated the record on behalf of another user.
+        "createdOnBehalfBy":"dataformat/guid/nullable/true", // Shows who created the record on behalf of another user.
+        "modifiedOnBehalfBy":"dataformat/guid/nullable/true", // Shows who last updated the record on behalf of another user.
         "overriddenCreatedOn":"common/crm/project/service/projectServiceApproval/overriddenCreatedOn", // Date and time that the record was migrated.
         "importSequenceNumber":"common/crm/project/service/projectServiceApproval/importSequenceNumber", // Sequence number of the import that created this record.
         "ownerId":"common/ownerId", // Owner Id

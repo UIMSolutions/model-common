@@ -35,12 +35,12 @@ static this() {
         "ownerIdType":"common/application/sla/ownerIdType", //	The type of owner, either User or Team.	
         "applicableFromPickList":"common/application/sla/applicableFromPickList", //	Select the field that specifies the date and time from which the SLA items will be calculated. For example, if you select the Case Created On field, SLA calculation will begin from the time the case is created.	
         "applicableFromPickList_display":"common/application/sla/applicableFromPickList_display", //		
-        "workflowId":"common/application/sla/workflowId", //	Workflow associated with the SLA.	
+        "workflowId":"dataformat/guid/nullable/true", //	Workflow associated with the SLA.	
         "allowPauseResume":"common/application/sla/allowPauseResume", //	Select whether this SLA will allow pausing and resuming during the time calculation.	
         "SLAType":"common/application/sla/SLAType", //	Select the type of service level agreement (SLA).	
         "SLAType_display":"common/application/sla/SLAType_display", //		
-        "createdOnBehalfBy":"common/createdOnBehalfBy", //	Shows who created the record on behalf of another user.	
-        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", //	Shows who created the record on behalf of another user.	
+        "createdOnBehalfBy":"dataformat/guid/nullable/true", //	Shows who created the record on behalf of another user.	
+        "modifiedOnBehalfBy":"dataformat/guid/nullable/true", //	Shows who created the record on behalf of another user.	
         "primaryEntityOTC":"common/application/sla/primaryEntityOTC", //	Shows the primary entity that the SLA has been created for.	
       ]); 
 

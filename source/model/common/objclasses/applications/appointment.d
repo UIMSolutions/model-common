@@ -8,8 +8,8 @@ static this() {
     this() {
       super();
       this.objclass("common/entity").attributes([
-        "createdOnBehalfBy":"common/createdOnBehalfBy", //	Shows who created the record on behalf of another user.	
-        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", //	Shows who last updated the record on behalf of another user.	
+        "createdOnBehalfBy":"dataformat/guid/nullable/true", //	Shows who created the record on behalf of another user.	
+        "modifiedOnBehalfBy":"dataformat/guid/nullable/true", //	Shows who last updated the record on behalf of another user.	
         "overriddenCreatedOn":"common/application/appointment/overriddenCreatedOn", //	Date and time that the record was migrated.	
         "importSequenceNumber":"common/application/appointment/importSequenceNumber", //	Unique identifier of the data import or data migration that created this record.	
         "ownerId":"common/ownerId", //	Owner Id	
@@ -45,7 +45,7 @@ static this() {
         "organizer":"common/application/appointment/organizer", //	The user who is in charge of coordinating or leading the activity.	
         "requiredAttendees":"common/application/appointment/requiredAttendees", //	Enter the account, contact, lead, user, or other equipment resources that are required to attend the activity.	
         "optionalAttendees":"common/application/appointment/optionalAttendees", //	The account, contact, lead, user, or other equipment resources that are not needed at the activity, but can optionally attend.	
-        "isAllDayEvent":"common/application/appointment/isAllDayEvent", //	Select whether the appointment is an all-day event to make sure that the required resources are scheduled for the full day.	
+        "isAllDayEvent":"dataformat/boolean/nullable/true", //	Select whether the appointment is an all-day event to make sure that the required resources are scheduled for the full day.	
         "globalObjectId":"common/application/appointment/globalObjectId", //	Shows the ID of the appointment in Microsoft Office Outlook. The ID is used to synchronize the appointment between Microsoft Dynamics 365 and the correct Exchange account.	
         "statusCode":"common/application/appointment/statusCode", //	Select the appointment's status.	
         "statusCode_display":"common/application/appointment/statusCode_display", //		

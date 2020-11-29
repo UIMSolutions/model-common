@@ -8,7 +8,7 @@ static this() {
     this() {
       super();
       this.objclass("common/entity").attributes([
-        "createdOnBehalfBy":"common/createdOnBehalfBy", //	Shows who created the record on behalf of another user.	
+        "createdOnBehalfBy":"dataformat/guid/nullable/true", //	Shows who created the record on behalf of another user.	
         "modifiedOnBehalfBy":"common/application/recurringAppointment/modifiedOnBehalfBy", //	Shows who last updated the record on behalf of another user.	
         "overriddenCreatedOn":"common/application/recurringAppointment/overriddenCreatedOn", //	Date and time that the record was migrated.	
         "importSequenceNumber":"common/application/recurringAppointment/importSequenceNumber", //	Unique identifier of the data import or data migration that created this record.	
@@ -22,8 +22,8 @@ static this() {
         "activityId":"common/application/recurringAppointment/activityId", //	Unique identifier of the activity.	
         "activityTypeCode":"common/application/recurringAppointment/activityTypeCode", //	Type of activity.	
         "isBilled":"common/application/recurringAppointment/isBilled", //	Information regarding whether the fax activity was billed as part of resolving a case.	
-        "isRegularActivity":"common/application/recurringAppointment/isRegularActivity", //	Information regarding whether the activity is a regular activity type or event type.	
-        "isWorkflowCreated":"common/application/recurringAppointment/isWorkflowCreated", //	Information regarding whether the activity was created from a workflow rule.	
+        "isRegularActivity":"dataformat/boolean/nullable/false", //	Information regarding whether the activity is a regular activity type or event type.	
+        "isWorkflowCreated":"dataformat/boolean/nullable/true", //	Information regarding whether the activity was created from a workflow rule.	
         "priorityCode":"common/application/recurringAppointment/priorityCode", //	Priority of the activity.	
         "priorityCode_display":"common/application/recurringAppointment/priorityCode_display", //		
         "regardingObjectId":"common/application/recurringAppointment/regardingObjectId", //	Unique identifier of the object with which the activity is associated.	
@@ -40,16 +40,16 @@ static this() {
         "organizer":"common/application/recurringAppointment/organizer", //	The user who is in charge of coordinating or leading the activity.	
         "requiredAttendees":"common/application/recurringAppointment/requiredAttendees", //	Enter the account, contact, lead, user, or other equipment resources that are required to attend the activity.	
         "optionalAttendees":"common/application/recurringAppointment/optionalAttendees", //	The account, contact, lead, user, or other equipment resources that are not needed at the activity, but can optionally attend.	
-        "isWeekDayPattern":"common/application/recurringAppointment/isWeekDayPattern", //	Indicates whether the weekly recurrence pattern is a daily weekday pattern. Valid for weekly recurrence pattern only.	
+        "isWeekDayPattern":"dataformat/boolean/nullable/false", //	Indicates whether the weekly recurrence pattern is a daily weekday pattern. Valid for weekly recurrence pattern only.	
         "ruleId":"common/application/recurringAppointment/ruleId", //	Unique identifier of the recurrence rule that is associated with the recurring appointment series.	
-        "isNthYearly":"common/application/recurringAppointment/isNthYearly", //	Indicates whether the recurring appointment series should occur after every N years. Valid for yearly recurrence pattern only.	
+        "isNthYearly":"dataformat/boolean/nullable/false", //	Indicates whether the recurring appointment series should occur after every N years. Valid for yearly recurrence pattern only.	
         "stateCode":"common/application/recurringAppointment/stateCode", //	Shows whether the recurring appointment is open, scheduled, completed, or canceled. Completed and canceled appointments are read-only and can't be edited.	
         "stateCode_display":"common/application/recurringAppointment/stateCode_display", //		
         "groupId":"common/application/recurringAppointment/groupId", //	Unique identifier of the recurring appointment series for which the recurrence information was updated.	
         "lastExpandedInstanceDate":"common/application/recurringAppointment/lastExpandedInstanceDate", //	Date of last expanded instance of a recurring appointment series.	
         "effectiveEndDate":"common/application/recurringAppointment/effectiveEndDate", //	Actual end date of the recurring appointment series based on the specified end date and recurrence pattern.	
         "patternStartDate":"common/application/recurringAppointment/patternStartDate", //	Start date of the recurrence range.	
-        "isRegenerate":"common/application/recurringAppointment/isRegenerate", //	For internal use only.	
+        "isRegenerate":"dataformat/boolean/nullable/false", //	For internal use only.	
         "firstDayOfWeek":"common/application/recurringAppointment/firstDayOfWeek", //	First day of week for the recurrence pattern.	
         "outlookOwnerApptId":"common/application/recurringAppointment/outlookOwnerApptId", //	Unique identifier of the Microsoft Office Outlook recurring appointment series owner that correlates to the PR_OWNER_APPT_ID MAPI property.	
         "recurrencePatternType":"common/application/recurringAppointment/recurrencePatternType", //	Select the pattern type for the recurring appointment to indicate whether the appointment occurs daily, weekly, monthly, or yearly.	
@@ -65,9 +65,9 @@ static this() {
         "statusCode_display":"common/application/recurringAppointment/statusCode_display", //		
         "startTime":"common/application/recurringAppointment/startTime", //	Start time of the recurring appointment series.	
         "occurrences":"common/application/recurringAppointment/occurrences", //	Number of appointment occurrences in a recurring appointment series.	
-        "isAllDayEvent":"common/application/recurringAppointment/isAllDayEvent", //	Select whether the recurring appointment is an all-day event to make sure that the required resources are scheduled for the full day.	
+        "isAllDayEvent":"dataformat/boolean/nullable/true", //	Select whether the recurring appointment is an all-day event to make sure that the required resources are scheduled for the full day.	
         "seriesStatus":"common/application/recurringAppointment/seriesStatus", //	Indicates whether the recurring appointment series is active or inactive.	
-        "isNthMonthly":"common/application/recurringAppointment/isNthMonthly", //	Indicates whether the recurring appointment series should occur after every N months. Valid for monthly recurrence pattern only.	
+        "isNthMonthly":"dataformat/boolean/nullable/false", //	Indicates whether the recurring appointment series should occur after every N months. Valid for monthly recurrence pattern only.	
         "endTime":"common/application/recurringAppointment/endTime", //	End time of the associated activity.	
         "daysOfWeekMask":"common/application/recurringAppointment/daysOfWeekMask", //	Bitmask that represents the days of the week on which the recurring appointment occurs.	
         "instance":"common/application/recurringAppointment/instance", //	Specifies the recurring appointment series to occur on every Nth day of a month. Valid for monthly and yearly recurrence patterns only.	

@@ -9,16 +9,16 @@ static this() {
       super();
       this.objclass("common/entity").attributes([
         "title":"common/application/team/name", // Name of the team.	
-        "organizationId":"common/application/team/organizationId", // Unique identifier of the organization associated with the team.	
-        "businessUnitId":"common/application/team/businessUnitId", // Unique identifier of the business unit with which the team is associated.	
+        "organizationId":"dataformat/guid/nullable/false", // Unique identifier of the organization associated with the team.	
+        "businessUnitId":"dataformat/guid/nullable/false", // Unique identifier of the business unit with which the team is associated.	
         "emailAddress":"common/application/team/emailAddress", // Email address for the team.	
         "importSequenceNumber":"common/application/team/importSequenceNumber", // Unique identifier of the data import or data migration that created this record.	
         "overriddenCreatedOn":"common/application/team/overriddenCreatedOn", // Date and time that the record was migrated.	
         "administratorId":"common/application/team/administratorId", // Unique identifier of the user primary responsible for the team.	
         "isDefault":"common/application/team/isDefault", // Information about whether the team is a default business unit team.	
         "yomiName":"common/application/team/yomiName", // Pronunciation of the full name of the team, written in phonetic hiragana or katakana characters.	
-        "createdOnBehalfBy":"common/createdOnBehalfBy", // Unique identifier of the delegate user who created the team.	
-        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", // Unique identifier of the delegate user who last modified the team.	
+        "createdOnBehalfBy":"dataformat/guid/nullable/true", // Unique identifier of the delegate user who created the team.	
+        "modifiedOnBehalfBy":"dataformat/guid/nullable/true", // Unique identifier of the delegate user who last modified the team.	
         "traversedPath":"common/application/team/traversedPath", // For internal use only.	
         "queueId":"common/application/team/queueId", // Unique identifier of the default queue for the team.	
         "transactionCurrencyId":"common/application/team/transactionCurrencyId", // Unique identifier of the currency associated with the team.	

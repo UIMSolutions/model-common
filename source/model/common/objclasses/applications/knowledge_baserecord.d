@@ -9,9 +9,9 @@ static this() {
       super();
       this.objclass("common/entity").attributes([
         "title":"common/application/knowledgeBaseRecord/title", //	Shows the title of the knowledge base (KB) Record.	
-        "createdOnBehalfBy":"common/createdOnBehalfBy", //	Unique identifier of the delegate user who created the record.	
-        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", //	Unique identifier of the delegate user who modified the record.	
-        "organizationId":"common/application/knowledgeBaseRecord/organizationId", //	Unique identifier for the organization	
+        "createdOnBehalfBy":"dataformat/guid/nullable/true", //	Unique identifier of the delegate user who created the record.	
+        "modifiedOnBehalfBy":"dataformat/guid/nullable/true", //	Unique identifier of the delegate user who modified the record.	
+        "organizationId":"dataformat/guid/nullable/false", //	Unique identifier for the organization	
         "timeZoneRuleVersionNumber":"common/application/knowledgeBaseRecord/timeZoneRuleVersionNumber", //	For internal use only.	
         "privateUrl":"common/application/knowledgeBaseRecord/privateUrl", //	Shows the internal Parature service desk URL of the knowledge base records.	
         "publicUrl":"common/application/knowledgeBaseRecord/publicUrl", //	Shows the public Parature portal URL of the knowledge base records.	

@@ -24,8 +24,8 @@ static this() {
         "overwriteTime":"common/application/emailSignature/overwriteTime", //	For internal use only.	
         "componentState":"common/application/emailSignature/componentState", //	For internal use only.	
         "componentState_display":"common/application/emailSignature/componentState_display", //		
-        "createdOnBehalfBy":"common/createdOnBehalfBy", //	Unique identifier of the delegate user who created the email signature.	
-        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", //	Unique identifier of the delegate user who last modified the email signature.	
+        "createdOnBehalfBy":"dataformat/guid/nullable/true", //	Unique identifier of the delegate user who created the email signature.	
+        "modifiedOnBehalfBy":"dataformat/guid/nullable/true", //	Unique identifier of the delegate user who last modified the email signature.	
         "owningTeam":"common/application/emailSignature/owningTeam", //	Unique identifier of the team who owns the email signature.	
         "isCustomizable":"common/application/emailSignature/isCustomizable", //	Information that specifies whether this component can be customized.	
         "overriddenCreatedOn":"common/application/emailSignature/overriddenCreatedOn", //	Date and time that the record was migrated.	

@@ -23,8 +23,8 @@ static this() {
         "owningUser":"common/application/customerRelationship/owningUser", //	Unique identifier of the user who owns the customer relationship.	
         "overriddenCreatedOn":"common/application/customerRelationship/overriddenCreatedOn", //	Date and time that the record was migrated.	
         "importSequenceNumber":"common/application/customerRelationship/importSequenceNumber", //	Unique identifier of the data import or data migration that created this record.	
-        "createdOnBehalfBy":"common/createdOnBehalfBy", //	Shows who created the record on behalf of another user.	
-        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", //	Shows who created the record on behalf of another user.	
+        "createdOnBehalfBy":"dataformat/guid/nullable/true", //	Shows who created the record on behalf of another user.	
+        "modifiedOnBehalfBy":"dataformat/guid/nullable/true", //	Shows who created the record on behalf of another user.	
         "owningTeam":"common/application/customerRelationship/owningTeam", //	Unique identifier of the team who owns the customer relationship.	
       ]); 
 

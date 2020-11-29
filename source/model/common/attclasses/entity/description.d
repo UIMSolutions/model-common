@@ -6,7 +6,7 @@ static this() {
   gsCommon.attclasses.entity("entity/description", new class DEIMAttclass {
     this() {
       super(); 
-      _attclassName = "dataFormat/string/maximumLength/2000/isNullable/true";
+      _attclassName = "dataFormat/string/maximumLength/2000/nullable/true";
     }
   });
 }

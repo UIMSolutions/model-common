@@ -8,7 +8,7 @@ static this() {
     this() {
       super();
       this.objclass("common/entity").attributes([
-        "organizationId":"common/application/businessUnit/organizationId", //	Unique identifier of the organization associated with the business unit.	
+        "organizationId":"dataformat/guid/nullable/false", //	Unique identifier of the organization associated with the business unit.	
         "title":"common/application/businessUnit/name", //	Name of the business unit.	
         "divisionName":"common/application/businessUnit/divisionName", //	Name of the division to which the business unit belongs.	
         "fileAsName":"common/application/businessUnit/fileAsName", //	Alternative name under which the business unit can be filed.	
@@ -22,8 +22,8 @@ static this() {
         "emailAddress":"common/application/businessUnit/emailAddress", //	Email address for the business unit.	
         "inheritanceMask":"common/application/businessUnit/inheritanceMask", //	Inheritance mask for the business unit.	
         "workflowSuspended":"common/application/businessUnit/workflowSuspended", //	Information about whether workflow or sales process rules have been suspended.	
-        "parentBusinessUnitId":"common/application/businessUnit/parentBusinessUnitId", //	Unique identifier for the parent business unit.	
-        "isDisabled":"common/application/businessUnit/isDisabled", //	Information about whether the business unit is enabled or disabled.	
+        "parentBusinessUnitId":"dataformat/guid/nullable/false", //	Unique identifier for the parent business unit.	
+        "isDisabled":"dataformat/boolean/nullable/true", //	Information about whether the business unit is enabled or disabled.	
         "disabledReason":"common/application/businessUnit/disabledReason", //	Reason for disabling the business unit.	
         "address1AddressId":"common/application/businessUnit/address1AddressId", //	Unique identifier for address 1.	
         "address1AddressTypeCode":"common/application/businessUnit/address1AddressTypeCode", //	Type of address for address 1, such as billing, shipping, or primary address.	
@@ -75,8 +75,8 @@ static this() {
         "calendarId":"common/application/businessUnit/calendarId", //	Fiscal calendar associated with the business unit.	
         "overriddenCreatedOn":"common/application/businessUnit/overriddenCreatedOn", //	Date and time that the record was migrated.	
         "importSequenceNumber":"common/application/businessUnit/importSequenceNumber", //	Unique identifier of the data import or data migration that created this record.	
-        "createdOnBehalfBy":"common/createdOnBehalfBy", //	Unique identifier of the delegate user who created the businessunit.	
-        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", //	Unique identifier of the delegate user who last modified the businessunit.	
+        "createdOnBehalfBy":"dataformat/guid/nullable/true", //	Unique identifier of the delegate user who created the businessunit.	
+        "modifiedOnBehalfBy":"dataformat/guid/nullable/true", //	Unique identifier of the delegate user who last modified the businessunit.	
         "transactionCurrencyId":"common/application/businessUnit/transactionCurrencyId", //	Unique identifier of the currency associated with the businessunit.	
         "exchangeRate":"common/application/businessUnit/exchangeRate", // Exchange rate for the currency associated with the businessunit with respect to the base currency.	
       ]); 

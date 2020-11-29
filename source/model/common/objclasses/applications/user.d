@@ -9,8 +9,8 @@ static this() {
       super();
       this.objclass("common/entity").attributes([
         "systemUserId":"common/application/user/systemUserId", //Unique identifier for the user.
-        "organizationId":"common/application/user/organizationId", //Unique identifier of the organization associated with the user.
-        "businessUnitId":"common/application/user/businessUnitId", //Unique identifier of the business unit with which the user is associated.
+        "organizationId":"dataformat/guid/nullable/false", //Unique identifier of the organization associated with the user.
+        "businessUnitId":"dataformat/guid/nullable/false", //Unique identifier of the business unit with which the user is associated.
         "parentSystemUserId":"common/application/user/parentSystemUserId", //Unique identifier of the manager of the user.
         "firstName":"common/application/user/firstName", //First name of the user.
         "salutation":"common/application/user/salutation", //Salutation for correspondence with the user.
@@ -108,9 +108,9 @@ static this() {
         "yomiFirstName":"common/application/user/yomiFirstName", //Pronunciation of the first name of the user, written in phonetic hiragana or katakana characters.
         "isIntegrationUser":"common/application/user/isIntegrationUser", //Check if user is an integration user.
         "defaultFiltersPopulated":"common/application/user/defaultFiltersPopulated", //Indicates if default outlook filters have been populated.
-        "createdOnBehalfBy":"common/createdOnBehalfBy", //Unique identifier of the delegate user who created the systemuser.
+        "createdOnBehalfBy":"dataformat/guid/nullable/true", //Unique identifier of the delegate user who created the systemuser.
         "queueId":"common/application/user/queueId", //Unique identifier of the default queue for the user.
-        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", //Unique identifier of the delegate user who last modified the systemuser.
+        "modifiedOnBehalfBy":"dataformat/guid/nullable/true", //Unique identifier of the delegate user who last modified the systemuser.
         "emailRouterAccessApproval":"common/application/user/emailRouterAccessApproval", //Shows the status of the primary email address.
         "emailRouterAccessApproval_display":"common/application/user/emailRouterAccessApproval_display", //
         "transactionCurrencyId":"common/application/user/transactionCurrencyId", //Unique identifier of the currency associated with the systemuser.

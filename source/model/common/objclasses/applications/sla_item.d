@@ -29,9 +29,9 @@ static this() {
         "owningUser":"common/application/slaItem/owningUser", //	Unique identifier of the user who owns the SLA Item record.	
         "ownerId":"common/ownerId", //	Owner Id	
         "ownerIdType":"common/application/slaItem/ownerIdType", //	The type of owner, either User or Team.	
-        "workflowId":"common/application/slaItem/workflowId", //	Workflow associated with the SLA Item.	
-        "createdOnBehalfBy":"common/createdOnBehalfBy", //	Shows who created the record on behalf of another user.	
-        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", //	Shows who created the record on behalf of another user.	
+        "workflowId":"dataformat/guid/nullable/true", //	Workflow associated with the SLA Item.	
+        "createdOnBehalfBy":"dataformat/guid/nullable/true", //	Shows who created the record on behalf of another user.	
+        "modifiedOnBehalfBy":"dataformat/guid/nullable/true", //	Shows who created the record on behalf of another user.	
       ]); 
 
     }

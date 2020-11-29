@@ -9,8 +9,8 @@ static this() {
       super(); 
       this.objclass("common/entity");
       this.attributes([
-        "createdOnBehalfBy":"common/createdOnBehalfBy", //	Shows who created the record on behalf of another user.
-        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", //	Shows who last updated the record on behalf of another user.
+        "createdOnBehalfBy":"dataformat/guid/nullable/true", //	Shows who created the record on behalf of another user.
+        "modifiedOnBehalfBy":"dataformat/guid/nullable/true", //	Shows who last updated the record on behalf of another user.
         "importSequenceNumber":"common/foundation/pricelistItem/importSequenceNumber", //	Sequence number of the import that created this record.
         "overriddenCreatedOn":"common/foundation/pricelistItem/overriddenCreatedOn", //	Date and time that the record was migrated.
         "timeZoneRuleVersionNumber":"common/foundation/pricelistItem/timeZoneRuleVersionNumber", //	For internal use only.
@@ -22,7 +22,7 @@ static this() {
         "transactionCurrencyId":"common/foundation/pricelistItem/transactionCurrencyId", //	Choose the local currency for the record to make sure budgets are reported in the correct currency.
         "exchangeRate":"common/foundation/pricelistItem/exchangeRate", //	Shows the conversion rate of the record's currency. The exchange rate is used to convert all money fields in the record from the local currency to the system's default currency.
         "amountBase":"common/foundation/pricelistItem/amountBase", //	Value of the Amount in base currency.
-        "organizationId":"common/foundation/pricelistItem/organizationId", //	Unique identifier of the organization associated with the price list.
+        "organizationId":"dataformat/guid/nullable/false", //	Unique identifier of the organization associated with the price list.
         "percentage":"common/foundation/pricelistItem/percentage", //	Percentage for the price list.
         "priceLevelId":"common/foundation/pricelistItem/priceLevelId", //	Unique identifier of the price level associated with this price list.
         "pricingMethodCode":"common/foundation/pricelistItem/pricingMethodCode", //	Pricing method applied to the price list.

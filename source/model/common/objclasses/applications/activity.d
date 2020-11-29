@@ -8,8 +8,8 @@ static this() {
     this() {
       super();
       this.objclass("common/entity").attributes([        
-        "createdOnBehalfBy":"common/createdOnBehalfBy", // 	Shows who created the record on behalf of another user.	
-        "modifiedOnBehalfBy":"common/modifiedOnBehalfBy", // 	Shows who last updated the record on behalf of another user.	
+        "createdOnBehalfBy":"dataformat/guid/nullable/true", // 	Shows who created the record on behalf of another user.	
+        "modifiedOnBehalfBy":"dataformat/guid/nullable/true", // 	Shows who last updated the record on behalf of another user.	
         "ownerId":"common/ownerId", // 	Owner Id	
         "ownerIdType":"common/application/activity/ownerIdType", // 	The type of owner, either User or Team.	
         "owningBusinessUnit":"common/application/activity/owningBusinessUnit", // 	Unique identifier for the business unit that owns the record	
