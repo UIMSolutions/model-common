@@ -4,10 +4,10 @@ import model.common;
 
 static this() {
   // Business that represents a customer or potential customer. The company that is billed in business transactions.
-  gsCommon.objclasses.entity("common/application/account", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/account", new class DOOPObjclass {
     this() {
       super();
-      this.objclass("common/entity").attributes([
+      this.objclass("common/entity").attclasses([
         "createdOnBehalfBy":"base/uuid", //	Shows who created the record on behalf of another user.	
         "modifiedOnBehalfBy":"base/uuid", //	Shows who last updated the record on behalf of another user.	
         "overriddenCreatedOn":"common/application/account/overriddenCreatedOn", //	Date and time that the record was migrated.	

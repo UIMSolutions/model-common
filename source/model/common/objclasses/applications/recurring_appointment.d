@@ -4,10 +4,10 @@ import model.common;
 
 static this() {
   // The Master appointment of a recurring appointment series.
-  gsCommon.objclasses.entity("common/application/recurringAppointment", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/recurringAppointment", new class DOOPObjclass {
     this() {
       super();
-      this.objclass("common/entity").attributes([
+      this.objclass("common/entity").attclasses([
         "createdOnBehalfBy":"dataformat/guid/nullable/true", //	Shows who created the record on behalf of another user.	
         "modifiedOnBehalfBy":"common/application/recurringAppointment/modifiedOnBehalfBy", //	Shows who last updated the record on behalf of another user.	
         "overriddenCreatedOn":"common/application/recurringAppointment/overriddenCreatedOn", //	Date and time that the record was migrated.	

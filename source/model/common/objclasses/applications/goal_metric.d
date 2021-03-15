@@ -4,10 +4,10 @@ import model.common;
 
 static this() {
   // Type of measurement for a goal, such as money amount or count.
-  gsCommon.objclasses.entity("common/application/goalMetric", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/goalMetric", new class DOOPObjclass {
     this() {
       super();
-      this.objclass("common/entity").attributes([
+      this.objclass("common/entity").attclasses([
         "title":"common/application/goalMetric/name", //	Name of the goal metric.	
         "createdOnBehalfBy":"dataformat/guid/nullable/true", //	Unique identifier of the delegate user who created the record.	
         "modifiedOnBehalfBy":"dataformat/guid/nullable/true", //	Unique identifier of the delegate user who modified the record.	

@@ -4,10 +4,10 @@ import model.common;
 
 static this() {
   // Unit of measure.
-  gsCommon.objclasses.entity("common/foundation/unit", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/foundation/unit", new class DOOPObjclass {
     this() {
       super();
-      this.objclass("common/entity").attributes([
+      this.objclass("common/entity").attclasses([
         "createdOnBehalfBy":"dataformat/guid/nullable/true", // Unique identifier of the delegate user who created the uom.
         "modifiedOnBehalfBy":"dataformat/guid/nullable/true", // Unique identifier of the delegate user who last modified the uom.
         "importSequenceNumber":"common/foundation/unit/importSequenceNumber", // Sequence number of the import that created this record.

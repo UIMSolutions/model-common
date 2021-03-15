@@ -4,10 +4,10 @@ import model.common;
 
 static this() {
   // Metadata of knowledge base (KB) articles associated with Microsoft Dynamics 365 entities.
-  gsCommon.objclasses.entity("common/application/knowledgeBaseRecord", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/knowledgeBaseRecord", new class DOOPObjclass {
     this() {
       super();
-      this.objclass("common/entity").attributes([
+      this.objclass("common/entity").attclasses([
         "title":"common/application/knowledgeBaseRecord/title", //	Shows the title of the knowledge base (KB) Record.	
         "createdOnBehalfBy":"dataformat/guid/nullable/true", //	Unique identifier of the delegate user who created the record.	
         "modifiedOnBehalfBy":"dataformat/guid/nullable/true", //	Unique identifier of the delegate user who modified the record.	

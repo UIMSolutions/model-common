@@ -4,10 +4,10 @@ import model.common;
 
 static this() {
   // Delivery entity in an engagement.
-  gsCommon.objclasses.entity("common/crm/project/service/project", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/crm/project/service/project", new class DOOPObjclass {
     this() {
       super();
-      this.objclass("common/entity").attributes([
+      this.objclass("common/entity").attclasses([
         "createdOnBehalfBy":"dataformat/guid/nullable/true", // Shows who created the record on behalf of another user.
         "modifiedOnBehalfBy":"dataformat/guid/nullable/true", // Shows who last updated the record on behalf of another user.
         "overriddenCreatedOn":"common/crm/project/service/project/overriddenCreatedOn", // Date and time that the record was migrated.

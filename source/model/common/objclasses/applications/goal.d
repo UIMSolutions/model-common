@@ -4,10 +4,10 @@ import model.common;
 
 static this() {
   // Target objective for a user or a team for a specified time period.
-  gsCommon.objclasses.entity("common/application/goal", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/goal", new class DOOPObjclass {
     this() {
       super();
-      this.objclass("common/entity").attributes([
+      this.objclass("common/entity").attclasses([
         "createdOnBehalfBy":"dataformat/guid/nullable/true", //	Shows who created the record on behalf of another user.	
         "modifiedOnBehalfBy":"dataformat/guid/nullable/true", //	Shows who last updated the record on behalf of another user.	
         "overriddenCreatedOn":"common/application/goal/overriddenCreatedOn", //	Date and time that the record was migrated.	

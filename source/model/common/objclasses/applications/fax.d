@@ -4,10 +4,10 @@ import model.common;
 
 static this() {
   // Activity that tracks call outcome and number of pages for a fax and optionally stores an electronic copy of the document.
-  gsCommon.objclasses.entity("common/application/fax", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/fax", new class DOOPObjclass {
     this() {
       super();
-      this.objclass("common/entity").attributes([
+      this.objclass("common/entity").attclasses([
         "createdOnBehalfBy":"dataformat/guid/nullable/true", //		Shows who created the record on behalf of another user.	
         "modifiedOnBehalfBy":"dataformat/guid/nullable/true", //		Shows who last updated the record on behalf of another user.	
         "overriddenCreatedOn":"common/application/fax/overriddenCreatedOn", //		Date and time that the record was migrated.	

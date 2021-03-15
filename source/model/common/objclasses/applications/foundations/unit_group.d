@@ -4,10 +4,10 @@ import model.common;
 
 static this() {
   // Grouping of units.
-  gsCommon.objclasses.entity("common/foundation/unitGroup", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/foundation/unitGroup", new class DOOPObjclass {
     this() {
       super();
-      this.objclass("common/entity").attributes([
+      this.objclass("common/entity").attclasses([
         "createdOnBehalfBy":"dataformat/guid/nullable/true", // Unique identifier of the delegate user who created the uomschedule.
         "modifiedOnBehalfBy":"dataformat/guid/nullable/true", // Unique identifier of the delegate user who last modified the uomschedule.
         "organizationId":"dataformat/guid/nullable/false", // Unique identifier for the organization

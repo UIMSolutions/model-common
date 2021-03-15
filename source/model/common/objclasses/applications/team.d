@@ -4,10 +4,10 @@ import model.common;
 
 static this() {
   // Collection of system users that routinely collaborate. Teams can be used to simplify record sharing and provide team members with common access to organization data when team members belong to different Business Units.
-  gsCommon.objclasses.entity("common/application/team", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/team", new class DOOPObjclass {
     this() {
       super();
-      this.objclass("common/entity").attributes([
+      this.objclass("common/entity").attclasses([
         "title":"common/application/team/name", // Name of the team.	
         "organizationId":"dataformat/guid/nullable/false", // Unique identifier of the organization associated with the team.	
         "businessUnitId":"dataformat/guid/nullable/false", // Unique identifier of the business unit with which the team is associated.	

@@ -4,11 +4,10 @@ import model.common;
 
 static this() {
   // Information about the selling relationship between two products, including the relationship type, such as up-sell, cross-sell, substitute, or accessory.
-  gsCommon.objclasses.entity("common/foundation/productRelationship", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/foundation/productRelationship", new class DOOPObjclass {
     this() {
       super(); 
-      this.objclass("common/entity");
-      this.attributes([
+      this.objclass("common/entity").attclasses([
         "title":"common/name", // name
         "createdOnBehalfBy":"dataformat/guid/nullable/true", // Shows who created the record on behalf of another user.
         "modifiedOnBehalfBy":"dataformat/guid/nullable/true", // Shows who created the record on behalf of another user.

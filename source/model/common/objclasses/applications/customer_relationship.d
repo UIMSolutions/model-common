@@ -3,10 +3,10 @@ module model.common.objclasses.applications.customer_relationship;
 import model.common;
 
 static this() {
-  gsCommon.objclasses.entity("common/application/customerRelationship", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/customerRelationship", new class DOOPObjclass {
     this() {
       super();
-      this.objclass("common/entity").attributes([
+      this.objclass("common/entity").attclasses([
         "customerRoleId":"common/application/customerRelationship/customerRoleId", //	Choose the primary party's role or nature of the relationship the customer has with the second party. The field is read-only until both parties have been selected. Administrators can configure role values under Business Management in the Settings area.	
         "customerRelationshipId":"common/application/customerRelationship/customerRelationshipId", //	Unique identifier of the customer relationship.	
         "ownerId":"common/ownerId", //	Owner Id	

@@ -4,10 +4,10 @@ import model.common;
 
 static this() {
   // Contains information about the tracked service-level KPIs for cases that belong to different customers.
-  gsCommon.objclasses.entity("common/application/slaKpiInstance", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/slaKpiInstance", new class DOOPObjclass {
     this() {
       super();
-      this.objclass("common/entity").attributes([
+      this.objclass("common/entity").attclasses([
         "SLAKPIInstanceId":"common/application/slaKpiInstance/SLAKPIInstanceId", //	Unique identifier of the SLA KPI Instance.	
         "title":"common/application/slaKpiInstance/name", //	Type a descriptive name for the service level agreement (SLA) key performance indicator (KPI) instance.	
         "computedFailureTime":"common/application/slaKpiInstance/computedFailureTime", //	Computed Failure Date and time	

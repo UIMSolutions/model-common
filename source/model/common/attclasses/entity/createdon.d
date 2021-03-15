@@ -3,7 +3,7 @@ module model.common.attclasses.entity.createdon;
 import model.common;
 
 static this() {
-  gsCommon.attclasses.entity("entity/createdOn", new class DEIMAttclass {
+  gsCommon.attclasses.entity("entity/createdOn", new class DOOPAttclass {
     this() {
       super(); 
       _attclassName = "base/dateTime/nullable";

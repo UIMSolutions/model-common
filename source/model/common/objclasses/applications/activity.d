@@ -4,10 +4,10 @@ import model.common;
 
 static this() {
   // Task performed, or to be performed, by a user. An activity is any action for which an entry can be made on a calendar.
-  gsCommon.objclasses.entity("common/application/activity", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/activity", new class DOOPObjclass {
     this() {
       super();
-      this.objclass("common/entity").attributes([        
+      this.objclass("common/entity").attclasses([        
         "createdOnBehalfBy":"dataformat/guid/nullable/true", // 	Shows who created the record on behalf of another user.	
         "modifiedOnBehalfBy":"dataformat/guid/nullable/true", // 	Shows who last updated the record on behalf of another user.	
         "ownerId":"common/ownerId", // 	Owner Id	

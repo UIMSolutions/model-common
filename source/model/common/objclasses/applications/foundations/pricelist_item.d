@@ -4,11 +4,10 @@ import model.common;
 
 static this() {
   // Information about how to price a product in the specified price level, including pricing method, rounding option, and discount type based on a specified product unit.
-  gsCommon.objclasses.entity("common/foundation/pricelistItem", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/foundation/pricelistItem", new class DOOPObjclass {
     this() {
       super(); 
-      this.objclass("common/entity");
-      this.attributes([
+      this.objclass("common/entity").attclasses([
         "createdOnBehalfBy":"dataformat/guid/nullable/true", //	Shows who created the record on behalf of another user.
         "modifiedOnBehalfBy":"dataformat/guid/nullable/true", //	Shows who last updated the record on behalf of another user.
         "importSequenceNumber":"common/foundation/pricelistItem/importSequenceNumber", //	Sequence number of the import that created this record.

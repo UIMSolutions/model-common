@@ -4,10 +4,10 @@ import model.common;
 
 static this() {
   // Address and shipping information. Used to store additional addresses for an account or contact.
-  gsCommon.objclasses.entity("common/application/address", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/address", new class DOOPObjclass {
     this() {
       super();
-      this.objclass("common/entity").attributes([
+      this.objclass("common/entity").attclasses([
         "parentId":"common/application/address/parentId", // Choose the customer's address.	
         "parentIdTypeCode":"common/application/address/parentIdTypeCode", // The name of the entity linked by parentId	
         "addressNumber":"common/application/address/addressNumber", // 	Shows the number of the address, to indicate whether the address is the primary, secondary, or other address for the customer.	

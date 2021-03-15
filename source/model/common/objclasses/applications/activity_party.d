@@ -4,10 +4,10 @@ import model.common;
 
 static this() {
   // Person or group associated with an activity. An activity can have multiple activity parties.
-  gsCommon.objclasses.entity("common/application/activityParty", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/activityParty", new class DOOPObjclass {
     this() {
       super();
-      this.objclass("common/entity").attributes([
+      this.objclass("common/entity").attclasses([
         "activityId":"common/application/activityParty/activityId", //	Unique identifier of the activity associated with the activity party. (A "party" is any person who is associated with an activity.)	
         "partyId":"common/application/activityParty/partyId", //		Unique identifier of the party associated with the activity.	
         "partyObjectTypeCode":"common/application/activityParty/partyObjectTypeCode", //		The name of the entity linked by partyId	

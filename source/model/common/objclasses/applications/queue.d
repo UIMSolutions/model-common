@@ -4,10 +4,10 @@ import model.common;
 
 static this() {
   // A list of records that require action, such as accounts, activities, and cases.
-  gsCommon.objclasses.entity("common/application/queue", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/queue", new class DOOPObjclass {
     this() {
       super();
-      this.objclass("common/entity").attributes([
+      this.objclass("common/entity").attclasses([
         "businessUnitId":"dataformat/guid/nullable/false", //	Unique identifier of the business unit with which the queue is associated.	
         "organizationId":"dataformat/guid/nullable/false", //	Unique identifier of the organization associated with the queue.	
         "emailAddress":"common/application/queue/emailAddress", //	Email address that is associated with the queue.	

@@ -4,10 +4,10 @@ import model.common;
 
 static this() {
   // Container for feedback and ratings for knowledge articles.
-  gsCommon.objclasses.entity("common/application/feedback", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/feedback", new class DOOPObjclass {
     this() {
       super();
-      this.objclass("common/entity").attributes([
+      this.objclass("common/entity").attclasses([
         "title":"common/application/feedback/title", //	Type a title for the feedback.	
         "feedbackId":"common/application/feedback/feedbackId", //	FeedbackId	
         "rating":"common/application/feedback/rating", //	Specifies how helpful the related record was.	

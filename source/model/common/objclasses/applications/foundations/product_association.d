@@ -4,11 +4,10 @@ import model.common;
 
 static this() {
   // Information about a product property.
-  gsCommon.objclasses.entity("common/foundation/productAssociation", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/foundation/productAssociation", new class DOOPObjclass {
     this() {
       super(); 
-      this.objclass("common/entity");
-      this.attributes([        
+      this.objclass("common/entity").attclasses([        
         "createdOnBehalfBy":"dataformat/guid/nullable/true", // Shows who created the record on behalf of another user.
         "modifiedOnBehalfBy":"dataformat/guid/nullable/true", // Shows who created the record on behalf of another user.
         "organizationId":"dataformat/guid/nullable/false", // Unique identifier for the organization

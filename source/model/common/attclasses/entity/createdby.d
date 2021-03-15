@@ -3,7 +3,7 @@ module model.common.attclasses.entity.createdby;
 import model.common;
 
 static this() {
-  gsCommon.attclasses.entity("entity/createdBy", new class DEIMAttclass {
+  gsCommon.attclasses.entity("entity/createdBy", new class DOOPAttclass {
     this() {
       super(); 
       _attclassName = "dataFormat/guid/nullable";

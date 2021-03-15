@@ -4,11 +4,10 @@ import model.common;
 
 static this() {
   // Reservation entity representing the summary of the associated resource bookings.
-  gsCommon.objclasses.entity("common/foundation/bookableResourceBookingHeader", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/foundation/bookableResourceBookingHeader", new class DOOPObjclass {
     this() {
       super(); 
-      this.objclass("common/entity");
-      this.attributes([
+      this.objclass("common/entity").attclasses([
         "title":"common/name", // The title of the booking summary.
         "createdOnBehalfBy":"dataformat/guid/nullable/true", // Shows who created the record on behalf of another user.
         "modifiedOnBehalfBy":"dataformat/guid/nullable/true", // Shows who last updated the record on behalf of another user.

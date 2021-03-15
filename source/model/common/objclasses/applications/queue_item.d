@@ -4,10 +4,10 @@ import model.common;
 
 static this() {
   // A specific item in a queue, such as a case record or an activity record.
-  gsCommon.objclasses.entity("common/application/queueItem", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/queueItem", new class DOOPObjclass {
     this() {
       super();
-      this.objclass("common/entity").attributes([
+      this.objclass("common/entity").attclasses([
         "queueItemId":"common/application/queueItem/queueItemId", //	Unique identifier of the queue item.	
         "queueId":"common/application/queueItem/queueId", //	Choose the queue that the item is assigned to.	
         "objectId":"common/application/queueItem/objectId", //	Choose the activity, case, or article assigned to the queue.	

@@ -4,10 +4,10 @@ import model.common;
 
 static this() {
   // Note that is attached to one or more objects, including other notes.
-  gsCommon.objclasses.entity("common/application/note", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/note", new class DOOPObjclass {
     this() {
       super();
-      this.objclass("common/entity").attributes([
+      this.objclass("common/entity").attclasses([
         "annotationId":"common/application/note/annotationId", //	Unique identifier of the note.	
         "objectTypeCode":"common/application/note/objectTypeCode", //	Type of entity with which the note is associated.	
         "objectTypeCode_display":"common/application/note/objectTypeCode_display", //		

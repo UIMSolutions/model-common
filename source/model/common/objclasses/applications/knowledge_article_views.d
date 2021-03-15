@@ -4,10 +4,10 @@ import model.common;
 
 static this() {
   // No of times an article is viewed per day
-  gsCommon.objclasses.entity("common/application/knowledgeArticleViews", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/knowledgeArticleViews", new class DOOPObjclass {
     this() {
       super();
-      this.objclass("common/entity").attributes([
+      this.objclass("common/entity").attclasses([
         "knowledgeArticleViewsId":"common/application/knowledgeArticleViews/knowledgeArticleViewsId", //	Unique identifier of the Knowledge Article Views	
         "timeZoneRuleVersionNumber":"common/application/knowledgeArticleViews/timeZoneRuleVersionNumber", //	For internal use only.	
         "transactionCurrencyId":"common/application/knowledgeArticleViews/transactionCurrencyId", //	Choose the local currency for the record to make sure budgets are reported in the correct currency.	

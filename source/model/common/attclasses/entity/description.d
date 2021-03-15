@@ -3,7 +3,7 @@ module model.common.attclasses.entity.description;
 import model.common;
 
 static this() {
-  gsCommon.attclasses.entity("entity/description", new class DEIMAttclass {
+  gsCommon.attclasses.entity("entity/description", new class DOOPAttclass {
     this() {
       super(); 
       _attclassName = "dataFormat/string/maximumLength/2000/nullable/true";

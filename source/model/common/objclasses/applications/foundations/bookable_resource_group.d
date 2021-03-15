@@ -4,11 +4,10 @@ import model.common;
 
 static this() {
   // Represents the line details of a resource booking.
-  gsCommon.objclasses.entity("common/foundation/bookableResourceGroup", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/foundation/bookableResourceGroup", new class DOOPObjclass {
     this() {
       super(); 
-      this.objclass("common/entity");
-      this.attributes([
+      this.objclass("common/entity").attclasses([
         "createdOnBehalfBy":"dataformat/guid/nullable/true", // Shows who created the record on behalf of another user.
         "modifiedOnBehalfBy":"dataformat/guid/nullable/true", // Shows who last updated the record on behalf of another user.
         "overriddenCreatedOn":"common/foundation/bookableResourceGroup/overriddenCreatedOn", // Date and time that the record was migrated.

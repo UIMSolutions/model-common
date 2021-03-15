@@ -3,10 +3,10 @@ module model.common.objclasses.applications.currency;
 import model.common;
 
 static this() {
-  gsCommon.objclasses.entity("common/application/currency", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/currency", new class DOOPObjclass {
     this() {
       super();
-      this.objclass("common/entity").attributes([
+      this.objclass("common/entity").attclasses([
         "statusCode":"common/application/currency/statusCode", //	Reason for the status of the transaction currency.	
         "statusCode_display":"common/application/currency/statusCode_display", // 	
         "stateCode":"common/application/currency/stateCode", // Status of the transaction currency.	

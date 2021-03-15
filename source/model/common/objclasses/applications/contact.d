@@ -4,10 +4,10 @@ import model.common;
 
 static this() {
   // Person with whom a business unit has a relationship, such as customer, supplier, and colleague.
-  gsCommon.objclasses.entity("common/application/contact", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/contact", new class DOOPObjclass {
     this() {
       super();
-      this.objclass("common/entity").attributes([
+      this.objclass("common/entity").attclasses([
         "createdOnBehalfBy":"dataformat/guid/nullable/true", //	Shows who created the record on behalf of another user.	
         "modifiedOnBehalfBy":"dataformat/guid/nullable/true", //	Shows who last updated the record on behalf of another user.	
         "overriddenCreatedOn":"common/application/contact/overriddenCreatedOn", //	Date and time that the record was migrated.	
@@ -19,7 +19,6 @@ static this() {
         "owningTeam":"common/application/contact/owningTeam", //	Unique identifier for the team that owns the record.	
         "timeZoneRuleVersionNumber":"common/application/contact/timeZoneRuleVersionNumber", //	For internal use only.	
         "UTCConversionTimeZoneCode":"common/application/contact/UTCConversionTimeZoneCode", //	Time zone code that was in use when the record was created.	
-        "contactId":"common/application/contact/contactId", //	Unique identifier of the contact.	
         "customerSizeCode":"common/application/contact/customerSizeCode", //	Select the size of the contact's company for segmentation and reporting purposes.	
         "customerSizeCode_display":"common/application/contact/customerSizeCode_display", //		
         "customerTypeCode":"common/application/contact/customerTypeCode", //	Select the category that best describes the relationship between the contact and your organization.	

@@ -4,10 +4,10 @@ import model.common;
 
 static this() {
   // Position of a user in the hierarchy
-  gsCommon.objclasses.entity("common/application/position", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/position", new class DOOPObjclass {
     this() {
       super();
-      this.objclass("common/entity").attributes([
+      this.objclass("common/entity").attclasses([
         "createdOnBehalfBy":"common/application/position/createdOnBehalfBy", //	Unique identifier of the delegate user who created the record.	
         "modifiedOnBehalfBy":"common/application/position/modifiedOnBehalfBy", //	Unique identifier of the delegate user who modified the record.	
         "organizationId":"dataformat/guid/nullable/false", //	Unique identifier for the organization	

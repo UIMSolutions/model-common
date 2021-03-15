@@ -4,10 +4,10 @@ import model.common;
 
 static this() {
   // Role describing a relationship between a two records.
-  gsCommon.objclasses.entity("common/application/connectionRole", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/connectionRole", new class DOOPObjclass {
     this() {
       super();
-      this.objclass("common/entity").attributes([
+      this.objclass("common/entity").attclasses([
         "importSequenceNumber":"common/application/connectionRole/importSequenceNumber", //	Unique identifier of the data import or data migration that created this record.	
         "stateCode":"common/application/connectionRole/stateCode", //	Status of the connection role.	
         "stateCode_display":"common/application/connectionRole/stateCode_display", //		

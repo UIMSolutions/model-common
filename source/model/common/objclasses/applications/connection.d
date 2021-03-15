@@ -4,15 +4,14 @@ import model.common;
 
 static this() {
   // Relationship between two entities.
-  gsCommon.objclasses.entity("common/application/connection", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/connection", new class DOOPObjclass {
     this() {
       super();
-      this.objclass("common/entity").attributes([
+      this.objclass("common/entity").attclasses([
         "owningUser":"common/application/connection/owningUser", //	Unique identifier of the user who owns the connection.	
         "statusCode":"common/application/connection/statusCode", //	Reason for the status of the connection.	
         "statusCode_display":"common/application/connection/statusCode_display", //		
         "importSequenceNumber":"common/application/connection/importSequenceNumber", //	Unique identifier of the data import or data migration that created this record.	
-        "connectionId":"common/application/connection/connectionId", //	Unique identifier of the connection.	
         "effectiveStart":"common/application/connection/effectiveStart", //	Enter the start date of the connection.	
         "isMaster":"common/application/connection/isMaster", //	Indicates that this is the master record.	
         "ownerId":"common/ownerId", //	Owner Id	

@@ -4,10 +4,10 @@ import model.common;
 
 static this() {
   // Signature for email message
-  gsCommon.objclasses.entity("common/application/emailSignature", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/emailSignature", new class DOOPObjclass {
     this() {
       super();
-      this.objclass("common/entity").attributes([
+      this.objclass("common/entity").attclasses([
         "emailSignatureId":"common/application/emailSignature/emailSignatureId", //	Unique identifier of the email signature.	
         "owningBusinessUnit":"common/application/emailSignature/owningBusinessUnit", //	Unique identifier of the business unit that owns the email signature.	
         "isPersonal":"common/application/emailSignature/isPersonal", //	Information about whether the email signature is personal or is available to all users.	

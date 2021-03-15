@@ -4,10 +4,10 @@ import model.common;
 
 static this() {
   // Structured content that is part of the knowledge base.
-  gsCommon.objclasses.entity("common/application/article", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/article", new class DOOPObjclass {
     this() {
       super();
-      this.objclass("common/entity").attributes([
+      this.objclass("common/entity").attclasses([
         "kbArticleId":"common/application/article/kbArticleId", //	Shows the ID of the article.	
         "kbArticleTemplateId":"common/application/article/kbArticleTemplateId", //	Choose the template that you want to use as a base for creating the new article.	
         "organizationId":"dataformat/guid/nullable/false", //	Unique identifier of the organization associated with the article.	

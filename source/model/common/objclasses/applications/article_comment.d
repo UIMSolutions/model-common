@@ -4,10 +4,10 @@ import model.common;
 
 static this() {
   // Comment on a knowledge base article.
-  gsCommon.objclasses.entity("common/application/articleComment", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/articleComment", new class DOOPObjclass {
     this() {
       super();
-      this.objclass("common/entity").attributes([
+      this.objclass("common/entity").attclasses([
         "kbArticleCommentId":"common/application/articleComment/kbArticleCommentId", //	Unique identifier of the knowledge base article comment.	
         "kbArticleId":"common/application/articleComment/kbArticleId", //	Unique identifier of the knowledge base article to which the comment applies.	
         "title":"common/application/articleComment/title", //	Title of the knowledge base article comment.	

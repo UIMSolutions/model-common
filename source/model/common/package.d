@@ -8,24 +8,45 @@ public import uim.core;
 public import uim.oop;
 public import uim.models;
 
-DEIMModel gsCommon;
+DOOPModel gsCommon;
 string[string][string] bsiTranslations;
 
 static this() {
-  gsCommon = new class DEIMModel {
+  gsCommon = new class DOOPModel {
     this() {
       super();
       this.name("Common");
 
       this.attclasses.entity(
-        EIMAttclass("base/integer"), 
-        EIMAttclass("base/string"), 
-        EIMAttclass("base/timestamp"), 
-        EIMAttclass("base/url"), 
-        EIMAttclass("base/uuid"));
+        OOPAttclass("dataformat/boolean/nullable/false"),
+        OOPAttclass("dataformat/boolean/nullable/true"),
+        OOPAttclass("dataformat/datetime/nullable/false"),
+        OOPAttclass("dataformat/datetime/nullable/true"),
+        OOPAttclass("dataformat/double/nullable/false"),
+        OOPAttclass("dataformat/double/nullable/true"),
+        OOPAttclass("dataformat/guid/nullable/false"),
+        OOPAttclass("dataformat/guid/nullable/true"),
+        OOPAttclass("dataformat/integer/nullable/false"),
+        OOPAttclass("dataformat/integer/nullable/true"),
+        OOPAttclass("dataformat/timestamp/nullable/false"),
+        OOPAttclass("dataformat/string/nullable/true"),
+        OOPAttclass("dataformat/string/nullable/false"),
+        OOPAttclass("dataformat/timestamp/nullable/true"),
+        OOPAttclass("dataformat/url/nullable/false"),
+        OOPAttclass("dataformat/url/nullable/true"),
+      );
     }
   };
 }
 unittest {
-  // writeln(gsCommon.objclasses);
+  writeln(gsCommon.objclasses.entity("common/entity").toJson);
+  writeln(gsCommon.objclasses.entity("common/application/team").toJson);
+  writeln(gsCommon.objclasses.entity("common/application/team").objclass);
+
+  auto f = File("model-common.json", "w"); // open for writing
+  f.write(gsCommon.toJson.toString);
+
+  MongoClient client = connectMongoDB("127.0.0.1");
+	auto models = client.getCollection("eim.models");
+  models.insert(gsCommon.toBson);
 }

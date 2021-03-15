@@ -4,10 +4,10 @@ import model.common;
 
 static this() {
   // Prospect or potential sales opportunity. Leads are converted into accounts, contacts, or opportunities when they are qualified. Otherwise, they are deleted or archived.
-  gsCommon.objclasses.entity("common/crm/project/lead", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/crm/project/lead", new class DOOPObjclass {
     this() {
       super();
-      this.objclass("common/entity").attributes([
+      this.objclass("common/entity").attclasses([
         "createdOnBehalfBy":"dataformat/guid/nullable/true", // Shows who created the record on behalf of another user.
         "modifiedOnBehalfBy":"dataformat/guid/nullable/true", // Shows who last updated the record on behalf of another user.
         "overriddenCreatedOn":"common/crm/project/lead/overriddenCreatedOn", // Date and time that the record was migrated.

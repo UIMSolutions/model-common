@@ -4,11 +4,10 @@ import model.common;
 
 static this() {
   // Categorize resources that have capacity into categories such as roles.
-  gsCommon.objclasses.entity("common/foundation/bookableResourceCategory", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/foundation/bookableResourceCategory", new class DOOPObjclass {
     this() {
       super(); 
-      this.objclass("common/entity");
-      this.attributes([
+      this.objclass("common/entity").attclasses([
         "createdOnBehalfBy":"dataformat/guid/nullable/true", // Shows who created the record on behalf of another user.
         "modifiedOnBehalfBy":"dataformat/guid/nullable/true", // Shows who last updated the record on behalf of another user.
         "overriddenCreatedOn":"common/foundation/bookableResourceCategory/overriddenCreatedOn", // Date and time that the record was migrated.

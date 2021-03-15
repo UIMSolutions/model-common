@@ -4,11 +4,10 @@ import model.common;
 
 static this() {
   // Represents a model to evaluate skills or other related entities.
-  gsCommon.objclasses.entity("common/foundation/ratingModel", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/foundation/ratingModel", new class DOOPObjclass {
     this() {
       super(); 
-      this.objclass("common/entity");
-      this.attributes([
+      this.objclass("common/entity").attclasses([
         "createdOnBehalfBy":"dataformat/guid/nullable/true", // Shows who created the record on behalf of another user.
         "modifiedOnBehalfBy":"dataformat/guid/nullable/true", // Shows who last updated the record on behalf of another user.
         "overriddenCreatedOn":"common/foundation/ratingModel/overriddenCreatedOn", // Date and time that the record was migrated.

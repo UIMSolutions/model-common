@@ -4,11 +4,10 @@ import model.common;
 
 static this() {
   // A unique value associated with a rating model that allows providing a user friendly rating value.
-  gsCommon.objclasses.entity("common/foundation/ratingValue", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/foundation/ratingValue", new class DOOPObjclass {
     this() {
       super(); 
-      this.objclass("common/entity");
-      this.attributes([
+      this.objclass("common/entity").attclasses([
         "createdOnBehalfBy":"dataformat/guid/nullable/true", // Shows who created the record on behalf of another user.
         "modifiedOnBehalfBy":"dataformat/guid/nullable/true", // Shows who last updated the record on behalf of another user.
         "overriddenCreatedOn":"common/foundation/ratingValue/overriddenCreatedOn", // Date and time that the record was migrated.

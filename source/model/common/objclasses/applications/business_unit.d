@@ -4,10 +4,10 @@ import model.common;
 
 static this() {
   // Business, division, or department in the Microsoft Dynamics 365 database.
-  gsCommon.objclasses.entity("common/application/businessUnit", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/businessUnit", new class DOOPObjclass {
     this() {
       super();
-      this.objclass("common/entity").attributes([
+      this.objclass("common/entity").attclasses([
         "organizationId":"dataformat/guid/nullable/false", //	Unique identifier of the organization associated with the business unit.	
         "title":"common/application/businessUnit/name", //	Name of the business unit.	
         "divisionName":"common/application/businessUnit/divisionName", //	Name of the division to which the business unit belongs.	

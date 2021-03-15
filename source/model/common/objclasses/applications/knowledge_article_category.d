@@ -4,10 +4,10 @@ import model.common;
 
 static this() {
   // Category for a Knowledge Article.
-  gsCommon.objclasses.entity("common/application/knowledgeArticleCategory", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/knowledgeArticleCategory", new class DOOPObjclass {
     this() {
       super();
-      this.objclass("common/entity").attributes([
+      this.objclass("common/entity").attclasses([
         "knowledgeArticleId":"common/application/knowledgeArticleCategory/knowledgeArticleId", //		
         "categoryId":"common/application/knowledgeArticleCategory/categoryId", //		
         "knowledgeArticleCategoryId":"common/application/knowledgeArticleCategory/knowledgeArticleCategoryId", //	Unique identifier of the Category for the knowledge article.	

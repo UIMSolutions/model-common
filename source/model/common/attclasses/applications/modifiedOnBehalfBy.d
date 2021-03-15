@@ -3,7 +3,7 @@ module model.common.attclasses.applications.modifiedOnBehalfBy;
 import model.common;
 
 static this() {
-  gsCommon.attclasses.entity("common/modifiedOnBehalfBy", new class DEIMAttclass {
+  gsCommon.attclasses.entity("common/modifiedOnBehalfBy", new class DOOPAttclass {
     this() {
       super(); 
       _attclassName = "dataFormat/guid/nullable/true";      

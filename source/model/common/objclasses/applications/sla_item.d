@@ -4,10 +4,10 @@ import model.common;
 
 static this() {
   // Contains information about a tracked support KPI for a specific customer.
-  gsCommon.objclasses.entity("common/application/slaItem", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/slaItem", new class DOOPObjclass {
     this() {
       super();
-      this.objclass("common/entity").attributes([
+      this.objclass("common/entity").attclasses([
         "SLAItemId":"common/application/slaItem/SLAItemId", //	Unique identifier of the SLA Item.	
         "title":"common/application/slaItem/name", //	Type a descriptive name of the service level agreement (SLA) item.	
         "owningBusinessUnit":"common/application/slaItem/owningBusinessUnit", //	Unique identifier for the business unit that owns the record	

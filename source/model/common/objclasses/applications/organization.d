@@ -4,12 +4,11 @@ import model.common;
 
 static this() {
   // Top level of the Microsoft Dynamics 365 business hierarchy. The organization can be a specific business, holding company, or corporation.
-  gsCommon.objclasses.entity("common/application/organization", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/organization", new class DOOPObjclass {
     this() {
       super();
-      this.objclass("common/entity").attributes([
+      this.objclass("common/entity").attclasses([
         "fiscalYearFormat":"common/application/organization/fiscalYearFormat", //	Information that specifies how the name of the fiscal year is displayed throughout Microsoft CRM.	
-        "organizationId":"dataformat/guid/nullable/false", //	Unique identifier of the organization.	
         "title":"common/application/organization/name", //	Name of the organization. The name is set when Microsoft CRM is installed and should not be changed.	
         "userGroupId":"common/application/organization/userGroupId", //	Unique identifier of the default group of users in the organization.	
         "privilegeUserGroupId":"common/application/organization/privilegeUserGroupId", //	Unique identifier of the default privilege for users in the organization.	

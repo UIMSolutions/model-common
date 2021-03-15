@@ -4,10 +4,10 @@ import model.common;
 
 static this() {
   // Territory represents sales regions.
-  gsCommon.objclasses.entity("common/application/user", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/user", new class DOOPObjclass {
     this() {
       super();
-      this.objclass("common/entity").attributes([
+      this.objclass("common/entity").attclasses([
         "systemUserId":"common/application/user/systemUserId", //Unique identifier for the user.
         "organizationId":"dataformat/guid/nullable/false", //Unique identifier of the organization associated with the user.
         "businessUnitId":"dataformat/guid/nullable/false", //Unique identifier of the business unit with which the user is associated.

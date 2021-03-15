@@ -4,10 +4,10 @@ import model.common;
 
 static this() {
   // Contains information about the tracked service-level KPIs for cases that belong to different customers.
-  gsCommon.objclasses.entity("common/application/sla", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/sla", new class DOOPObjclass {
     this() {
       super();
-      this.objclass("common/entity").attributes([
+      this.objclass("common/entity").attclasses([
         "SLAId":"common/application/sla/SLAId", //	Unique identifier of the SLA.	
         "title":"common/application/sla/name", //	Type a descriptive name of the service level agreement (SLA).	
         "businessHoursId":"common/application/sla/businessHoursId", //	Choose the business hours for calculating SLA item timelines.	

@@ -4,10 +4,10 @@ import model.common;
 
 static this() {
   // Template for a knowledge base article that contains the standard attributes of an article.
-  gsCommon.objclasses.entity("common/application/articleTemplate", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/articleTemplate", new class DOOPObjclass {
     this() {
       super();
-      this.objclass("common/entity").attributes([
+      this.objclass("common/entity").attclasses([
         "structureXml":"common/application/articleTemplate/structureXml", //	XML structure of the knowledge base article.	
         "organizationId":"dataformat/guid/nullable/false", //	Unique identifier of the organization associated with the template.	
         "formatXml":"common/application/articleTemplate/formatXml", //	XML format of the knowledge base article template.	

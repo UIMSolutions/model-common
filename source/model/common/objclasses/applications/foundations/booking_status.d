@@ -4,10 +4,10 @@ import model.common;
 
 static this() {
   // Allows creation of multiple sub statuses mapped to a booking status option.
-  gsCommon.objclasses.entity("common/foundation/bookingStatus", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/foundation/bookingStatus", new class DOOPObjclass {
     this() {
       super();
-      this.objclass("common/entity").attributes([
+      this.objclass("common/entity").attclasses([
         "title":"common/foundation/bookingStatus/name", // Type the name of the booking status.
         "createdOnBehalfBy":"dataformat/guid/nullable/true", // Shows who created the record on behalf of another user.
         "modifiedOnBehalfBy":"dataformat/guid/nullable/true", // Shows who last updated the record on behalf of another user.

@@ -4,10 +4,10 @@ import model.common;
 
 static this() {
   // This entity is used to store social profile information of its associated account and contacts on different social channels.
-  gsCommon.objclasses.entity("common/application/socialProfile", new class DEIMObjclass {
+  gsCommon.objclasses.entity("common/application/socialProfile", new class DOOPObjclass {
     this() {
       super();
-      this.objclass("common/entity").attributes([
+      this.objclass("common/entity").attclasses([
         "createdOnBehalfBy":"dataformat/guid/nullable/true", //	Shows who created the record on behalf of another user.
         "modifiedOnBehalfBy":"dataformat/guid/nullable/true", //	Shows who last updated the record on behalf of another user.
         "overriddenCreatedOn":"common/application/socialProfile/overriddenCreatedOn", //	Date and time that the record was migrated.
