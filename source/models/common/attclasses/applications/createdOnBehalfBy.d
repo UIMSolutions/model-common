@@ -7,8 +7,8 @@ static this() {
     this() {
       super();       
       this
-      .name("common/createdOnBehalfBy")
-      .attclass("dataFormat/guid/nullable/true");
+      .name("common/createdOnBehalfBy");
+//      .attclass("dataFormat/guid/nullable/true");
     }
   });
 }
