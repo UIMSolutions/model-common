@@ -8,6 +8,10 @@ public import uim.core;
 public import uim.oop;
 public import uim.models;
 
+public import models.common.attributes;
+public import models.common.entities;
+
+
 DOOPModel gsCommon;
 string[string][string] bsiTranslations;
 
