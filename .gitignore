@@ -1,7 +1,7 @@
 .dub
 docs.json
 __dummy.html
-docs/
+
 /model-common
 model-common.so
 model-common.dylib
@@ -14,7 +14,6 @@ model-common-test-*
 *.obj
 *.lst
 dub.selections.json
-dub.selections.json
+
 libmodel-common.a
-dub.selections.json
 model-common.json
